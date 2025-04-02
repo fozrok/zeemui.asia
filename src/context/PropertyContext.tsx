@@ -127,26 +127,35 @@ export const PropertyProvider: React.FC<{ children: ReactNode }> = ({ children }
         return newId;
       } else {
         // Insert into properties table
+        const propertyData = {
+          title: property.title,
+          description: property.description,
+          price: property.price,
+          type: property.type,
+          bedrooms: property.bedrooms,
+          bathrooms: property.bathrooms,
+          city: property.location.city,
+          country: property.location.country,
+          area: property.location.area,
+          featured: property.featured,
+          new_property: property.newProperty,
+          active: property.active
+        };
+
+        console.log('Attempting to insert property:', propertyData);
+        
         const { data: insertedProperty, error: insertError } = await supabase
           .from('properties')
-          .insert({
-            title: property.title,
-            description: property.description,
-            price: property.price,
-            type: property.type,
-            bedrooms: property.bedrooms,
-            bathrooms: property.bathrooms,
-            city: property.location.city,
-            country: property.location.country,
-            area: property.location.area,
-            featured: property.featured,
-            new_property: property.newProperty,
-            active: property.active
-          })
+          .insert(propertyData)
           .select('id')
           .single();
 
-        if (insertError) throw insertError;
+        if (insertError) {
+          console.error('Error inserting property:', insertError);
+          throw insertError;
+        }
+
+        console.log('Successfully inserted property:', insertedProperty);
 
         const newPropertyId = insertedProperty.id;
 
@@ -157,11 +166,18 @@ export const PropertyProvider: React.FC<{ children: ReactNode }> = ({ children }
             feature
           }));
 
+          console.log('Attempting to insert features:', featuresToInsert);
+          
           const { error: featuresError } = await supabase
             .from('property_features')
             .insert(featuresToInsert);
 
-          if (featuresError) throw featuresError;
+          if (featuresError) {
+            console.error('Error inserting features:', featuresError);
+            throw featuresError;
+          }
+
+          console.log('Successfully inserted features');
         }
 
         // Insert images
@@ -172,11 +188,18 @@ export const PropertyProvider: React.FC<{ children: ReactNode }> = ({ children }
             display_order: index + 1
           }));
 
+          console.log('Attempting to insert images:', imagesToInsert);
+          
           const { error: imagesError } = await supabase
             .from('property_images')
             .insert(imagesToInsert);
 
-          if (imagesError) throw imagesError;
+          if (imagesError) {
+            console.error('Error inserting images:', imagesError);
+            throw imagesError;
+          }
+
+          console.log('Successfully inserted images');
         }
 
         // Refresh properties
@@ -185,8 +208,8 @@ export const PropertyProvider: React.FC<{ children: ReactNode }> = ({ children }
         return newPropertyId;
       }
     } catch (err) {
-      console.error('Error adding property:', err);
-      setError('Failed to add property. Please try again.');
+      console.error('Detailed error adding property:', err);
+      setError(`Failed to add property: ${err instanceof Error ? err.message : 'Unknown error'}`);
       return null;
     }
   }, [fetchProperties]);

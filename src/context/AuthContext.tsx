@@ -1,54 +1,69 @@
 import React, { createContext, useState, useEffect, ReactNode, useMemo, useCallback } from 'react';
-import { adminUsers } from '../data/admin';
-import { AdminUser } from '../types';
+import { supabase } from '../lib/supabase';
+import { User } from '@supabase/supabase-js';
 
 interface AuthContextType {
-  user: AdminUser | null;
-  login: (username: string, password: string) => boolean;
-  logout: () => void;
+  user: User | null;
+  login: (email: string, password: string) => Promise<{ error: any | null }>;
+  logout: () => Promise<void>;
   isAuthenticated: boolean;
 }
 
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<AdminUser | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
   useEffect(() => {
-    // Check if user is stored in localStorage
-    const storedUser = localStorage.getItem('adminUser');
-    if (storedUser) {
-      try {
-        const parsedUser = JSON.parse(storedUser);
-        setUser(parsedUser);
+    // Check active session
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session?.user) {
+        setUser(session.user);
         setIsAuthenticated(true);
-      } catch (error) {
-        console.error('Failed to parse stored user:', error);
-        localStorage.removeItem('adminUser');
+      } else {
+        setUser(null);
+        setIsAuthenticated(false);
       }
-    }
+    });
+
+    // Get initial session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        setUser(session.user);
+        setIsAuthenticated(true);
+      }
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
-  const login = useCallback((username: string, password: string): boolean => {
-    const foundUser = adminUsers.find(
-      u => u.username === username && u.password === password
-    );
+  const login = useCallback(async (email: string, password: string) => {
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
 
-    if (foundUser) {
-      setUser(foundUser);
-      setIsAuthenticated(true);
-      localStorage.setItem('adminUser', JSON.stringify(foundUser));
-      return true;
+    if (error) {
+      console.error('Login error:', error.message);
+      return { error };
     }
-    
-    return false;
+
+    setUser(data.user);
+    setIsAuthenticated(true);
+    return { error: null };
   }, []);
 
-  const logout = useCallback(() => {
-    setUser(null);
-    setIsAuthenticated(false);
-    localStorage.removeItem('adminUser');
+  const logout = useCallback(async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error('Logout error:', error.message);
+    } else {
+      setUser(null);
+      setIsAuthenticated(false);
+    }
   }, []);
 
   const contextValue = useMemo(() => ({

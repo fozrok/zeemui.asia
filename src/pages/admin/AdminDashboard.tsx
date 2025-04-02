@@ -1,12 +1,14 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useProperties } from '../../hooks/useProperties';
-import { Home, Eye, EyeOff, Plus, DollarSign, RefreshCw, Star } from 'lucide-react';
+import { Home, Eye, EyeOff, Plus, DollarSign, RefreshCw, Star, Database } from 'lucide-react';
 import { formatCurrency } from '../../utils/format';
-import { isMockData } from '../../lib/supabase';
+import { isMockData, supabase } from '../../lib/supabase';
 
 const AdminDashboard: React.FC = () => {
   const { properties, loading, error, refreshProperties } = useProperties();
+  const [connectionStatus, setConnectionStatus] = useState<string>('');
+  const [isTestingConnection, setIsTestingConnection] = useState(false);
 
   const dashboardStats = useMemo(() => {
     const totalProperties = properties.length;
@@ -24,6 +26,27 @@ const AdminDashboard: React.FC = () => {
     };
   }, [properties]);
 
+  const testConnection = async () => {
+    setIsTestingConnection(true);
+    setConnectionStatus('Testing connection...');
+    try {
+      const { data, error } = await supabase
+        .from('properties')
+        .select('count')
+        .limit(1);
+      
+      if (error) {
+        setConnectionStatus(`Connection error: ${error.message}`);
+      } else {
+        setConnectionStatus('Successfully connected to Supabase!');
+      }
+    } catch (err: any) {
+      setConnectionStatus(`Failed to connect: ${err?.message || 'Unknown error'}`);
+    } finally {
+      setIsTestingConnection(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -39,14 +62,36 @@ const AdminDashboard: React.FC = () => {
     <div>
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-gray-800 mb-6">Dashboard</h1>
-        <button
-          onClick={() => refreshProperties()}
-          className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-md flex items-center transition-colors"
-        >
-          <RefreshCw size={18} className="mr-1" />
-          Refresh Data
-        </button>
+        <div className="flex space-x-3">
+          <button
+            onClick={testConnection}
+            disabled={isTestingConnection}
+            className="bg-purple-100 hover:bg-purple-200 text-purple-800 px-4 py-2 rounded-md flex items-center transition-colors"
+          >
+            <Database size={18} className="mr-1" />
+            Test Connection
+          </button>
+          <button
+            onClick={() => refreshProperties()}
+            className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-md flex items-center transition-colors"
+          >
+            <RefreshCw size={18} className="mr-1" />
+            Refresh Data
+          </button>
+        </div>
       </div>
+
+      {connectionStatus && (
+        <div className={`p-4 rounded-md mb-6 ${
+          connectionStatus.includes('error') || connectionStatus.includes('Failed')
+            ? 'bg-red-50 border border-red-200 text-red-600'
+            : connectionStatus.includes('Success')
+            ? 'bg-green-50 border border-green-200 text-green-600'
+            : 'bg-blue-50 border border-blue-200 text-blue-600'
+        }`}>
+          {connectionStatus}
+        </div>
+      )}
 
       {isMockData && (
         <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 p-4 rounded-md mb-6">

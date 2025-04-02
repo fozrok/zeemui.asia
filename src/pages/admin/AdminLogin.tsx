@@ -1,12 +1,14 @@
 import React, { useState, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
-import { Lock, User } from 'lucide-react';
+import { Lock, Mail } from 'lucide-react';
+import { supabase } from '../../lib/supabase';
 
 const AdminLogin: React.FC = () => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const { login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -14,23 +16,61 @@ const AdminLogin: React.FC = () => {
   // Get the intended destination from the location state or default to /admin
   const from = (location.state as any)?.from?.pathname || '/admin';
 
-  const handleSubmit = useCallback((e: React.FormEvent) => {
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setIsLoading(true);
     
-    if (!username || !password) {
-      setError('Please enter both username and password');
+    if (!email || !password) {
+      setError('Please enter both email and password');
+      setIsLoading(false);
       return;
     }
 
-    const success = login(username, password);
-    
-    if (success) {
-      navigate(from, { replace: true });
-    } else {
-      setError('Invalid username or password');
+    try {
+      const { error: loginError } = await login(email, password);
+      
+      if (loginError) {
+        setError(loginError.message);
+      } else {
+        navigate(from, { replace: true });
+      }
+    } catch (err) {
+      setError('An unexpected error occurred');
+    } finally {
+      setIsLoading(false);
     }
-  }, [username, password, login, navigate, from]);
+  }, [email, password, login, navigate, from]);
+
+  const handleSignUp = useCallback(async () => {
+    if (!email || !password) {
+      setError('Please enter both email and password');
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: {
+            role: 'admin'
+          }
+        }
+      });
+
+      if (error) {
+        setError(error.message);
+      } else {
+        setError('Success! Please check your email for verification link.');
+      }
+    } catch (err) {
+      setError('Failed to create user');
+    } finally {
+      setIsLoading(false);
+    }
+  }, [email, password]);
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
@@ -48,27 +88,27 @@ const AdminLogin: React.FC = () => {
         
         <div className="p-6">
           {error && (
-            <div className="mb-4 bg-red-50 border border-red-200 text-red-600 p-3 rounded">
+            <div className={`mb-4 ${error.includes('Success') ? 'bg-green-50 border-green-200 text-green-600' : 'bg-red-50 border-red-200 text-red-600'} p-3 rounded border`}>
               {error}
             </div>
           )}
           
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label htmlFor="username" className="block text-gray-700 text-sm font-medium mb-1">
-                Username
+              <label htmlFor="email" className="block text-gray-700 text-sm font-medium mb-1">
+                Email
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <User size={18} className="text-gray-400" />
+                  <Mail size={18} className="text-gray-400" />
                 </div>
                 <input
-                  type="text"
-                  id="username"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full pl-10 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Enter your username"
+                  placeholder="Enter your email"
                 />
               </div>
             </div>
@@ -92,12 +132,32 @@ const AdminLogin: React.FC = () => {
               </div>
             </div>
             
-            <button
-              type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-colors"
-            >
-              Login
-            </button>
+            <div className="flex space-x-3">
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-colors flex items-center justify-center"
+              >
+                {isLoading ? (
+                  <>
+                    <div className="mr-2 h-4 w-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    Logging in...
+                  </>
+                ) : (
+                  'Login'
+                )}
+              </button>
+
+              {/* Development only - remove in production */}
+              <button
+                type="button"
+                onClick={handleSignUp}
+                disabled={isLoading}
+                className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-md transition-colors"
+              >
+                Create Admin User
+              </button>
+            </div>
           </form>
           
           <div className="mt-4 text-center text-sm text-gray-500">
