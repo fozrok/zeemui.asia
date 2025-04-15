@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+# Disable the Next.js plugin
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 [[headers]]
   for = "/*.js"
     [headers.values]
@@ -10,4 +14,4 @@
 [[headers]]
   for = "/*.mjs"
     [headers.values]
-    Content-Type = "application/javascript" 
+    Content-Type = "application/javascript"
