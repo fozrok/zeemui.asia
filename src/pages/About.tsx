@@ -126,22 +126,30 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                alt="James Wilson" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="font-bold text-xl mb-1 text-gray-800">James Wilson</h3>
-                <div className="text-custom-green font-medium mb-3">Founder & CEO</div>
-                <p className="text-gray-600 mb-4">
-                  With over 20 years of experience in luxury real estate, James founded Zeemui with a vision to redefine the standard of excellence in the industry.
-                </p>
+          {/* Founder Profile - Prominent and Centered */}
+          <div className="mb-12">
+            <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="h-full">
+                  <img 
+                    src="https://res.cloudinary.com/dhxriuzu5/image/upload/v1744706701/zanette-small_yf0jba.jpg" 
+                    alt="Zanette Cross" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-bold text-2xl mb-2 text-gray-800">Zanette Cross</h3>
+                  <div className="text-custom-green font-medium text-lg mb-4">Founder & Managing Director</div>
+                  <p className="text-gray-600 leading-relaxed">
+                    Zanette founded Zeemui after more than 2 decades working in the real estate industry, initially for the large corporate Countrywide plc in the UK, with Bridgfords and Bairstow Eves, and then for almost a decade based in Koh Samui as the Sales Director for Conrad Properties. She is a highly skilled real estate sales professional and is praised by her past buyers for her extensive local knowledge, focussed diligence and perseverance in finding the most suitable properties for her clients.
+                  </p>
+                </div>
               </div>
             </div>
-            
+          </div>
+          
+          {/* Other Team Members */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
