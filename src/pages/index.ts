@@ -7,6 +7,7 @@ export { default as BlogPost } from './BlogPost';
 export { default as About } from './About';
 export { default as Contact } from './Contact';
 export { default as Terms } from './Terms';
+export { default as BuyersGuide } from './BuyersGuide';
 
 // Admin pages
 export { default as AdminLogin } from './admin/AdminLogin';

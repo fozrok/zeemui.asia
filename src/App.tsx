@@ -7,6 +7,7 @@ import {
   PropertyDetails, 
   Blog, 
   BlogPost,
+  BuyersGuide,
   About, 
   Contact,
   AdminLogin,
@@ -33,6 +34,7 @@ function App() {
               <Route path="properties/:id" element={<PropertyDetails />} />
               <Route path="blog" element={<Blog />} />
               <Route path="blog/:id" element={<BlogPost />} />
+              <Route path="blog/buyers-guide" element={<BuyersGuide />} />
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               <Route path="terms" element={<Terms />} />

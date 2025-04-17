@@ -1,12 +1,12 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
   return (
     <div>
       {/* Header */}
-      <div className="bg-gray-900 py-20 bg-cover bg-center relative" style={{ backgroundImage: "url('https://res.cloudinary.com/dhxriuzu5/image/upload/v1741726808/a-luxurious-modern-villa-with-an-infinit__IeWg50eSy6SiOD580qnjg_Bn614P7vTy20g1-4ro7q7Q_gralzm.jpg')" }}>
+      <div className="bg-gray-900 py-20 bg-cover bg-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center">
@@ -14,27 +14,16 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Our team of luxury real estate experts is ready to assist with your property journey.
+              Get in touch with our team of luxury property experts
             </p>
           </div>
         </div>
       </div>
       
-      {/* Contact Information */}
+      {/* Contact Info Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="bg-amber-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin size={24} className="text-amber-600" />
-              </div>
-              <h3 className="font-bold text-xl mb-2 text-gray-800">Our Location</h3>
-              <p className="text-gray-600">
-                123 Luxury Lane, Chaweng<br />
-                Koh Samui, Koh Samui 84320
-              </p>
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="bg-amber-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone size={24} className="text-amber-600" />
@@ -51,46 +40,34 @@ const Contact = () => {
               </div>
               <h3 className="font-bold text-xl mb-2 text-gray-800">Email Address</h3>
               <p className="text-gray-600">
-                info@zeemui.com<br />
-                sales@zeemui.com
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="bg-amber-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock size={24} className="text-amber-600" />
-              </div>
-              <h3 className="font-bold text-xl mb-2 text-gray-800">Working Hours</h3>
-              <p className="text-gray-600">
-                Monday - Friday: 9:00 AM - 6:00 PM<br />
-                Saturday: 10:00 AM - 4:00 PM
+                info@zeemui.asia
               </p>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Contact Form & Map */}
-      <section className="py-8 mb-16">
+      {/* Contact Form and Map Section */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-serif text-gray-800 mb-6">Send Us a Message</h2>
-              <p className="text-gray-600 mb-8">
-                Whether you're looking to buy, sell, or have questions about our properties, we're here to help. Fill out the form below and one of our luxury real estate specialists will get back to you shortly.
-              </p>
-              
               <ContactForm />
             </div>
             
             <div>
-              <h2 className="text-3xl font-serif text-gray-800 mb-6">Find Us</h2>
-              <div className="rounded-lg overflow-hidden shadow-md">
-                {/* Map placeholder - in a real app, this would be an actual map */}
-                <div className="w-full h-96 bg-gray-200 flex items-center justify-center">
-                  <MapPin size={48} className="text-gray-400" />
-                  <span className="ml-2 text-gray-500">Map view would be displayed here</span>
-                </div>
+              <h2 className="text-3xl font-serif text-gray-800 mb-6">Our Location - Koh Samui</h2>
+              <div className="rounded-lg overflow-hidden shadow-md h-[500px]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125756.25600402366!2d99.87937563646195!3d9.509386328559433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054f79f752cd2bb%3A0x93a23245f792fc9c!2sKo%20Samui%2C%20Ko%20Samui%20District%2C%20Surat%20Thani%2084140%2C%20Thailand!5e0!3m2!1sen!2s!4v1708099436099!5m2!1sen!2s" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
               
               <div className="mt-8">
@@ -116,32 +93,17 @@ const Contact = () => {
       </section>
       
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-4">Frequently Asked Questions</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Find answers to common questions about our luxury properties and services.
-            </p>
-          </div>
-          
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8 text-center">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="font-bold text-lg mb-2 text-gray-800">
-                  What areas of Koh Samui do you cover?
+                  What services do you offer to property buyers?
                 </h3>
                 <p className="text-gray-600">
-                  Zeemui specializes in luxury properties throughout Koh Samui's most desirable locations, with a primary focus on Koh Samui, Phuket, Bangkok, Hua Hin, and Chiang Mai.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-bold text-lg mb-2 text-gray-800">
-                  Can foreigners own property in Koh Samui?
-                </h3>
-                <p className="text-gray-600">
-                  Foreigners can own condominiums in their own name, while houses and villas are typically purchased through a Thai company structure or long-term leasehold. Our team can guide you through the legal process and options available.
+                  We provide comprehensive property search, viewings, legal advice, and support throughout the entire buying process. Our services are free for buyers, as we receive our commission from property sellers.
                 </p>
               </div>
               
