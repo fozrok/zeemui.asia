@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter, Settings } from 'lucide-react';
+import { Phone, Mail, Facebook, Instagram, Linkedin, Twitter, Settings } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
@@ -49,32 +49,16 @@ const Footer = () => {
                 <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
               </li>
               <li>
+                <Link to="/blog/buyers-guide" className="text-gray-400 hover:text-white transition-colors">Buyers Guide</Link>
+              </li>
+              <li>
                 <Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link>
               </li>
-            </ul>
-          </div>
-
-          {/* Property Types */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Property Types</h3>
-            <ul className="space-y-2">
               <li>
-                <Link to="/properties" className="text-gray-400 hover:text-white transition-colors">Luxury Villas</Link>
-              </li>
-              <li>
-                <Link to="/properties" className="text-gray-400 hover:text-white transition-colors">Beachfront Properties</Link>
-              </li>
-              <li>
-                <Link to="/properties" className="text-gray-400 hover:text-white transition-colors">Pool Villas</Link>
-              </li>
-              <li>
-                <Link to="/properties" className="text-gray-400 hover:text-white transition-colors">Investment Properties</Link>
-              </li>
-              <li>
-                <Link to="/properties" className="text-gray-400 hover:text-white transition-colors">New Developments</Link>
+                <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</Link>
               </li>
             </ul>
           </div>
@@ -83,17 +67,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin size={20} className="text-custom-green mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">123 Luxury Lane, Chaweng, Koh Samui, Koh Samui 84320</span>
-              </li>
               <li className="flex items-center">
                 <Phone size={20} className="text-custom-green mr-2 flex-shrink-0" />
                 <a href="tel:+66881380006" className="text-gray-400 hover:text-white transition-colors">+66 88 138 0006</a>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-custom-green mr-2 flex-shrink-0" />
-                <a href="mailto:info@zeemui.com" className="text-gray-400 hover:text-white transition-colors">info@zeemui.com</a>
+                <a href="mailto:info@zeemui.asia" className="text-gray-400 hover:text-white transition-colors">info@zeemui.asia</a>
               </li>
             </ul>
           </div>

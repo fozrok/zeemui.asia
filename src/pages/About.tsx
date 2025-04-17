@@ -14,7 +14,7 @@ const About = () => {
               About Zeemui
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Luxury real estate redefined: Excellence, integrity, and unparalleled service since 2010.
+              Luxury real estate redefined: Excellence, integrity, and unparalleled service.
             </p>
           </div>
         </div>
@@ -27,13 +27,22 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-serif text-gray-800 mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Zeemui was founded in 2010 with a clear mission: to provide discerning clients with access to the most exclusive luxury properties in Koh Samui. What began as a boutique agency in Koh Samui has grown into one of the premier luxury real estate companies in Southeast Asia.
+                Zeemui is an independent, British luxury property agency based in Koh Samui, Thailand, founded with a clear mission: to provide discerning clients with access to the most exclusive luxury properties in Koh Samui. What began as a boutique agency in Koh Samui has grown into one of the premier luxury real estate companies in Southeast Asia.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Our journey has been defined by an unwavering commitment to excellence, integrity, and personalized service. We understand that purchasing a luxury property is not just a transaction—it's an experience that should be as exceptional as the properties we represent.
               </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Today, Zeemui continues to set the standard for luxury real estate in Koh Samui, with a curated portfolio of the finest properties and estates in the island's most sought-after locations.
+              </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Our trained team of professionals have over a decade of experience to serve your needs and requirements. We ensure you are confident knowing how to buy property in Thailand, and that your property purchase is undertaken smoothly, confidentially and without complication.
+              </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Services are free for property buyers and commissions only come from property sellers.
+              </p>
               <p className="text-gray-600 leading-relaxed">
-                Today, Zeemui continues to set the standard for luxury real estate in Koh Samui, with a curated portfolio of the finest villas, penthouses, and estates in the island's most sought-after locations.
+                As an independent real estate agency, we are not tied to any specific developers or sellers and can therefore offer completely impartial advice and opinions. We put our passion, creativity and commitment in property at the heart of everything we do, aspiring to achieve the extra mile to exceed our clients expectations.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -122,12 +131,12 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif text-gray-800 mb-4">Our Team</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet the dedicated professionals behind Zeemui, each bringing their unique expertise and passion for luxury real estate.
+              Meet our Founder, bringing over two decades of expertise and passion for luxury real estate.
             </p>
           </div>
           
           {/* Founder Profile - Prominent and Centered */}
-          <div className="mb-12">
+          <div>
             <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="h-full">
@@ -144,39 +153,6 @@ const About = () => {
                     Zanette founded Zeemui after more than 2 decades working in the real estate industry, initially for the large corporate Countrywide plc in the UK, with Bridgfords and Bairstow Eves, and then for almost a decade based in Koh Samui as the Sales Director for Conrad Properties. She is a highly skilled real estate sales professional and is praised by her past buyers for her extensive local knowledge, focussed diligence and perseverance in finding the most suitable properties for her clients.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Other Team Members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                alt="Sarah Chen" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="font-bold text-xl mb-1 text-gray-800">Sarah Chen</h3>
-                <div className="text-custom-green font-medium mb-3">Head of Sales</div>
-                <p className="text-gray-600 mb-4">
-                  Sarah leads our sales team with enthusiasm and expertise, ensuring that each client finds the perfect property to match their unique lifestyle and investment goals.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                alt="Michael Thompson" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="font-bold text-xl mb-1 text-gray-800">Michael Thompson</h3>
-                <div className="text-custom-green font-medium mb-3">Property Director</div>
-                <p className="text-gray-600 mb-4">
-                  Michael's deep knowledge of Koh Samui's luxury property market and attention to detail ensures that our portfolio represents only the finest properties available.
-                </p>
               </div>
             </div>
           </div>
@@ -267,38 +243,12 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="bg-custom-green-50 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                    <MapPin size={20} className="text-custom-green" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-1">Our Office</h4>
-                    <p className="text-gray-600">
-                      123 Luxury Lane, Chaweng<br />
-                      Koh Samui, Koh Samui 84320
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-custom-green-50 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                     <Phone size={20} className="text-custom-green" />
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
                     <p className="text-gray-600">
                       +66 88 138 0006
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-custom-green-50 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                    <Mail size={20} className="text-custom-green" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-1">Email</h4>
-                    <p className="text-gray-600">
-                      info@zeemui.com<br />
-                      sales@zeemui.com
                     </p>
                   </div>
                 </div>

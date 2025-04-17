@@ -6,12 +6,14 @@ import {
   Properties, 
   PropertyDetails, 
   Blog, 
+  BlogPost,
   About, 
   Contact,
   AdminLogin,
   AdminDashboard,
   PropertyList,
-  PropertyForm
+  PropertyForm,
+  Terms
 } from './pages';
 
 // Context providers
@@ -30,8 +32,10 @@ function App() {
               <Route path="properties" element={<Properties />} />
               <Route path="properties/:id" element={<PropertyDetails />} />
               <Route path="blog" element={<Blog />} />
+              <Route path="blog/:id" element={<BlogPost />} />
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="terms" element={<Terms />} />
             </Route>
 
             {/* Admin Routes */}

@@ -22,6 +22,7 @@ const Navbar = () => {
             <Link to="/" className="text-gray-800 hover:text-custom-green transition-colors">HOME</Link>
             <Link to="/properties" className="text-gray-800 hover:text-custom-green transition-colors">PROPERTIES</Link>
             <Link to="/blog" className="text-gray-800 hover:text-custom-green transition-colors">BLOG</Link>
+            <Link to="/blog/buyers-guide" className="text-gray-800 hover:text-custom-green transition-colors">BUYERS GUIDE</Link>
             <Link to="/about" className="text-gray-800 hover:text-custom-green transition-colors">ABOUT</Link>
             <Link to="/contact" className="text-gray-800 hover:text-custom-green transition-colors">CONTACT</Link>
           </nav>
@@ -62,6 +63,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               BLOG
+            </Link>
+            <Link 
+              to="/blog/buyers-guide" 
+              className="block text-gray-800 hover:text-custom-green transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              BUYERS GUIDE
             </Link>
             <Link 
               to="/about" 
