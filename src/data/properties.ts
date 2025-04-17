@@ -262,9 +262,7 @@ export const propertyTypes = [
   "LUXURY VILLA",
   "LAND",
   "BEACHFRONT",
-  "COMMERCIAL",
-  "COVID DEALS",
-  "CRYPTO INVESTMENTS"
+  "COMMERCIAL"
 ];
 export const priceRanges = [
   "ANY",
