@@ -44,7 +44,7 @@ const Terms = () => {
               </p>
 
               <p className="mt-6 text-gray-700">
-                For more information you can write to us at: info@zeemui.com
+                For more information you can write to us at: info@zeemui.asia
               </p>
             </div>
           </div>
