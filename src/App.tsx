@@ -17,6 +17,8 @@ import {
   Terms
 } from './pages';
 
+import { BlogPostList, BlogPostForm } from './pages/admin';
+
 // Context providers
 import { AuthProvider } from './context/AuthContext';
 import { PropertyProvider } from './context/PropertyContext';
@@ -67,10 +69,34 @@ function App() {
               }
             />
             <Route
-              path="/admin/properties/:id"
+              path="/admin/properties/edit/:id"
               element={
                 <AdminProtectedRoute>
                   <PropertyForm />
+                </AdminProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin/blog"
+              element={
+                <AdminProtectedRoute>
+                  <BlogPostList />
+                </AdminProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin/blog/new"
+              element={
+                <AdminProtectedRoute>
+                  <BlogPostForm />
+                </AdminProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin/blog/edit/:id"
+              element={
+                <AdminProtectedRoute>
+                  <BlogPostForm />
                 </AdminProtectedRoute>
               }
             />
