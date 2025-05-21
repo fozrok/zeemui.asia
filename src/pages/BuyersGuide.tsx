@@ -107,15 +107,19 @@ const BuyersGuide = () => {
                     Property ownership through marriage, with specific legal considerations and protections.
                   </p>
                 </div>
-              </div>
-            </div>
 
-            {/* Detailed Explanation */}
-            <div className="prose prose-lg max-w-none mb-12">
-              <h3 className="text-2xl font-serif text-gray-800 mb-6">Understanding Condominium Ownership</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                i.e., if there are 100 equal-sized condominiums in a project, 49 would be available for foreigners to own, with their personal name on the title deed/' Condominium Chanote' (*Note: is worth doing your due diligence and research, as some regions in Thailand for example Koh Samui have now prohibited the new building of condominium projects.)
-              </p>
+                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-custom-green-50 p-3 rounded-full mr-4">
+                      <FileCheck className="h-6 w-6 text-custom-green" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-800">5. BOI Investment</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    This unique type of property ownership option in Thailand is more uncommon for a residential purchase, but it is still a possible option for investors of luxury villas and resorts for sale, however there is a strict assessment procedure to qualify.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Call to Action */}

@@ -4,11 +4,12 @@ import { useProperties } from '../../hooks/useProperties';
 import { Property } from '../../types';
 import { X, Plus, Save, ChevronLeft, Star } from 'lucide-react';
 import { cities, propertyTypes } from '../../data/properties';
+import { supabase } from '../../lib/supabase';
 
 const PropertyForm: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { getProperty, addProperty, updateProperty } = useProperties();
+  const { addProperty, updateProperty } = useProperties();
   
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -36,15 +37,133 @@ const PropertyForm: React.FC = () => {
   const [feature, setFeature] = useState('');
 
   useEffect(() => {
-    if (id) {
-      const property = getProperty(id);
-      if (property) {
-        setFormData(property);
-      } else {
-        setError('Property not found');
+    const loadProperty = async () => {
+      if (!id) return;
+      
+      console.log('Loading property with ID:', id);
+      setIsLoading(true);
+      try {
+        // Test Supabase connection first
+        const { data: testData, error: testError } = await supabase
+          .from('properties')
+          .select('count')
+          .single();
+        
+        if (testError) {
+          console.error('Supabase connection test failed:', testError);
+          throw new Error('Failed to connect to database. Please check your configuration.');
+        }
+        
+        console.log('Supabase connection test successful');
+
+        // Fetch property data
+        const { data: propertyData, error: propertyError } = await supabase
+          .from('properties')
+          .select('*')
+          .eq('id', id)
+          .single();
+
+        if (propertyError) {
+          console.error('Error fetching property:', propertyError);
+          throw propertyError;
+        }
+
+        if (!propertyData) {
+          console.error('No property found with ID:', id);
+          throw new Error('Property not found');
+        }
+
+        console.log('Found property:', propertyData);
+
+        // Fetch features
+        const { data: featuresData, error: featuresError } = await supabase
+          .from('property_features')
+          .select('feature')
+          .eq('property_id', id);
+
+        if (featuresError) {
+          console.error('Error fetching features:', featuresError);
+          throw featuresError;
+        }
+
+        console.log('Found features:', featuresData);
+
+        // Fetch images
+        const { data: imagesData, error: imagesError } = await supabase
+          .from('property_images')
+          .select('image_url')
+          .eq('property_id', id)
+          .order('display_order', { ascending: true });
+
+        if (imagesError) {
+          console.error('Error fetching images:', imagesError);
+          throw imagesError;
+        }
+
+        console.log('Found images:', imagesData);
+
+        // Combine all data
+        const combinedData = {
+          title: propertyData.title,
+          description: propertyData.description,
+          price: propertyData.price,
+          type: propertyData.type,
+          bedrooms: propertyData.bedrooms,
+          bathrooms: propertyData.bathrooms,
+          location: {
+            city: propertyData.city,
+            country: propertyData.country,
+            area: propertyData.area
+          },
+          features: featuresData?.map(f => f.feature) || [],
+          images: imagesData?.map(i => i.image_url) || [''],
+          featured: propertyData.featured,
+          newProperty: propertyData.new_property,
+          active: propertyData.active
+        };
+
+        console.log('Setting form data:', combinedData);
+        setFormData(combinedData);
+      } catch (err: any) {
+        console.error('Error in loadProperty:', err);
+        setError(err.message || 'Failed to load property. Please try again.');
+      } finally {
+        setIsLoading(false);
       }
-    }
-  }, [id, getProperty]);
+    };
+
+    loadProperty();
+  }, [id]);
+
+  // Show loading state
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-custom-green border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading property data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show error state
+  if (error) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="bg-red-50 border border-red-200 text-red-600 p-4 rounded-md mb-4">
+          {error}
+        </div>
+        <button
+          onClick={() => navigate('/admin/properties')}
+          className="text-custom-green hover:text-custom-green-600"
+        >
+          <ChevronLeft className="inline-block mr-1" size={20} />
+          Back to Properties
+        </button>
+      </div>
+    );
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;

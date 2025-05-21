@@ -38,7 +38,7 @@ const HeroSection = () => {
       
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-4 max-w-3xl">
-          Bespoke Luxury Properties for Sale in Koh Samui
+          Bespoke Properties for Sale in Koh Samui
         </h1>
         
         <div className="w-full max-w-4xl mt-8 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-1">

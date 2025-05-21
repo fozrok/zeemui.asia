@@ -1,9 +1,11 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useProperties } from '../../hooks/useProperties';
 import { Eye, EyeOff, Edit, Trash2, Plus, Search, RefreshCw, Star, StarOff } from 'lucide-react';
 import { formatCurrency } from '../../utils/format';
 import { isMockData } from '../../lib/supabase';
+import { Property } from '../../types';
+import { API_BASE_URL } from '@/config';
 
 const PropertyList: React.FC = () => {
   const { properties, togglePropertyStatus, deleteProperty, loading, error, refreshProperties, updateProperty } = useProperties();
@@ -11,6 +13,14 @@ const PropertyList: React.FC = () => {
   const [showConfirmation, setShowConfirmation] = useState<string | null>(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [filterFeatured, setFilterFeatured] = useState<boolean | null>(null);
+
+  // Log properties and their IDs when the component mounts or properties change
+  useEffect(() => {
+    console.log('Available properties:', properties.map(p => ({
+      id: p.id,
+      title: p.title
+    })));
+  }, [properties]);
 
   const filteredProperties = React.useMemo(() => {
     return properties.filter(property => {
@@ -42,16 +52,32 @@ const PropertyList: React.FC = () => {
     setIsRefreshing(false);
   }, [refreshProperties]);
 
-  const toggleFeaturedStatus = useCallback(async (property) => {
-    // Create a copy of the property with the featured flag toggled
-    const updatedProperty = {
-      ...property,
-      featured: !property.featured
-    };
-    
-    // Update the property
-    await updateProperty(updatedProperty);
-  }, [updateProperty]);
+  const toggleFeaturedStatus = async (property: Property) => {
+    try {
+      const token = localStorage.getItem('authToken');
+      if (!token) {
+        throw new Error('Authentication token not found');
+      }
+
+      const response = await fetch(`${API_BASE_URL}/properties/${property.id}/toggle-featured`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to update property featured status');
+      }
+
+      // Refresh the property list after successful update
+      await refreshProperties();
+    } catch (error) {
+      console.error('Error toggling featured status:', error);
+      // You can add a toast notification here to show the error
+    }
+  };
 
   return (
     <div>
@@ -209,13 +235,27 @@ const PropertyList: React.FC = () => {
                     </td>
                     <td className="py-3 px-4">
                       <div className="flex space-x-2">
-                        <button
-                          onClick={() => togglePropertyStatus(property.id)}
-                          className={`p-1 rounded ${property.active ? 'text-red-600 hover:bg-red-50' : 'text-green-600 hover:bg-green-50'}`}
-                          title={property.active ? 'Hide property' : 'Show property'}
+                        {properties.map((property: Property) => (
+                          <button
+                            key={property.id}
+                            onClick={() => {
+                              console.log('Toggling property status:', property.id);
+                              togglePropertyStatus(property.id);
+                            }}
+                            className="text-gray-600 hover:text-gray-800"
+                            title={property.active ? 'Deactivate' : 'Activate'}
+                          >
+                            {property.active ? <Eye size={18} /> : <EyeOff size={18} />}
+                          </button>
+                        ))}
+                        <Link
+                          to={`/admin/properties/edit/${property.id}`}
+                          onClick={() => console.log('Navigating to edit property:', property.id)}
+                          className="text-blue-600 hover:text-blue-800"
+                          title="Edit"
                         >
-                          {property.active ? <EyeOff size={18} /> : <Eye size={18} />}
-                        </button>
+                          <Edit size={18} />
+                        </Link>
                         <button
                           onClick={() => toggleFeaturedStatus(property)}
                           className={`p-1 rounded ${property.featured ? 'text-gray-600 hover:bg-gray-50' : 'text-blue-600 hover:bg-blue-50'}`}
@@ -223,13 +263,6 @@ const PropertyList: React.FC = () => {
                         >
                           {property.featured ? <StarOff size={18} /> : <Star size={18} />}
                         </button>
-                        <Link
-                          to={`/admin/properties/${property.id}`}
-                          className="p-1 text-blue-600 hover:bg-blue-50 rounded"
-                          title="Edit property"
-                        >
-                          <Edit size={18} />
-                        </Link>
                         <button
                           onClick={() => setShowConfirmation(property.id)}
                           className="p-1 text-red-600 hover:bg-red-50 rounded"
