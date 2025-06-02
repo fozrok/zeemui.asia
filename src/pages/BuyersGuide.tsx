@@ -35,11 +35,6 @@ const BuyersGuide = () => {
               <p className="text-gray-600 leading-relaxed mb-6">
                 The easy answer is 'yes!' However, you cannot directly own the freehold land in your personal name if you are a foreigner. Although, the building structure can always be legally owned and registered in a foreigner's personal name, whereas the freehold Chanote land title must be registered at the land office in a Thai person or in a Limited Thai company name.
               </p>
-              <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
-                <p className="text-amber-800">
-                  <strong>Important Note:</strong> Home ownership within Thailand is very high at over 80%! Compared to places such as United Kingdom at 63.5% or USA at 64.5%.
-                </p>
-              </div>
             </div>
 
             {/* Context Section */}
@@ -53,6 +48,13 @@ const BuyersGuide = () => {
               </p>
               <p className="text-gray-600 leading-relaxed">
                 This has already become the case in many more over-developed places around the world, such as London, San Fransisco, Singapore or Hong Kong.
+              </p>
+            </div>
+
+            {/* Important Note */}
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-12">
+              <p className="text-amber-800">
+                <strong>Important Note:</strong> Home ownership within Thailand is very high at over 80%! Compared to places such as United Kingdom at 63.5% or USA at 64.5%.
               </p>
             </div>
 
