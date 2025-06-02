@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Clock, ThumbsUp, Award } from 'lucide-react';
+import { MapPin, Clock, ThumbsUp, Award, Users, Globe } from 'lucide-react';
 import { HeroSection, FeaturedProperties } from '../components';
 
 const Home = () => {
@@ -14,21 +14,21 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-gray-800 uppercase tracking-wider mb-2">
-              Why Choose Us
+              Our Values
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              At Zeemui, we pride ourselves on providing exceptional service and the finest selection of luxury properties in Koh Samui.
+              At Zeemui, our core values guide everything we do, from the properties we select to the service we provide.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6 hover:shadow-md rounded-lg transition-shadow">
               <div className="bg-custom-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin size={24} className="text-custom-green" />
+                <Award size={24} className="text-custom-green" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Prime Locations</h3>
+              <h3 className="font-bold text-xl mb-2">Excellence</h3>
               <p className="text-gray-600">
-                Our properties are located in the most desirable areas of Koh Samui, offering stunning views and exclusive surroundings.
+                We are committed to excellence in every aspect of our business, from the properties we represent to the service we provide.
               </p>
             </div>
             
@@ -36,29 +36,29 @@ const Home = () => {
               <div className="bg-custom-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ThumbsUp size={24} className="text-custom-green" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Exceptional Quality</h3>
+              <h3 className="font-bold text-xl mb-2">Integrity</h3>
               <p className="text-gray-600">
-                Each property in our portfolio is carefully selected to ensure it meets our high standards of luxury and craftsmanship.
+                We operate with unwavering integrity and transparency, ensuring that our clients can trust us completely throughout their journey.
               </p>
             </div>
             
             <div className="text-center p-6 hover:shadow-md rounded-lg transition-shadow">
               <div className="bg-custom-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock size={24} className="text-custom-green" />
+                <Users size={24} className="text-custom-green" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Personalized Service</h3>
+              <h3 className="font-bold text-xl mb-2">Personalization</h3>
               <p className="text-gray-600">
-                Our experienced team is dedicated to providing personalized service to each client, ensuring your property journey is seamless.
+                We believe in personalized service, tailoring our approach to meet the unique needs and preferences of each client.
               </p>
             </div>
             
             <div className="text-center p-6 hover:shadow-md rounded-lg transition-shadow">
               <div className="bg-custom-green-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award size={24} className="text-custom-green" />
+                <Globe size={24} className="text-custom-green" />
               </div>
-              <h3 className="font-bold text-xl mb-2">Award-Winning</h3>
+              <h3 className="font-bold text-xl mb-2">Innovation</h3>
               <p className="text-gray-600">
-                Zeemui has been recognized with numerous awards for excellence in the luxury real estate market.
+                We embrace innovation and continuously seek new ways to enhance the experience of buying and selling luxury real estate.
               </p>
             </div>
           </div>
