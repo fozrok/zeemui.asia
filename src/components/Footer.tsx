@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Facebook, Instagram, Linkedin, Settings } from 'lucide-react';
+import { Phone, Mail, Facebook, Instagram, Linkedin, Youtube, Settings } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -28,6 +28,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/in/zanette-cross-099451227/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
+              </a>
+              <a href="https://www.youtube.com/@zanettecross5199" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Youtube size={20} />
               </a>
             </div>
           </div>
