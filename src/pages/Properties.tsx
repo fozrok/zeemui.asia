@@ -42,19 +42,19 @@ const Properties = () => {
     
     if (currentFilters.country) {
       result = result.filter(property => 
-        property.location.country === currentFilters.country
+        property.location.country.toLowerCase() === currentFilters.country.toLowerCase()
       );
     }
     
     if (currentFilters.location) {
       result = result.filter(property => 
-        property.location.city === currentFilters.location
+        property.location.city.toLowerCase() === currentFilters.location.toLowerCase()
       );
     }
     
     if (currentFilters.type) {
       result = result.filter(property => 
-        property.type === currentFilters.type
+        property.type.toLowerCase() === currentFilters.type.toLowerCase()
       );
     }
     
@@ -62,16 +62,20 @@ const Properties = () => {
       result = result.filter(property => {
         const price = property.price;
         switch (currentFilters.price) {
-          case 'Under $10,000,000':
-            return price < 10000000;
-          case '$10,000,000 - $15,000,000':
-            return price >= 10000000 && price < 15000000;
-          case '$15,000,000 - $20,000,000':
-            return price >= 15000000 && price < 20000000;
-          case '$20,000,000 - $25,000,000':
-            return price >= 20000000 && price < 25000000;
-          case '$25,000,000+':
-            return price >= 25000000;
+          case '<5M THB':
+            return price < 5000000;
+          case '5 - 10M THB':
+            return price >= 5000000 && price < 10000000;
+          case '10 - 20M THB':
+            return price >= 10000000 && price < 20000000;
+          case '20 - 30M THB':
+            return price >= 20000000 && price < 30000000;
+          case '30 - 50M THB':
+            return price >= 30000000 && price < 50000000;
+          case '50 - 100M THB':
+            return price >= 50000000 && price < 100000000;
+          case '>100M THB':
+            return price >= 100000000;
           default:
             return true;
         }
@@ -96,12 +100,12 @@ const Properties = () => {
   
   return (
     <div>
-      {/* Header */}
-      <div className="bg-gray-900 py-20 bg-cover bg-center relative" style={{ backgroundImage: "url('https://res.cloudinary.com/dhxriuzu5/image/upload/v1741727836/a-modern-two-story-house-with-a-sleek-de_SBjwVImtS8iYd2MXRhFS7A_GeTPWMkAQK68003jvQuSRA_zz129a.png')" }}>
+      {/* Header Banner */}
+      <div className="bg-gray-900 py-16 bg-cover bg-center relative" style={{ backgroundImage: "url('https://res.cloudinary.com/dhxriuzu5/image/upload/v1741727836/a-modern-two-story-house-with-a-sleek-de_SBjwVImtS8iYd2MXRhFS7A_GeTPWMkAQK68003jvQuSRA_zz129a.png')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-serif text-white mb-4">
+            <h1 className="text-4xl font-serif text-white mb-4">
               Our Properties
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -111,7 +115,7 @@ const Properties = () => {
         </div>
       </div>
       
-      {/* Filter Section */}
+      {/* Filters */}
       <div className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-6">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
@@ -122,7 +126,7 @@ const Properties = () => {
               className="px-4 py-3 border border-gray-300 rounded text-gray-700 w-full focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             >
               <option value="">All Countries</option>
-              <option value="Koh Samui">Koh Samui</option>
+              <option value="Thailand">Thailand</option>
             </select>
             
             <select

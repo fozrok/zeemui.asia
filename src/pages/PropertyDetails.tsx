@@ -101,32 +101,15 @@ const PropertyDetails = () => {
             
             <div className="mt-10">
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">Description</h2>
-              <p className="text-gray-700 mb-8 leading-relaxed">
+              <p className="text-gray-700 mb-8 leading-relaxed whitespace-pre-line">
                 {property.description}
               </p>
               
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">Property Features</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4">
-                {property.features.map((feature, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle size={18} className="text-custom-green mr-2" />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-              
               <div className="mt-10 p-6 bg-gray-50 rounded-lg">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">Location</h2>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700">
                   This property is located in {property.location.city}, {property.location.area}, {property.location.country}.
                 </p>
-                <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
-                  {/* Map placeholder - in a real app, this would be an actual map */}
-                  <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                    <MapPin size={48} className="text-gray-400" />
-                    <span className="ml-2 text-gray-500">Map view would be displayed here</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -135,16 +118,12 @@ const PropertyDetails = () => {
           <div>
             <div className="sticky top-6">
               <div className="mb-8 text-center p-6 bg-custom-green-50 rounded-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {formatCurrency(property.price)}
                 </h3>
-                <div className="flex items-center justify-center text-gray-600 mb-4">
-                  <Tag size={16} className="mr-1" />
-                  <span>ID: {property.id}</span>
-                </div>
                 <Link 
                   to="/contact" 
-                  className="block w-full bg-custom-green hover:bg-custom-green-600 text-white py-3 px-6 rounded-md transition-colors text-center mb-4"
+                  className="block w-full bg-custom-green hover:bg-custom-green-600 text-white py-3 px-6 rounded-md transition-colors text-center"
                 >
                   Schedule Viewing
                 </Link>

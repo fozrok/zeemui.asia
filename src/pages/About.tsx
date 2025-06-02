@@ -255,7 +255,7 @@ const About = () => {
                   <div>
                     <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
                     <p className="text-gray-600">
-                      +66 88 138 0006
+                      +66(0)620492980
                     </p>
                   </div>
                 </div>

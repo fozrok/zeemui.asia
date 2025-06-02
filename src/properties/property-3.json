@@ -1,0 +1,19 @@
+{
+  "id": "property-3",
+  "title": "Sumptuous luxury 3 Bedroom Sea View Villa in Plai Laem",
+  "description": "Description goes here",
+  "price": 29900000,
+  "type": "Sea View",
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "location": {
+    "city": "Plai Laem",
+    "country": "Thailand",
+    "area": "Koh Samui"
+  },
+  "features": ["Sea View"],
+  "images": ["/images/p3-1.jpeg", "/images/p3-2.jpeg", "/images/p3-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

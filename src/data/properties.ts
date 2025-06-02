@@ -224,48 +224,18 @@ export const properties: Property[] = [
 
 export const countries = [...new Set(properties.map(property => property.location.country))];
 export const cities = [
-  "ANY",
-  "NORTH EAST",
-  "BANGRAK",
-  "BIG BUDDHA",
-  "BOPHUT",
-  "CHAWENG",
-  "CHAWENG NOI",
-  "CHOENG MON",
-  "PLAI LAEM",
-  "NORTH WEST",
-  "BAN TAI",
-  "MAENAM",
-  "BAN MAKHAM",
-  "BANG POR",
-  "LAEM YAI",
-  "NATHON",
-  "SOUTH EAST",
-  "HUA THANON",
-  "LAEM SOR",
-  "LAEM SET",
-  "LAMAI",
-  "KOH RAP",
-  "SOUTH WEST",
-  "BAN KAO",
-  "BAN SAKET",
-  "LIPA NOI",
-  "NAMUANG",
-  "PANG KA BAY",
-  "TALING NGAM",
-  "THONG KRUT"
+  "Bophut",
+  "Laem Set",
+  "Plai Laem",
+  "Laem Sor",
+  "Chaweng"
 ];
 export const propertyTypes = [
-  "ANY",
-  "VILLA/HOUSE",
-  "CONDO/APART",
-  "LUXURY VILLA",
-  "LAND",
-  "BEACHFRONT",
-  "COMMERCIAL"
+  "Beachfront",
+  "Sea View",
+  "Villa"
 ];
 export const priceRanges = [
-  "ANY",
   "<5M THB",
   "5 - 10M THB",
   "10 - 20M THB",
