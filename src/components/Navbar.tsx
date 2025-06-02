@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Menu, X, Search } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchId, setSearchId] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchId.trim()) {
+      navigate(`/properties/${searchId.trim()}`);
+      setSearchId('');
+    }
+  };
 
   return (
     <header className="bg-[#fdf0d1] shadow-sm">
@@ -18,12 +28,29 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-800 hover:text-custom-green transition-colors">HOME</Link>
             <Link to="/properties" className="text-gray-800 hover:text-custom-green transition-colors">PROPERTIES</Link>
             <Link to="/blog/buyers-guide" className="text-gray-800 hover:text-custom-green transition-colors">BUYERS GUIDE</Link>
             <Link to="/about" className="text-gray-800 hover:text-custom-green transition-colors">ABOUT</Link>
             <Link to="/contact" className="text-gray-800 hover:text-custom-green transition-colors">CONTACT</Link>
+            
+            {/* Property ID Search */}
+            <form onSubmit={handleSearch} className="flex items-center">
+              <input
+                type="text"
+                value={searchId}
+                onChange={(e) => setSearchId(e.target.value)}
+                placeholder="Search by ID (e.g. ZM7)"
+                className="px-3 py-1 text-sm border border-gray-300 rounded-l focus:outline-none focus:border-custom-green"
+              />
+              <button
+                type="submit"
+                className="bg-custom-green text-white px-3 py-1 rounded-r hover:bg-custom-green-600 transition-colors"
+              >
+                <Search size={16} />
+              </button>
+            </form>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -84,6 +111,23 @@ const Navbar = () => {
             >
               CONTACT
             </Link>
+            
+            {/* Mobile Property ID Search */}
+            <form onSubmit={handleSearch} className="flex items-center mt-4">
+              <input
+                type="text"
+                value={searchId}
+                onChange={(e) => setSearchId(e.target.value)}
+                placeholder="Search by ID (e.g. ZM7)"
+                className="flex-1 px-3 py-2 text-sm border border-gray-300 rounded-l focus:outline-none focus:border-custom-green"
+              />
+              <button
+                type="submit"
+                className="bg-custom-green text-white px-3 py-2 rounded-r hover:bg-custom-green-600 transition-colors"
+              >
+                <Search size={16} />
+              </button>
+            </form>
           </nav>
         )}
       </div>
