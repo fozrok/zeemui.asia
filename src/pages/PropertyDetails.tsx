@@ -121,6 +121,10 @@ const PropertyDetails = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {formatCurrency(property.price)}
                 </h3>
+                <div className="flex items-center justify-center text-gray-600 mb-4">
+                  <Tag size={16} className="mr-1" />
+                  <span>ID: {property.id}</span>
+                </div>
                 <Link 
                   to="/contact" 
                   className="block w-full bg-custom-green hover:bg-custom-green-600 text-white py-3 px-6 rounded-md transition-colors text-center"
