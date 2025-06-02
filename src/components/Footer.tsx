@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Facebook, Settings } from 'lucide-react';
+import { Phone, Mail, Facebook, Instagram, Linkedin, Settings } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,6 +22,12 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/zeemui" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
+              </a>
+              <a href="https://www.instagram.com/zeemuirealestate/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/zanette-cross-099451227/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Linkedin size={20} />
               </a>
             </div>
           </div>
