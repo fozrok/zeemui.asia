@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Facebook, Instagram, Linkedin, Twitter, Settings } from 'lucide-react';
+import { Phone, Mail, Facebook, Settings } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -20,17 +20,8 @@ const Footer = () => {
               Zeemui offers a bespoke collection of luxury properties in Koh Samui's most sought-after locations.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/zeemui" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>

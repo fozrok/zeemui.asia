@@ -71,7 +71,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif mb-6">
-              Find Your Dream Luxury Property in Koh Samui
+              Find Your Dream Property in Koh Samui
             </h2>
             <p className="text-lg mb-8 text-gray-300">
               Let us help you discover the perfect property that matches your lifestyle and investment goals.
@@ -90,90 +90,6 @@ const Home = () => {
                 Contact Us
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Recent Blog Posts */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-gray-800 uppercase tracking-wider mb-2">
-              Latest News
-            </h2>
-            <div className="w-full max-w-lg mx-auto flex items-center">
-              <div className="flex-1 h-px bg-gray-300"></div>
-              <span className="px-4 text-custom-green uppercase text-lg">From Our Blog</span>
-              <div className="flex-1 h-px bg-gray-300"></div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Blog Post" 
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-6">
-                <div className="text-custom-green text-sm mb-2">June 15, 2025</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-800">The Luxury Real Estate Market in Koh Samui: 2025 Outlook</h3>
-                <p className="text-gray-600 mb-4">Discover the latest trends and investment opportunities in Koh Samui's thriving luxury real estate market for 2025.</p>
-                <Link to="/blog" className="text-custom-green font-medium hover:text-custom-green-800 transition-colors">
-                  Read More
-                </Link>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Blog Post" 
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-6">
-                <div className="text-custom-green text-sm mb-2">May 28, 2025</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-800">5 Must-Have Features in Your Luxury Villa</h3>
-                <p className="text-gray-600 mb-4">From infinity pools to smart home technology, we explore the essential features that define true luxury in modern villas.</p>
-                <Link to="/blog" className="text-custom-green font-medium hover:text-custom-green-800 transition-colors">
-                  Read More
-                </Link>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Blog Post" 
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-6">
-                <div className="text-custom-green text-sm mb-2">May 10, 2025</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-800">Investing in Koh Samui: A Guide for Foreign Buyers</h3>
-                <p className="text-gray-600 mb-4">Everything you need to know about purchasing property in Koh Samui, from legal requirements to the best locations.</p>
-                <Link to="/blog" className="text-custom-green font-medium hover:text-custom-green-800 transition-colors">
-                  Read More
-                </Link>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-12 text-center">
-            <Link
-              to="/blog"
-              className="inline-block border-2 border-custom-green text-custom-green hover:bg-custom-green hover:text-white px-6 py-3 rounded-md transition-colors uppercase font-medium tracking-wider"
-            >
-              View All Posts
-            </Link>
           </div>
         </div>
       </section>
