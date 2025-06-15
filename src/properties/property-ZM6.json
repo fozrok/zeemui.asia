@@ -15,9 +15,16 @@
     "Beachfront"
   ],
   "images": [
-    "/images/ZM6-1.jpeg",
-    "/images/ZM6-2.jpeg",
-    "/images/ZM6-3.jpeg"
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983633/1_Large_q6q2bb.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983634/2_Large_dnljso.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983637/3_Large_yn8s3v.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983636/4_Large_fr1nbk.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983636/5_Large_ojq2db.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983633/6_Large_dj9u75.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983634/7_Large_dsn4u2.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983634/8_Large_lczq15.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983639/9_Large_lgflbm.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983638/10_Large_safdt2.jpg"
   ],
   "featured": true,
   "newProperty": false,

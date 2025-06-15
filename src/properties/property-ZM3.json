@@ -15,9 +15,16 @@
     "Sea View"
   ],
   "images": [
-    "/images/ZM3-1.jpeg",
-    "/images/ZM3-2.jpeg",
-    "/images/ZM3-3.jpeg"
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983386/ZM3_Villa-Maliya_cover_1_Large_p5zezs.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM3-Villa-Maliya-2_Large_va9mds.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM3-Villa-Maliya-3_Large_rdhvew.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983385/ZM3-Villa-Maliya-4_Large_kgwqcv.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983383/ZM3_Villa-Maliya-5_Large_qc49vv.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983388/ZM3-Villa-Maliya-6_Large_cpsh6v.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983385/ZM3-Villa-Maliya-7_Large_izynwa.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983388/ZM3-Villa-Maliya-8_Large_mba7b4.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983384/ZM3-Villa-Maliya-9_Large_knk2gz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983385/ZM3-Villa-Maliya-10_Large_wegwnw.jpg"
   ],
   "featured": true,
   "newProperty": false,
