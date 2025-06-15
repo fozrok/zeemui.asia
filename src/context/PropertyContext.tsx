@@ -41,7 +41,15 @@ export const PropertyProvider: React.FC<{ children: ReactNode }> = ({ children }
   }, [properties]);
 
   const getFeaturedProperties = useCallback(() => {
-    return properties.filter(p => p.featured && p.active);
+    const desiredOrder = ['ZM1', 'ZM2', 'ZM3', 'ZM4', 'ZM6', 'ZM7', 'ZM11', 'ZM13', 'ZM14', 'ZM15'];
+    
+    return properties
+      .filter(p => p.featured && p.active)
+      .sort((a, b) => {
+        const idA = a.id.replace('property-', '');
+        const idB = b.id.replace('property-', '');
+        return desiredOrder.indexOf(idA) - desiredOrder.indexOf(idB);
+      });
   }, [properties]);
 
   const getActiveProperties = useCallback(() => {
