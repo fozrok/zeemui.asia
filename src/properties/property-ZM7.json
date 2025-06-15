@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM7",
+  "title": "Elegant 3 Bedroom Jungle View Villa in Ban Tai",
+  "description": "Key Features\n•\t3 bedroom, 3 bathroom jungle view ... close to local markets",
+  "price": 13500000,
+  "type": "Sea View",
+  "bedrooms": 3,
+  "bathrooms": 3.0,
+  "location": {
+    "city": "Ban Tai",
+    "country": "Thailand",
+    "area": "Ban Tai"
+  },
+  "features": [
+    "Sea View"
+  ],
+ "images": ["https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/1_Medium_octpaq.jpg", "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834003/2_Medium_lgfurx.jpg", "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/3_Medium_dhialk.jpg"],
+"featured": true,
+  "newProperty": false,
+  "active": true
+} 

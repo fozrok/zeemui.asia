@@ -228,7 +228,8 @@ export const cities = [
   "Laem Set",
   "Plai Laem",
   "Laem Sor",
-  "Chaweng"
+  "Chaweng",
+  "Ban Tai"
 ];
 export const propertyTypes = [
   "Beachfront",

@@ -1,0 +1,32 @@
+{
+  "id": "property-ZM4",
+  "title": "Charming 2 Bedroom Riverside Pool Villa in Fisherman's Village",
+  "description": "Key Features\n•\t2 bedroom, 2 bathroom pool villa ... to local shops & restaurants",
+  "price": 12500000,
+  "type": "Pool",
+  "bedrooms": 2,
+  "bathrooms": 2.0,
+  "location": {
+    "city": "Bophut",
+    "country": "Thailand",
+    "area": "Fisherman's Village"
+  },
+  "features": [
+    "Pool"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982274/1._Large_z6b51w.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982276/2_Large_gl8avj.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982275/3_Large_w5date.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982274/4_Large_tme24s.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982274/5_Large_sjmxy8.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982273/6_Large_uujufk.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982275/7_Large_vnhslm.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982275/8_Large_xwme7v.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982274/9_Large_klztmi.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749982273/10_Large_xvctde.jpg"
+  ],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

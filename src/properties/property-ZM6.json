@@ -1,0 +1,25 @@
+{
+  "id": "property-ZM6",
+  "title": "Luxurious 4 Bedroom Private Beachfront Pool Villa in Lamai",
+  "description": "Key Features\n•\t4 bedroom, 4 bathroom beachfront ... spa services available",
+  "price": 24900000,
+  "type": "Beachfront",
+  "bedrooms": 4,
+  "bathrooms": 4.0,
+  "location": {
+    "city": "Lamai",
+    "country": "Thailand",
+    "area": "Koh Samui"
+  },
+  "features": [
+    "Beachfront"
+  ],
+  "images": [
+    "/images/ZM6-1.jpeg",
+    "/images/ZM6-2.jpeg",
+    "/images/ZM6-3.jpeg"
+  ],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

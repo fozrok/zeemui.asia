@@ -1,0 +1,25 @@
+{
+  "id": "property-ZM3",
+  "title": "Panoramic 3 Bedroom Hillside Sea View Pool Villa in Maenam",
+  "description": "Key Features\n•\t3 bedroom, 3 bathroom villa...November to April",
+  "price": 19900000,
+  "type": "Sea View",
+  "bedrooms": 3,
+  "bathrooms": 3.5,
+  "location": {
+    "city": "Maenam",
+    "country": "Thailand",
+    "area": "Koh Samui"
+  },
+  "features": [
+    "Sea View"
+  ],
+  "images": [
+    "/images/ZM3-1.jpeg",
+    "/images/ZM3-2.jpeg",
+    "/images/ZM3-3.jpeg"
+  ],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

@@ -1,0 +1,32 @@
+{
+  "id": "property-ZM1",
+  "title": "Striking 3 Bedroom Modern Sea View Villa in Bangpor",
+  "description": "Key Features\n•\t3 bedroom, 3 bathroom sea view villa\n•\t2 on the second floor, one on the 1st floor \n•\tLocated in private part of Bangpor hills\n•\tPanoramic ocean & mountain views\n•\tFully furnished & decorated throughout \n•\tPrivate infinity swimming pool (7x3.5m)\n•\tPrivate terrace/sundeck & sala\n•\tair-conditioning & ceiling fans \n•\tEnsuite modern fitted bathrooms \n•\tFully equipped Western kitchen\n•\tBuilt in microwave/oven\n•\tGas hob & extractor \n•\tLarge breakfast island\n•\tLarge open-plan living area \n•\tGym/massage room\n•\tStorage room\n•\tPrivate covered parking \n•\tLandscaped garden\n•\tGovernment electric\n•\tRainwater harvesting   \n•\tLand size : 800 sqm \n•\tBuilt size: 390 sqm\n•\tIndoor size : 170 sqm\n•\tFreehold tenure \n•\tChanote title\n\nLocation:\n•\tLocated in North of Koh Samui in Bangpor hills\n•\t3 minutes drive to beach, amenities & restaurants\n•\t5 minutes drive to Nathon town & ferry piers\n•\t30 minutes drive to International airport",
+  "price": 14500000,
+  "type": "Sea View",
+  "bedrooms": 3,
+  "bathrooms": 3.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Bangpor"
+  },
+  "features": [
+    "Sea View"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981737/1_Cover_Large_visgh0.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981737/2_Large_xqdtew.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981737/3_Large_xouavm.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981740/4_Large_ice6ey.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981737/5_Large_yl4at6.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981737/6_Large_ass9wi.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981737/7_Large_tju6qe.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981739/8_Large_qu410u.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981739/9_Large_jkhszr.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749981740/10_Large_i15pg5.jpg"
+  ],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 
