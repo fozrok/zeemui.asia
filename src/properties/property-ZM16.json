@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM16",
+  "title": "Elegant 3 Bedroom Hilltop Sea View Pool Villa in Taling Ngam",
+  "description": "Key Features\n• 3 bedroom, 3 bathroom hilltop villa\n• Infinity pool with sea views\n• Modern minimalist design\n• High ceilings\n• Outdoor lounge and dining area\n• Freehold",
+  "price": 135000000,
+  "type": "Sea View",
+  "bedrooms": 3,
+  "bathrooms": 3.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Taling Ngam"
+  },
+  "features": ["Sea View"],
+  "images": ["/images/ZM16-1.jpeg", "/images/ZM16-2.jpeg", "/images/ZM16-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

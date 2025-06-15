@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM20",
+  "title": "Spacious 3 Bedroom Estate with Private Pool in Choeng Mon",
+  "description": "Key Features\n• 3 bedroom, 3 bathroom luxury estate\n• Large private pool\n• Open living/dining pavilion\n• Fully fitted kitchen\n• Landscaped gardens\n• Freehold",
+  "price": 155000000,
+  "type": "Villa",
+  "bedrooms": 3,
+  "bathrooms": 3.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Choeng Mon"
+  },
+  "features": ["Villa"],
+  "images": ["/images/ZM20-1.jpeg", "/images/ZM20-2.jpeg", "/images/ZM20-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

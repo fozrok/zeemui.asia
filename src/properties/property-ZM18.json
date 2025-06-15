@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM18",
+  "title": "Modern 2 Bedroom Riverfront Villa in Fisherman's Village",
+  "description": "Key Features\n• 2 bedroom, 2 bathroom riverfront villa\n• Private deck and pool\n• Contemporary interiors\n• Gourmet kitchen\n• Garden courtyard\n• Leasehold",
+  "price": 110000000,
+  "type": "Villa",
+  "bedrooms": 2,
+  "bathrooms": 2.0,
+  "location": {
+    "city": "Bophut",
+    "country": "Thailand",
+    "area": "Fisherman's Village"
+  },
+  "features": ["Villa"],
+  "images": ["/images/ZM18-1.jpeg", "/images/ZM18-2.jpeg", "/images/ZM18-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM29",
+  "title": "Charming 1 Bedroom Tropical Loft in Bang Por",
+  "description": "Key Features\n• 1 bedroom, 1 bathroom loft\n• Tropical garden views\n• Open loft design\n• Private plunge pool\n• Leasehold",
+  "price": 45000000,
+  "type": "Villa",
+  "bedrooms": 1,
+  "bathrooms": 1.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Bang Por"
+  },
+  "features": ["Villa"],
+  "images": ["/images/ZM29-1.jpeg", "/images/ZM29-2.jpeg", "/images/ZM29-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

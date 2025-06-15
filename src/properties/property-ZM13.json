@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM13",
+  "title": "Stylish 2 Bedroom Pool Villa in Bangrak Beach",
+  "description": "Key Features\n• 2 bedroom, 2 bathroom villa with private pool\n• Modern Scandinavian interior design\n• Fully equipped kitchen\n• Open lounge/dining area\n• Tropical garden setting\n• Walking distance to Bangrak Beach\n• Leasehold tenure",
+  "price": 95000000,
+  "type": "Villa",
+  "bedrooms": 2,
+  "bathrooms": 2.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Bangrak Beach"
+  },
+  "features": ["Villa"],
+  "images": ["/images/ZM13-1.jpeg", "/images/ZM13-2.jpeg", "/images/ZM13-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

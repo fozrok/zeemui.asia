@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM30",
+  "title": "Opulent 6 Bedroom Mansion with Private Beachfront in Plai Laem",
+  "description": "Key Features\n• 6 bedroom, 7 bathroom beachfront mansion\n• Private beach access\n• Multiple pools and cabanas\n• Grand foyer with spiral staircase\n• Home cinema and gym\n• Land size: 3000 sqm\n• Freehold",
+  "price": 450000000,
+  "type": "Beachfront",
+  "bedrooms": 6,
+  "bathrooms": 7.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Plai Laem"
+  },
+  "features": ["Beachfront"],
+  "images": ["/images/ZM30-1.jpeg", "/images/ZM30-2.jpeg", "/images/ZM30-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

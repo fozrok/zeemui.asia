@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM2",
+  "title": "Palatial 5 Bedroom Sea View Villa on Chaweng Noi Peak",
+  "description": "Key Features\n• Ultra luxury 5 bedroom, 6 bathroom villa\n• Spectacular 360° view of Chaweng Bay\n• Prime land just set back from ocean\n• Set over 3 stories of living space\n• 2 bedroom apartment on lower level\n• Unique ultra modern architecture\n• Contemporary chic interior design\n• Impeccable construction & finishing\n• Large freeform infinity-edge pool\n• Sunken pool sala seating area\n• Massage sala and separate spa\n• Rain showers & oversized bathtubs\n• Oversized ceilings in living space\n• Wall to wall sliding glass doors\n• Glass balustrades on balconies\n• 24 hour security guards\n• Technical room & storage\n• Fibre optic internet\n• Land size: 740 sqm\n• Freehold company\n• Chanote title\n\nLocation details:\n• Secure private beachside residential estate\n• 50 meters walk to private beach in Bangrak\n• Close to beachside restaurants & amenities\n• 5 minutes drive to Fisherman's village & beach\n• 5 minutes drive to International Airport\n• 10 minutes to Tesco super-market & mall\n• 15 minutes to nightlife of Chaweng beach",
+  "price": 290000000,
+  "type": "Sea View",
+  "bedrooms": 5,
+  "bathrooms": 6.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Chaweng Noi Peak"
+  },
+  "features": ["Sea View"],
+  "images": ["/images/ZM2-1.jpeg", "/images/ZM2-2.jpeg", "/images/ZM2-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 

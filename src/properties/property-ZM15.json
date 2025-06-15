@@ -1,0 +1,19 @@
+{
+  "id": "property-ZM15",
+  "title": "Rustic 4 Bedroom Jungle Retreat in Mae Nam",
+  "description": "Key Features\n• 4 bedroom, 3 bathroom villa in jungle setting\n• Open-plan living pavilion\n• Private plunge pool\n• Rustic teakwood finishes\n• Walking distance to river\n• Leasehold",
+  "price": 80000000,
+  "type": "Villa",
+  "bedrooms": 4,
+  "bathrooms": 3.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Mae Nam"
+  },
+  "features": ["Villa"],
+  "images": ["/images/ZM15-1.jpeg", "/images/ZM15-2.jpeg", "/images/ZM15-3.jpeg"],
+  "featured": true,
+  "newProperty": false,
+  "active": true
+} 
