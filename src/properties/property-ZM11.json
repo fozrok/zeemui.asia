@@ -1,18 +1,22 @@
 {
   "id": "property-ZM11",
-  "title": "Contemporary 4 Bedroom Hillside Sea View Villa in Plai Laem",
-  "description": "Key Features\n• 4 bedroom, 4 bathroom modern villa\n• Infinity-edge pool overlooking the bay\n• Open-plan living/dining space with integrated kitchen\n• Floor-to-ceiling windows in every room\n• En-suite bathrooms with rain showers\n• Private gym and sauna\n• Landscaped garden & outdoor lounge\n• 2-car garage\n• 5 minutes to local amenities\n• Freehold",
-  "price": 180000000,
+  "title": "Luxury 5 Bedroom Sea View Villa in Chaweng Noi",
+  "description": "Key Features\n• 5 bedroom, 5 bathroom luxury villa\n• Panoramic sea views\n• Private infinity pool\n• Modern open-plan design\n• Fully equipped kitchen\n• Land size: 1,200 sqm\n• Built size: 600 sqm\n• Freehold tenure",
+  "price": 25000000,
   "type": "Sea View",
-  "bedrooms": 4,
-  "bathrooms": 4.0,
+  "bedrooms": 5,
+  "bathrooms": 5.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Plai Laem"
+    "area": "Chaweng Noi"
   },
   "features": ["Sea View"],
-  "images": ["/images/ZM11-1.jpeg", "/images/ZM11-2.jpeg", "/images/ZM11-3.jpeg"],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM11-Villa-Maliya-1_Large_va9mds.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM11-Villa-Maliya-2_Large_rdhvew.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM11-Villa-Maliya-3_Large_va9mds.jpg"
+  ],
   "featured": true,
   "newProperty": false,
   "active": true

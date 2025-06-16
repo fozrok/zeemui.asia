@@ -1,7 +1,7 @@
 {
   "id": "property-ZM7",
   "title": "Zen Style 3-4 Bed Sea-view Pool Villas in Ban Tai",
-  "description": "Key Features\n•\t3-4 Bedroom, en-suite sea-view villas\n•\tAsian minimalist design\n•\tPrivate plunge or lap pool\n•\tCeiling height: 4.5m\n•\tLand area: from 650 sqm\n•\tBuilt size: 490–900 sqm\n•\tLeasehold tenure",
+  "description": "Key Features\n• 3-4 bedroom, 3-4 bathroom villas\n• Asian minimalist design\n• Private pool options\n• High ceilings\n• Land size: 800 sqm\n• Built size: 300 sqm\n• Leasehold tenure",
   "price": 25000000,
   "type": "Sea View",
   "bedrooms": 4,
@@ -14,7 +14,11 @@
   "features": [
     "Sea View"
   ],
-  "images": ["https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/1_Medium_octpaq.jpg", "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834003/2_Medium_lgfurx.jpg", "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/3_Medium_dhialk.jpg"],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM7-Villa-Maliya-1_Large_va9mds.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM7-Villa-Maliya-2_Large_rdhvew.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM7-Villa-Maliya-3_Large_va9mds.jpg"
+  ],
   "featured": true,
   "newProperty": false,
   "active": true
