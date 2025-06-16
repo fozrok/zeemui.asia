@@ -68,7 +68,7 @@ const PropertyDetails = () => {
             </h1>
             <div className="flex items-center text-gray-300 mb-4">
               <MapPin size={18} className="mr-1" />
-              <span>{property.location.city}, {property.location.area}, {property.location.country}</span>
+              <span>{property.location.area}, {property.location.city}, {property.location.country}</span>
             </div>
             <div className="flex flex-wrap gap-4 md:gap-6">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center">
@@ -108,7 +108,7 @@ const PropertyDetails = () => {
               <div className="mt-10 p-6 bg-gray-50 rounded-lg">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">Location</h2>
                 <p className="text-gray-700">
-                  This property is located in {property.location.city}, {property.location.area}, {property.location.country}.
+                  This property is located in {property.location.area}, {property.location.city}, {property.location.country}.
                 </p>
               </div>
             </div>

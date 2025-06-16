@@ -109,7 +109,7 @@ const PropertyDetails = () => {
             </h1>
             <div className="flex items-center text-gray-300 mb-4">
               <MapPin size={18} className="mr-1" />
-              <span>{property.city}, {property.area}, {property.country}</span>
+              <span>{property.area}, {property.city}, {property.country}</span>
             </div>
             <div className="flex flex-wrap gap-4 md:gap-6">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm px-4 py-2 rounded-lg flex items-center">
@@ -165,7 +165,7 @@ const PropertyDetails = () => {
               <div className="mt-10 p-6 bg-gray-50 rounded-lg">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">Location</h2>
                 <p className="text-gray-700 mb-4">
-                  This property is located in {property.city}, {property.area}, {property.country}.
+                  This property is located in {property.area}, {property.city}, {property.country}.
                 </p>
                 <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
                   {/* Map placeholder */}
