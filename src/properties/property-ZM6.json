@@ -1,15 +1,15 @@
 {
   "id": "property-ZM6",
-  "title": "Luxurious 4 Bedroom Private Beachfront Pool Villa in Lamai",
-  "description": "Key Features\n•\t4 bedroom, 4 bathroom beachfront villa with direct beach access\n•\tLarge infinity pool overlooking the Gulf\n•\tExpansive sun deck and cabana area\n•\tIndoor–outdoor living spaces\n•\tGourmet kitchen and separate prep kitchen\n•\tPrivate spa services available\n•\tLand area: 1,200 sqm\n•\tBuilt area: 750 sqm",
-  "price": 24900000,
-  "type": "Beachfront",
-  "bedrooms": 4,
-  "bathrooms": 4.0,
-  "location": {
-    "city": "Lamai",
-    "country": "Thailand",
-    "area": "Koh Samui"
+  "title": "New 3 Bedroom Balinese Luxury Style Villa in Bangrak",
+    "description": "Key Features\n�3 Bedroom and 3.5 Bathroom\n�Sala & outdoor BBQ area\n�Fully Furnished\n�Western kitchen and island\n�Teak-wood furniture\n�Built in Wardrobes in bedrooms\n�Air-conditioning & ceiling fans\n�3 x 12M Salt Water Pool & Jacuzzi\n�Landscaped garden\n�Kitchen fully equipped\n�2 Car parking spaces\n�Laundry and Storage Room\n�Government Electric \n�Government Water\n�Land size: 514.40 sqm\n�Built area: 350 sqm\n�Freehold ownership\n�Chanote title",
+    "price": 14900000,
+    "type": "Villa",
+    "bedrooms": 3,
+    "bathrooms": 3.5,
+    "location": {
+      "city": "Koh Samui",
+      "country": "Thailand",
+      "area": "Bangrak"
   },
   "features": [
     "Beachfront"
