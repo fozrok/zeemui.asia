@@ -1,23 +1,30 @@
 {
   "id": "property-ZM7",
-  "title": "Zen Style 3-4 Bed Sea-view Pool Villas in Ban Tai",
-  "description": "Key Features\n• 3-4 bedroom, 3-4 bathroom villas\n• Asian minimalist design\n• Private pool options\n• High ceilings\n• Land size: 800 sqm\n• Built size: 300 sqm\n• Leasehold tenure",
-  "price": 25000000,
-  "type": "Sea View",
-  "bedrooms": 4,
-  "bathrooms": 4.0,
-  "location": {
-    "city": "Koh Samui",
-    "country": "Thailand",
-    "area": "Ban Tai"
+  "title": "Zen Style 3 -4 Bed Sea-view Pool Villas in Ban Tai",
+    "description": "- 3-4 Bedroom, en-suite sea-view villas\n- Award-winning reliable developer\n- 2 Storey layout\n- Fully furnished to high-standard\n- Stylish Acacia-wood features\n- Natural earthy/rustic design style\n- Open-plan living & dining area\n- Infinity-edge swimming pool\n- Balinese stone titles\n- Large sun-terrace \n- Open-air roof terrace area\n- Fully fitted Western-style kitchen\n- High-quality fittings & appliances\n- Soaking tubs & rain-showers\n- Government electricity & water\n- Private parking area\n- Land sizes: from 650 sqm\n- Built size: 490 - 900sqm\n- Leasehold tenure",
+    "price": 25000000,
+    "type": "Sea View",
+    "bedrooms": 4,
+    "bathrooms": 4.0,
+    "location": {
+      "city": "Koh Samui",
+      "country": "Thailand",
+      "area": "Ban Tai"
   },
   "features": [
     "Sea View"
   ],
   "images": [
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM7-Villa-Maliya-1_Large_va9mds.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM7-Villa-Maliya-2_Large_rdhvew.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM7-Villa-Maliya-3_Large_va9mds.jpg"
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/1_Medium_octpaq.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834003/2_Medium_lgfurx.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/3_Medium_dhialk.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/4_Medium_nkh1ok.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834005/5_Medium_pfik9y.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834005/6_Medium_qltaea.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834005/7_Medium_l2fsvl.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/8_Medium_cnmn1x.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834004/9_Medium_xe4ozn.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1748834005/10_Medium_m5jdc3.jpg"
   ],
   "featured": true,
   "newProperty": false,
