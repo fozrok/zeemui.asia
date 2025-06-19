@@ -27,22 +27,23 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-serif text-gray-800 mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Zeemui is an independent, British luxury property agency based in Koh Samui, Thailand, founded with a clear mission: to provide discerning clients with access to the most exclusive luxury properties in Koh Samui.
+                Welcome to Zeemui – Redefining Luxury Real Estate in Koh Samui.
+                Zeemui is an independent British luxury property agency based in Koh Samui, Thailand. Founded with a clear mission, we provide discerning clients with access to the island's most exclusive and exceptional properties.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Our journey has been defined by an unwavering commitment to excellence, integrity, and personalized service. We understand that purchasing a property is not just a transaction—it's an experience that should be as exceptional as the properties we represent.
+                Our journey is defined by an unwavering commitment to excellence, integrity, and personalized service. At Zeemui, we believe that purchasing a property is more than a transaction—it's a meaningful experience, and we are here to make that experience seamless, rewarding, and memorable.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Zeemui continues to set the standard for luxury real estate in Koh Samui, with a curated portfolio of the finest properties and estates in the island's most sought-after locations.
+                With a curated portfolio of the finest villas, estates, and developments in Koh Samui's most desirable locations, we set the standard for luxury real estate on the island. Our team of trained professionals is dedicated to understanding your needs and guiding you through every step of the property journey with expertise, discretion, and care.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Our trained team of professionals are ready to serve your needs and requirements. We ensure you are confident knowing how to buy property in Thailand, and that your property purchase is undertaken smoothly, confidentially and without complication.
+                As an independent agency, we are free from ties to developers or sellers. This allows us to offer impartial advice and honest insights, ensuring that your interests are always our priority.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Services are free for property buyers and commissions only come from property sellers.
+                Our services are entirely free for property buyers—our commissions are only received from sellers. This transparent model supports our ethos of trust and fairness in every interaction.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                As an independent real estate agency, we are not tied to any specific developers or sellers and can therefore offer completely impartial advice and opinions. We put our passion, creativity and commitment in property at the heart of everything we do, aspiring to achieve the extra mile to exceed our clients' expectations.
+                At Zeemui, passion, creativity, and commitment drive everything we do. We go the extra mile to deliver beyond expectations, making your investment in Koh Samui not just secure, but truly exceptional.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -150,7 +151,22 @@ const About = () => {
                   <h3 className="font-bold text-2xl mb-2 text-gray-800">Zanette Cross</h3>
                   <div className="text-custom-green font-medium text-lg mb-4">Founder & Managing Director</div>
                   <p className="text-gray-600 leading-relaxed">
-                    Zanette founded Zeemui after more than 2 decades working in the real estate industry, initially for the large corporate Countrywide plc in the UK, with Bridgfords and Bairstow Eves, and then for almost a decade based in Koh Samui as the Sales Director for Conrad Properties. She is a highly skilled real estate sales professional and is praised by her past buyers for her extensive local knowledge, focussed diligence and perseverance in finding the most suitable properties for her clients.
+                  Zanette founded Zeemui after more than two decades of experience in the real estate industry, bringing with her a wealth of expertise and a reputation for excellence.
+                  </p><br/>
+                  <p className="text-gray-600 leading-relaxed">
+                    Her career began in the UK with Countrywide plc, one of the largest property services groups, where she worked with prestigious brands including Bridgfords and Bairstow Eves.
+                  </p><br/>
+                  <p className="text-gray-600 leading-relaxed">
+                  Her deep understanding of the market and unwavering professionalism quickly established her as a trusted and results-driven property advisor.
+                  </p><br/>
+                  <p className="text-gray-600 leading-relaxed">
+                  After relocating to Thailand, Zanette spent nearly a decade in the real estate industry primarily as Sales Director for Conrad Properties in Koh Samui. During this time, she developed a profound knowledge of the local market, forged strong industry relationships, and helped clients from around the world secure their dream properties on the island.
+                  </p><br/>
+                  <p className="text-gray-600 leading-relaxed">
+                  Zanette is widely respected for her extensive local insight, focused diligence, and perseverance in finding properties that perfectly match her clients' needs. Her hands-on, client-first approach has earned her lasting praise and loyalty from buyers who value her commitment to quality and integrity.
+                  </p><br/>
+                  <p className="text-gray-600 leading-relaxed">
+                  Through Zeemui, Zanette channels her passion and expertise into a boutique real estate experience—offering impartial advice, exceptional service, and access to Koh Samui's most exclusive luxury properties.
                   </p>
                 </div>
               </div>
