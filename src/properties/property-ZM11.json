@@ -1,23 +1,30 @@
 {
   "id": "property-ZM11",
-  "title": "Luxury 5 Bedroom Sea View Villa in Chaweng Noi",
-  "description": "Key Features\n- 5 bedroom, 5 bathroom luxury villa\n- Panoramic sea views\n- Private infinity pool\n- Modern open-plan design\n- Fully equipped kitchen\n- Land size: 1,200 sqm\n- Built size: 600 sqm\n- Freehold tenure",
-  "price": 25000000,
+  "title": "Palatial 6 Bedroom Luxury Sea View Villa in Bophut",
+  "description": "Key Features\n- 6 Luxurious double bedroom\n- All with en-suite bathrooms\n- Private sea view balconies\n- 20m infinity-edge swimming pool\n- Private life fitness gym\n- Six zone Bose Hi fi system\n- Three sets of outdoor speakers\n- Wireless remote control access\n- 50 inch plasma screen\n- TV satellite & DVD player\n- Fully furnished incl. linens/towels\n- Two fully equipped kitchens\n- Nor Sor Gor 3 Title\n- Freehold Tenure",
+  "price": 80000000,
   "type": "Sea View",
-  "bedrooms": 5,
-  "bathrooms": 5.0,
+  "bedrooms": 6,
+  "bathrooms": 6.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Chaweng Noi"
+    "area": "Bophut"
   },
   "features": ["Sea View"],
   "images": [
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM11-Villa-Maliya-1_Large_va9mds.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM11-Villa-Maliya-2_Large_rdhvew.jpg",
-    ""
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986433/1_Large_zjmt06.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986426/2_Large_btbnkz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986433/3_Large_zjmt06.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986426/4_Large_btbnkz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986433/5_Large_zjmt06.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986426/6_Large_btbnkz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986433/7_Large_zjmt06.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986426/8_Large_btbnkz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986433/9_Large_zjmt06.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986426/10_Large_btbnkz.jpg"
   ],
   "featured": true,
   "newProperty": false,
-  "active": false
+  "active": true
 } 
