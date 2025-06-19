@@ -12,8 +12,8 @@
     "area": "Plai Laem"
   },
   "features": ["Beachfront"],
-  "images": ["/images/ZM30-1.jpeg", "/images/ZM30-2.jpeg", "/images/ZM30-3.jpeg"],
+  "images": ["/images/ZM30-1.jpeg", "/images/ZM30-2.jpeg", ""],
   "featured": true,
   "newProperty": false,
-  "active": true
+  "active": false
 } 

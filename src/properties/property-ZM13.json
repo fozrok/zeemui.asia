@@ -1,7 +1,7 @@
 {
   "id": "property-ZM13",
   "title": "Luxury 4 Bedroom Sea View Villa in Bophut",
-  "description": "Key Features\n• 4 bedroom, 4 bathroom luxury villa\n• Panoramic sea views\n• Private infinity pool\n• Modern open-plan design\n• Fully equipped kitchen\n• Land size: 1,000 sqm\n• Built size: 500 sqm\n• Freehold tenure",
+  "description": "Key Features\n- 4 bedroom, 4 bathroom luxury villa\n- Panoramic sea views\n- Private infinity pool\n- Modern open-plan design\n- Fully equipped kitchen\n- Land size: 1,000 sqm\n- Built size: 500 sqm\n- Freehold tenure",
   "price": 20000000,
   "type": "Sea View",
   "bedrooms": 4,
@@ -15,9 +15,9 @@
   "images": [
     "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM13-Villa-Maliya-1_Large_va9mds.jpg",
     "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM13-Villa-Maliya-2_Large_rdhvew.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM13-Villa-Maliya-3_Large_va9mds.jpg"
+    ""
   ],
   "featured": true,
   "newProperty": false,
-  "active": true
+  "active": false
 } 

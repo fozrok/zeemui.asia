@@ -12,8 +12,8 @@
     "area": "Fisherman's Village"
   },
   "features": ["Villa"],
-  "images": ["/images/ZM18-1.jpeg", "/images/ZM18-2.jpeg", "/images/ZM18-3.jpeg"],
+  "images": ["/images/ZM18-1.jpeg", "/images/ZM18-2.jpeg", ""],
   "featured": true,
   "newProperty": false,
-  "active": true
+  "active": false
 } 

@@ -53,7 +53,12 @@ export const PropertyProvider: React.FC<{ children: ReactNode }> = ({ children }
   }, [properties]);
 
   const getActiveProperties = useCallback(() => {
-    return properties.filter(p => p.active);
+    return properties.filter(p =>
+      p.active &&
+      Array.isArray(p.images) &&
+      p.images.length > 0 &&
+      p.images.every(img => typeof img === 'string' && img.trim() !== '')
+    );
   }, [properties]);
 
   const refreshProperties = useCallback(async () => {
