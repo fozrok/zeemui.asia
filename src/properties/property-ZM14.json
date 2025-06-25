@@ -1,23 +1,19 @@
 {
   "id": "property-ZM14",
-  "title": "Luxury 4 Bedroom Sea View Villa in Choeng Mon",
-  "description": "Key Features\n• 4 bedroom, 4 bathroom luxury villa\n• Panoramic sea views\n• Private infinity pool\n• Modern open-plan design\n• Fully equipped kitchen\n• Land size: 1,000 sqm\n• Built size: 500 sqm\n• Freehold tenure",
-  "price": 20000000,
+  "title": "Ultra Luxury 4+1 Bedroom Sea View Villa in Thong Krut\n",
+  "description": "Key Features\n- 4 + 1 Bedroom, 5.5 Bathroom\n- Private large infinity-pool \n- Stunning outdoor dining \n- Completed in May 2023 \n- Panoramic ocean views \n- State of the art kitchen\n- Low-density gated estate \n- Built-up Size: 945 sqm \n- Fully Furnished \n- Land Size: 1600 sqm \n- Freehold ownership\n\n\n\nLocation details:\n- Area: Thong Krut\n- City: Koh Samui\n- Country: Thailand",
+  "price": 85000000,
   "type": "Sea View",
-  "bedrooms": 4,
-  "bathrooms": 4.0,
+  "bedrooms": 5,
+  "bathrooms": 5.5,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Choeng Mon"
+    "area": "Thong Krut"
   },
   "features": ["Sea View"],
-  "images": [
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM14-Villa-Maliya-1_Large_va9mds.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM14-Villa-Maliya-2_Large_rdhvew.jpg",
-    ""
-  ],
-  "featured": true,
+  "images": ["/images/ZM14-1.jpeg", "/images/ZM14-2.jpeg", ""],
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 

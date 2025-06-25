@@ -1,23 +1,19 @@
 {
   "id": "property-ZM13",
-  "title": "Luxury 4 Bedroom Sea View Villa in Bophut",
-  "description": "Key Features\n- 4 bedroom, 4 bathroom luxury villa\n- Panoramic sea views\n- Private infinity pool\n- Modern open-plan design\n- Fully equipped kitchen\n- Land size: 1,000 sqm\n- Built size: 500 sqm\n- Freehold tenure",
-  "price": 20000000,
-  "type": "Sea View",
-  "bedrooms": 4,
-  "bathrooms": 4.0,
+  "title": "Tropical Luxury 3 Bedroom Pool Villa by Bangrak Beach",
+  "description": "Key Features\n- 3 Bedroom, 3 bathroom tropical villa\n- 50 meters walk to private beach\n- Contemporary tropical design\n- Over-sized wooden ceilings\n- Infinity-edge swimming pool\n- Covered Sala seating area\n- Al Fresco dining area\n- Sun-loungers & sun-beds\n- Built in outdoor BBQ area\n- Open-plan living/dining area\n- Air-condition & fans in all rooms\n- Outdoor terrazzo bathtubs\n- Western fully equipped kitchen\n- Large terrace & sun-deck\n- Expansive tropical gardens\n- Fully walled-in & gated\n- Covered parking area\n- 24 hour security guards\n- Technical room & storage\n- Fibre optic internet\n- Land size: 740 sqm\n- Freehold company\n- Chanote title\n\nLocation details:\n- Secure private beachside residential estate\n- 50 meters walk to private beach in Bangrak\n- Close to beachside restaurants & amenities\n- 5 minutes drive to Fisherman's village & beach\n- 5 minutes drive to International Airport\n- 10 minutes to Tesco super-market & mall\n- 15 minutes to nightlife of Chaweng beach\n\nLocation details:\n- Area: Bangrak Beach\n- City: Koh Samui\n- Country: Thailand",
+  "price": 21000000,
+  "type": "Villa",
+  "bedrooms": 3,
+  "bathrooms": 3.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Bophut"
+    "area": "Bangrak Beach"
   },
-  "features": ["Sea View"],
-  "images": [
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM13-Villa-Maliya-1_Large_va9mds.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM13-Villa-Maliya-2_Large_rdhvew.jpg",
-    ""
-  ],
-  "featured": true,
+  "features": ["Villa"],
+  "images": ["/images/ZM13-1.jpeg", "/images/ZM13-2.jpeg", ""],
+  "featured": false,
   "newProperty": false,
   "active": false
 } 

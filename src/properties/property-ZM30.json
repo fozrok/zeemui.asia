@@ -1,19 +1,19 @@
 {
   "id": "property-ZM30",
-  "title": "Opulent 6 Bedroom Mansion with Private Beachfront in Plai Laem",
-  "description": "Key Features\n• 6 bedroom, 7 bathroom beachfront mansion\n• Private beach access\n• Multiple pools and cabanas\n• Grand foyer with spiral staircase\n• Home cinema and gym\n• Land size: 3000 sqm\n• Freehold",
-  "price": 450000000,
-  "type": "Beachfront",
-  "bedrooms": 6,
-  "bathrooms": 7.0,
+  "title": "Sleek 3-4 Bedroom Luxury Sea View Villas in Bophut Hills\n",
+  "description": "Villa Types & Sizes:\n\nVILLA Type-01: SUNA\n3-4+ Bedrooms, double Level\nBuilt area: from 500/750/1000 sq.m\nPrices from: 1 mil/1.5 mil/ 2 mil USD\n\nVILLA Type-02: YAMA\n3-4+ Bedroom, double Level\nBuilt area: from 500/750/1000 sq.m\nPrices from: 1 mil/1.5 mil/ 2 mil USD\n\nVILLA Type-03: SORA\n3-4+ Bedrooms, double Level\nBuilt area: from 500/750/1000 sq.m\nPrices from: 1 mil/1.5 mil/ 2 mil USD\n\nVILLA Type-04: YAMI\n3-4+ Bedroom, double Level\nBuilt area: from 500/750/1000 sq.m\nPrices from: 1 mil/1.5 mil/ 2 mil USD\n\n(*The standard configurations are 3 bedroom but further bedrooms can be added if needed.)\n\n\nKey Features\n- 3-4 bedroom luxury sea view pool villas \n- Prime location in peak of Bophut hillside\n- Secure & exclusive gated community\n- Spectacular panoramic ocean views\n- Contemporary Asian architecture \n- 2-stories with cedar tiled pitched roofs\n- Minimal design with steel, glass & wood\n- Built on prefab steel frame structures\n- Private infinity-edge swimming pool\n- Fully furnished & turn key handover \n- Chic interiors with light & earthy tones\n- Featured local stone walls & details \n- High-quality furnishing & decoration \n- Designer fully equipped kitchen\n- Oversized ceilings in living areas\n- Fully extendable glass sliding doors\n- Private covered parking area \n- 24/7 security & gated entry\n- Landscaped tropical gardens\n- Built area: 500/750/1000 sq.m \n- Land sizes: 800 sq.m - 4 Rai\n- Freehold tenure \n- Chanote title \n\nAdditional information: \n- Underground electricity system\n- Full back up generator included\n- Leased fiber optic lines- high-speed internet\n- Water supplied by deep wells \n- High-quality drainage systems \n- European standards of construction \n- Easy access by wide concrete road \n- Safe transportation throughout the site\n- 24 hour security and gated access/entry \n\n\n\nLocation details:\n- Area: Bophut Hills\n- City: Koh Samui\n- Country: Thailand",
+  "price": 33500000,
+  "type": "Sea View",
+  "bedrooms": 4,
+  "bathrooms": 4.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Plai Laem"
+    "area": "Bophut Hills"
   },
-  "features": ["Beachfront"],
+  "features": ["Sea View"],
   "images": ["/images/ZM30-1.jpeg", "/images/ZM30-2.jpeg", ""],
-  "featured": true,
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 

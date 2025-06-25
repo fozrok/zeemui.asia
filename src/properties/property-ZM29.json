@@ -1,19 +1,30 @@
 {
   "id": "property-ZM29",
-  "title": "Charming 1 Bedroom Tropical Loft in Bang Por",
-  "description": "Key Features\n• 1 bedroom, 1 bathroom loft\n• Tropical garden views\n• Open loft design\n• Private plunge pool\n• Leasehold",
-  "price": 45000000,
-  "type": "Villa",
-  "bedrooms": 1,
-  "bathrooms": 1.0,
+  "title": "Exclusive beachfront 5-7 Bedroom Luxury villa in Laem Sor",
+  "description": "Key Features\n 7 bedroom, 8 bathroom beach villa estate\n Located directly on Laem Sor beachfront \n Huge 78 meter wide beach-frontage\n Oceanfront infinity swimming pool\n Large poolside Sala seating area \n Large front landscaped lawn area\n High-quality furnishing & decoration \n Modern open-plan living & dining\n Fully-equipped Western kitchen\n Large breakfast island/prep area\n Fully-extendable glass sliding-doors\n 10-seat indoor wooden dining area\n Al Fresco outdoor dining area \n Mezzanine day living room \n Private fitness/ gym room\n Office/study/media room\n Private covered parking \n Large landscaped garden\n Land size: 2880 sq.m\n Freehold ownership\n Chanote title \n\n\n\n\nLocation details:\n- Area: Laem Sor\n- City: Koh Samui\n- Country: Thailand",
+  "price": null,
+  "type": "Beachfront",
+  "bedrooms": 7,
+  "bathrooms": 8.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Bang Por"
+    "area": "Laem Sor"
   },
-  "features": ["Villa"],
-  "images": ["/images/ZM29-1.jpeg", "/images/ZM29-2.jpeg", ""],
-  "featured": true,
+  "features": ["Beachfront"],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_1_gybrkd.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893888/ZM29_2_tka6zf.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_3_lynn1k.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_4_rfvvac.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_5_r31iju.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_6_gbclhx.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_7_bbhfjh.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_8_stgktr.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_9_lmc0zs.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893896/ZM29_10_ougehx.jpg"
+  ],
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 

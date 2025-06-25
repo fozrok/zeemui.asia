@@ -1,19 +1,30 @@
 {
   "id": "property-ZM16",
-  "title": "Elegant 3 Bedroom Hilltop Sea View Pool Villa in Taling Ngam",
-  "description": "Key Features\n• 3 bedroom, 3 bathroom hilltop villa\n• Infinity pool with sea views\n• Modern minimalist design\n• High ceilings\n• Outdoor lounge and dining area\n• Freehold",
-  "price": 135000000,
-  "type": "Sea View",
-  "bedrooms": 3,
-  "bathrooms": 3.0,
+  "title": "Boutique Villa Resort for Sale in Peaceful Maenam",
+  "description": "Key Features\n- 6 Private luxury villas\n- 1 studio apartment\n- Fully Furnished\n- Close to amenities & beach\n- Air Condition & Ceiling Fans\n- Concrete Government Access Road\n- Communal Swimming Pool\n- Landscaped Gardens\n- Pool Terrace\n- Private Parking\n- Private Pool\n- Satellite TV & Wifi\n- Nor Sor Sam Gor        \n- Freehold Title\n\n\nLocation details:\n- Area: Maenam\n- City: Koh Samui\n- Country: Thailand",
+  "price": 19950000,
+  "type": "Resort",
+  "bedrooms": 8,
+  "bathrooms": 8.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Taling Ngam"
+    "area": "Maenam"
   },
-  "features": ["Sea View"],
-  "images": ["/images/ZM16-1.jpeg", "/images/ZM16-2.jpeg", ""],
-  "featured": true,
+  "features": ["Resort"],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_1_oyccaw.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893446/ZM16_2_rir70y.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_3_cthwvs.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_4_ndja03.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_5_r6nnxb.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_6_rsppiz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_7_ue6bb1.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_8_gubvpa.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_9_gxzi18.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750893445/ZM16_10_fwqgp0.jpg"
+  ],
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 

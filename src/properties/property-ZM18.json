@@ -1,19 +1,19 @@
 {
   "id": "property-ZM18",
-  "title": "Modern 2 Bedroom Riverfront Villa in Fisherman's Village",
-  "description": "Key Features\n• 2 bedroom, 2 bathroom riverfront villa\n• Private deck and pool\n• Contemporary interiors\n• Gourmet kitchen\n• Garden courtyard\n• Leasehold",
-  "price": 110000000,
-  "type": "Villa",
-  "bedrooms": 2,
-  "bathrooms": 2.0,
+  "title": "Ultra Luxury 4 Bedroom Mediterranean Sea View Villas in Chaweng\n",
+  "description": "Key Features\n- 4 bedroom with en-suite bathroom \n- 2 storey mediterranean style design \n- Fully furnished villas\n- Stylish wooden features\n- Open-plan living and dining area \n- infinity-edge swimming pool \n- Balinese stone titles\n- Equipped Western style kitchen\n- High quality fitting & appliances \n- Soaking tub and rain-showers\n- Land sizes: 1200 sqm\n- Built size: 460 sqm\n- Freehold tenure\n- Chanote title\n\nLocation details:\n- Located close to Chaweng Beach\n- 5 minutes drive to beaches, shops & amenities\n- 5 minutes to supermarkets, schools & hospitals\n- 10 minutes drive to International Airport\n\n\n\n\nLocation details:\n- Area: Chaweng\n- City: Koh Samui\n- Country: Thailand",
+  "price": 60000000,
+  "type": "Sea View",
+  "bedrooms": 4,
+  "bathrooms": 4.0,
   "location": {
-    "city": "Bophut",
+    "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Fisherman's Village"
+    "area": "Chaweng"
   },
-  "features": ["Villa"],
+  "features": ["Sea View"],
   "images": ["/images/ZM18-1.jpeg", "/images/ZM18-2.jpeg", ""],
-  "featured": true,
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 

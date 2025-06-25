@@ -1,23 +1,19 @@
 {
   "id": "property-ZM15",
-  "title": "Luxury 4 Bedroom Sea View Villa in Bang Por",
-  "description": "Key Features\n- 4 bedroom, 4 bathroom luxury villa\n- Panoramic sea views\n- Private infinity pool\n- Modern open-plan design\n- Fully equipped kitchen\n- Land size: 1,000 sqm\n- Built size: 500 sqm\n- Freehold tenure",
-  "price": 20000000,
+  "title": "New Stunning 4 Bedroom Luxury Sea View Villas in Bophut\n",
+  "description": "Villa Types & Prices:\n\nType A: (Villas 1,2,3)\n4 Bedroom + 2 Bedroom Annex Option\nBuilt Size: Sq m 700-1,000\nLand Size: Sq m 923\n\nType B: (Villas 4,5,6,7)\n4 Bedrooms + Studio Garden Room Option\nBuilt Size: Sq m 500-700\nLand Size: Sq m 665\n\nKey Features\n- 7 Large Villas on 4 rais plots of land\n- Exclusive residence located in Bophut\n- Easy and gentle slope access by car\n- Large size infinity-pool\n- Indoor garden\n- Gym with sea view\n- Lift and ramp accessible\n- Indoor and outdoor living\n- Indoor and outdoor kitchen\n- Annex 2 bedroom option\n- Studio room option\n- CCTV and Security guards\n- Furnitures package available (optional)\n- Freehold tenure / chanote title\n- Government electric and water\n\nLocation:\nThe residence is located in a very quiet area in Soi Thong Hor in Bophut.  An easy and gentle slope for driving by car leads to a private road access only.\n- 2 minutes drive from main ring road\n- 5 minutes from Fisherman Village and Bophut Beach\n- 15 minutes to Airport, Choeng Mon and Chaweng Beach\n- 25 minutes to Nathon ferry pier\n\nLocation details:\n- Area: Bophut\n- City: Koh Samui\n- Country: Thailand",
+  "price": 39500000,
   "type": "Sea View",
   "bedrooms": 4,
   "bathrooms": 4.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Bang Por"
+    "area": "Bophut"
   },
   "features": ["Sea View"],
-  "images": [
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM15-Villa-Maliya-1_Large_va9mds.jpg",
-    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749983390/ZM15-Villa-Maliya-2_Large_rdhvew.jpg",
-    ""
-    ],
-  "featured": true,
+  "images": ["/images/ZM15-1.jpeg", "/images/ZM15-2.jpeg", ""],
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 

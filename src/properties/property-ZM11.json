@@ -1,7 +1,7 @@
 {
   "id": "property-ZM11",
   "title": "Palatial 6 Bedroom Luxury Sea View Villa in Bophut",
-  "description": "Key Features\n- 6 Luxurious double bedroom\n- All with en-suite bathrooms\n- Private sea view balconies\n- 20m infinity-edge swimming pool\n- Private life fitness gym\n- Six zone Bose Hi fi system\n- Three sets of outdoor speakers\n- Wireless remote control access\n- 50 inch plasma screen\n- TV satellite & DVD player\n- Fully furnished incl. linens/towels\n- Two fully equipped kitchens\n- Nor Sor Gor 3 Title\n- Freehold Tenure",
+  "description": "Key Features\n- 6 Luxurious double bedroom\n- All with en-suite bathrooms\n- Private sea view balconies\n- 20m infinity-edge swimming pool\n- Private life fitness gym\n- Six zone Bose Hi fi system\n- Three sets of outdoor speakers\n- Wireless remote control access\n- 50 inch plasma screen\n- TV satellite & DVD player\n- Fully furnished incl. linens/towels\n- Two fully equipped kitchens\n- Nor Sor Gor 3 Title\n- Freehold Tenure\n\n\nLocation details:\n- Area: Bophut\n- City: Koh Samui\n- Country: Thailand",
   "price": 80000000,
   "type": "Sea View",
   "bedrooms": 6,
@@ -24,7 +24,7 @@
     "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986433/9_Large_zjmt06.jpg",
     "https://res.cloudinary.com/dhxriuzu5/image/upload/v1749986426/10_Large_btbnkz.jpg"
   ],
-  "featured": true,
+  "featured": false,
   "newProperty": false,
   "active": true
 } 

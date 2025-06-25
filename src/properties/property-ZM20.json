@@ -1,19 +1,30 @@
 {
   "id": "property-ZM20",
-  "title": "Spacious 3 Bedroom Estate with Private Pool in Choeng Mon",
-  "description": "Key Features\n• 3 bedroom, 3 bathroom luxury estate\n• Large private pool\n• Open living/dining pavilion\n• Fully fitted kitchen\n• Landscaped gardens\n• Freehold",
-  "price": 155000000,
-  "type": "Villa",
+  "title": "Stylish 3-4 Bedroom Sea View Villa in Chaweng",
+  "description": "Key Features\n?3 bedroom with en-suite bathrooms\n?2 storey beach house design \n?Fully furnished villa\n?Stylish wooden features\n?Open plan living and dining area \n?infinity-edge swimming pool \n?Balinese stone titles\n?Equipped western style kitchen\n?High quality fitting & appliances \n?Soaking tub and rain showers\n?Land sizes: 543 - 884sqm\n?Built size: 400 sqm\n?Freehold tenure\n?Chanote title\n\nLocation details:\n- Area: Chaweng\n- City: Koh Samui\n- Country: Thailand",
+  "price": 19000000,
+  "type": "Sea View",
   "bedrooms": 3,
   "bathrooms": 3.0,
   "location": {
     "city": "Koh Samui",
     "country": "Thailand",
-    "area": "Choeng Mon"
+    "area": "Chaweng"
   },
-  "features": ["Villa"],
-  "images": ["/images/ZM20-1.jpeg", "/images/ZM20-2.jpeg", ""],
-  "featured": true,
+  "features": ["Sea View"],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_1_Large_tug2ub.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894058/ZM20_2_Large_n5xm1p.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_3_Large_iza21k.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_4_Large_mswufd.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_5_Large_lnuf2u.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_6_Large_fi6bvg.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_7_Large_qxcx26.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_8_Large_iq4mo3.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_9_Large_roqkva.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750894064/ZM20_10_Large_vybtzn.jpg"
+  ],
+  "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true
 } 
