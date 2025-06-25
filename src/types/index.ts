@@ -13,6 +13,7 @@ export interface Property {
   featured: boolean;
   newProperty: boolean;
   active: boolean;
+  sold?: boolean;
 }
 
 export interface PropertyLocation {

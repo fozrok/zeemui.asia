@@ -12,8 +12,20 @@
     "area": "Bangrak Beach"
   },
   "features": ["Villa"],
-  "images": ["/images/ZM13-1.jpeg", "/images/ZM13-2.jpeg", ""],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_1_Large_b4pd5h.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895401/ZM13_2_Large_mdnhez.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_3_Large_plafoa.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_4_Large_mrvijs.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_5_Large_elhqao.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_6_Large_wwpzth.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_7_Large_ubness.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_8_Large_vkrn8x.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_9_Large_ilhb87.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895403/ZM13_10_Large_et4glj.jpg"
+  ],
   "featured": false,
   "newProperty": false,
-  "active": false
+  "active": true,
+  "sold": true
 } 

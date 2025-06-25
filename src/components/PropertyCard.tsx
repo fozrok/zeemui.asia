@@ -21,12 +21,17 @@ const PropertyCard: React.FC<PropertyCardProps> = React.memo(({ property }) => {
         
         {/* Tag overlays */}
         <div className="absolute top-4 left-4 flex space-x-2">
-          {property.newProperty && (
+          {property.sold && (
+            <span className="bg-red-600 text-white px-3 py-1 text-xs uppercase font-semibold rounded">
+              Sold
+            </span>
+          )}
+          {property.newProperty && !property.sold && (
             <span className="bg-custom-green text-white px-3 py-1 text-xs uppercase font-semibold rounded">
               New
             </span>
           )}
-          {property.featured && !property.newProperty && (
+          {property.featured && !property.newProperty && !property.sold && (
             <span className="bg-blue-600 text-white px-3 py-1 text-xs uppercase font-semibold rounded">
               Featured
             </span>

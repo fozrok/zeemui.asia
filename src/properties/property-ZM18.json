@@ -12,7 +12,18 @@
     "area": "Chaweng"
   },
   "features": ["Sea View"],
-  "images": ["/images/ZM18-1.jpeg", "/images/ZM18-2.jpeg", ""],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_1_Large_mavdpk.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895245/ZM18_2_Large_syisvj.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_3_Large_lceh0m.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_4_Large_cx0xbx.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_5_Large_tqg6ig.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_6_Large_skxte1.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_7_Large_pyd9qo.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_8_Large_usfwp4.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_9_Large_fnrdgx.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750895236/ZM18_10_Large_iz9xzg.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": true
