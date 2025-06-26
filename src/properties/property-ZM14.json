@@ -12,7 +12,18 @@
     "area": "Thong Krut"
   },
   "features": ["Sea View"],
-  "images": ["/images/ZM14-1.jpeg", "/images/ZM14-2.jpeg", ""],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_1_Large_xp2axd.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_2_Large_nmyssz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_3_Large_cgsjt4.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_4_Large_hxiq7b.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_5_Large_wagvba.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_6_Large_vqvpkh.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_7_Large_blfc1o.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_8_Large_yyi4wn.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_9_Large_ognqmc.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750898011/ZM14_10_Large_lpydnz.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": true

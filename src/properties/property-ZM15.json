@@ -12,7 +12,18 @@
     "area": "Bophut"
   },
   "features": ["Sea View"],
-  "images": ["/images/ZM15-1.jpeg", "/images/ZM15-2.jpeg", ""],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_1_mdyxep.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897836/ZM15_2_ilt5ln.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_3_fdpkdh.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_4_wczhao.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_5_xp2hfa.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_6_wsyz4h.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_7_w80vv1.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_8_vqfwp7.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_9_sxrcsv.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897834/ZM15_10_ami6wc.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": true

@@ -12,7 +12,17 @@
     "area": "Bophut Hills"
   },
   "features": ["Sea View"],
-  "images": ["/images/ZM30-1.jpeg", "/images/ZM30-2.jpeg", ""],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_1_Large_qqzvy4.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897574/ZM30_2_Large_m0c9m7.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_3_Large_g74y8c.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_4_Large_tayhcx.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_5_Large_xuf7s0.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_6_Large_fquw4m.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_7_Large_zbjm1t.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_8_Large_gqzsuj.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1750897565/ZM30_9_Large_j8rn7m.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": true
