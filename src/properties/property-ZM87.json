@@ -1,0 +1,32 @@
+{
+  "id": "property-ZM87",
+  "title": "Luxury 3 Bedroom Panoramic Sea View Villa in Chaweng Noi",
+  "description": "Key Features\n•\t3 Bedroom, 3 bathroom pool villa\n•\tLocated in peaceful part of Chaweng Noi\n•\tPrivate infinity-swimming pool\n•\tModern fitted kitchen with island \n•\tBuilt-in oven, gas-hob & extractor fan\n•\tFull furnishing & decoration \n•\tModern open-plan design\n•\tAir-conditioning & ceiling fans \n•\tLarge flat-screen television \n•\tPrivate parking area\n•\tBuilt size: 560 sqm\n•\tFreehold tenure\n•\tChanote title",
+  "price": 19500000,
+  "type": "Villa",
+  "bedrooms": 3,
+  "bathrooms": 3.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Chaweng Noi"
+  },
+  "features": [
+    "Villa"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_1_gikie7.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_2_seh03o.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_3_uspkcj.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_4_fsshc9.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_5_io1rqo.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_6_o7vvga.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_7_ure1f4.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_8_uxxvsr.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_9_jbbi7q.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624976/ZM87_10_qjsrqz.jpg"
+  ],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

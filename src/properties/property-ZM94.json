@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM94",
+  "title": "Palatial 6 Bedroom Luxury Oriental Villa in Koh Samui",
+  "description": "Key Features\n•\tUltra-luxury 6 bedroom, 7 bathroom villa\n•\tUnique cedar-wooden pagoda roof-design\n•\tLocated in the peaceful Laem Sor hillside\n•\tFully furnished to an exceptional level\n•\tBuilt-in-conditioning & ceiling fans\n•\tHuge Infinity-edge private pool\n•\tExpansive terrace area & Jacuzzi\n•\tEn-suite bathrooms & bathtub\n•\tLuxury white designer kitchen\n•\tFully equipped: gas hob & oven\n•\tLarge breakfast bar/island area\n•\tOutdoor covered kitchen area\n•\tOversize wooden vaulted ceilings\n•\tDesigner fitted kitchen\n•\tBreakfast bar/island area\n•\tWestern-style kitchen\n•\tLarge landscaped gardens\n•\tMature trees & boulders\n•\tPrivate covered parking\n•\tFreehold Chanote",
+  "price": 89000000,
+  "type": "Villa",
+  "bedrooms": 6,
+  "bathrooms": 7.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Laem Sor"
+  },
+  "features": [
+    "Villa"
+  ],
+  "images": [],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

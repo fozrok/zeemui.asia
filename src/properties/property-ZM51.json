@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM51",
+  "title": "5 bedroom Beachside Sea View Villa near Big Buddha",
+  "description": "New exclusive listing \n\n•5 bedroom/5 bathroom luxury pool villa\n•200m easy walk to beach and many restaurants/amenities \n•Stunning close up sunset sea views\n•Ideally located for solid rental investment \n•Open plan living/dining/kitchen\n•Fully fitted designer kitchen with built in appliances \n•Games room/second living/entertaining space \n•Laundry room\n•Separate staff quarters \n•Carport with electric gate\n•Freehold tenure \n•Chanote land title ",
+  "price": 39950000,
+  "type": "Villa",
+  "bedrooms": 5,
+  "bathrooms": 5.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Big Buddha"
+  },
+  "features": [
+    "Villa"
+  ],
+  "images": [],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

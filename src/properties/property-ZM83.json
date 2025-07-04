@@ -1,0 +1,32 @@
+{
+  "id": "property-ZM83",
+  "title": "Sleek 4 Bedroom Luxury Sea View Villa in Big Buddha",
+  "description": "•4 Bedrooms, 3.5 bathroom pool villa\n•Award-winning luxury boutique resort\n•Pristine panoramic sunset sea-views\n•Stunning infinity-edged private pool\n•Highest level of furnishings & decor\n•Prime location set in Bangrak hills\n•2-300 meters walk to the beach\n•Single-level detached villa design\n•Open-plan living & dining area\n•Fully-equipped designer kitchen\n•24 hour security & CCTV\n•Property Built in 2015\n•Built area: 375 sqm\n•Freehold tenure\n•Chanote title",
+  "price": 19900000,
+  "type": "Villa",
+  "bedrooms": 4,
+  "bathrooms": 3.5,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Big Buddha"
+  },
+  "features": [
+    "Villa"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625099/ZM83_1_f9tlns.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_2_gfx3bz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_3_pifput.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_4_ao6z2r.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_5_uce221.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_6_tppx1q.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_7_igwxr8.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_8_ph8lfp.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_9_wvmlt7.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751625098/ZM83_10_qsb4tw.jpg"
+  ],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

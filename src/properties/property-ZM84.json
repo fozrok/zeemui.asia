@@ -1,0 +1,32 @@
+{
+  "id": "property-ZM84",
+  "title": "Ultimate Beachfront 3 Bedroom Villa for Sale in Ban Makham",
+  "description": "Key Features\n•\tComplex of 7 luxury 3 bedroom villas\n•\tMulti award-winning reliable developer\n•\tLocated on pristine Laem Noi beach\n•\tNext to Four Seasons Resort Samui\n•\tSecure gated & guarded community\n•\tContemporary, open-plan modern living\n•\tSleek, elegant and functional design\n•\tExpansive terraces, sofa lounge & Sala\n•\tSpectacular ocean and sunset views\n•\tMineral treated infinity-edge pool\n•\tDesigner furniture (Pedrali, Dedon)\n•\tWestern kitchen appliances\n•\tSmart Home System - via iPhone/iPad\n•\t6 camera CCTV - remote access\n•\tTerrazzo bath tub & rain shower\n•\tAXOR Urquiola Bathroom fittings\n•\tFull concierge service available\n•\tFacility management services\n•\t350-500 sqm living space\n•\tFreehold or leasehold options\n\n",
+  "price": 63000000,
+  "type": "Beachfront ",
+  "bedrooms": 3,
+  "bathrooms": 4.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Ban Makham"
+  },
+  "features": [
+    "Beachfront "
+  ],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624803/ZM84_1_q2st6c.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624803/ZM84_2_dymtbz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_3_gunyvm.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_4_hqqn9e.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_5_ae9cmz.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_6_puy9bu.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_7_utpnvm.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_8_p3ksoi.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_9_yoh63b.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1751624802/ZM84_10_z6txo2.jpg"
+  ],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

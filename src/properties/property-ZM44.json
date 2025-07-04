@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM44",
+  "title": "Sleek Designer 4 Bedroom Sea View Villa in Big Buddha",
+  "description": "Key Features\n•\t4 bedroom, 4 bathroom sea view villa\n•\tPrivate swimming pool\n•\tPrivate Garden\n•\tPanoramic sea views\n•\tFully Furnished Villa\n•\tOpen plan lounge\n•\tFully fitted kitchen\n•\tLocated in resort community\n•\tPrivate Parking\n•\t24 hour resort security\n•\tLand Area 635sqm\n•\tBuilt Area 616sqm\n•\tFreehold Tenure\n•\tChanote title\n",
+  "price": 45000000,
+  "type": "Sea View ",
+  "bedrooms": 4,
+  "bathrooms": 4.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Big Buddha"
+  },
+  "features": [
+    "Sea View "
+  ],
+  "images": [],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM35",
+  "title": "Contemporary 5 Bedroom Beachfront Villa in Bangpor",
+  "description": "Key Features\n•\t5 Bed Luxury Beachfront Villa\n•\t800m to Four Seasons\n•\tEn-suite bathrooms\n•\tBeach front villa\n•\tBuilt Area: 272 sqm\n•\tLand Area: 400 sqm\n•\tFurnished modern kitchen\n•\tFully furnished\n•\tBBQ area & Sun loungers\n•\tPrivate pool\n•\tGarden and Terrace\n•\tPrivate parking\n•\tFreehold Tenure\n•\tChanote Title",
+  "price": 59000000,
+  "type": "Beachfront ",
+  "bedrooms": 5,
+  "bathrooms": 5.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Bangpor"
+  },
+  "features": [
+    "Beachfront "
+  ],
+  "images": [],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 

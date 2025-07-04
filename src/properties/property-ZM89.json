@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM89",
+  "title": "Contemporary 5 Bedroom Ultra Luxury Villa in Bangpor",
+  "description": "Key Features\n•\t5 Bedrooms with ensuite bathrooms\n•\tStunning Panoramic views of the island\n•\tCutting edge architecture\n•\tSunken seating area & sala\n•\tDining area with drinks bar\n•\tInfinity edge swimming pool\n•\tLarge fully equipped kitchen\n•\tPowder room\n•\tAV room with satellite TV\n•\tWifi, sound system and ipod dock\n•\tLush tropical gardens\n•\tTable tennis & badminton\n•\tPrivate Garage\n•\tFreehold Tenure\n•\tChanote Title\n",
+  "price": 129000000,
+  "type": "Villa",
+  "bedrooms": 5,
+  "bathrooms": 5.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Bangpor"
+  },
+  "features": [
+    "Villa"
+  ],
+  "images": [],
+  "featured": false,
+  "newProperty": false,
+  "active": false
+} 

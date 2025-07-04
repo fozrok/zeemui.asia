@@ -1,0 +1,21 @@
+{
+  "id": "property-ZM46",
+  "title": "Luxury 5-Bedroom Sea View Villa in Maenam",
+  "description": "• 5 Bedrooms / 5 Bathrooms \n• Private and serene location in Maenam Hills\n• Stunning panoramic sea and jungle views \n• Open plan living/dining/kitchen with top grade appliances\n• Beautifully renovated with premium finishing throughout \n• 10 meter infinity edge swimming pool  \n• Land Size: 800 sqm\n• Built Area: 700 sqm\n• Freehold tenure \n• Chanote land title ",
+  "price": 38000000,
+  "type": "Sea View ",
+  "bedrooms": 5,
+  "bathrooms": 5.0,
+  "location": {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "area": "Maenam"
+  },
+  "features": [
+    "Sea View "
+  ],
+  "images": [],
+  "featured": false,
+  "newProperty": false,
+  "active": true
+} 
