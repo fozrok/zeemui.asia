@@ -302,4 +302,148 @@ export const BlogPostRentalLocations = () => (
   </div>
 );
 
+export const BlogPostInternationalSchools = () => (
+  <div>
+    {/* Header */}
+    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center">
+          <h1 className="text-4xl font-serif text-white mb-4">
+            Top 5 International Schools in Koh Samui
+          </h1>
+          <p className="text-gray-300">JULY 22, 2025</p>
+        </div>
+      </div>
+    </div>
+    {/* Blog Content */}
+    <article className="py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="prose prose-lg max-w-none">
+          <p>Koh Samui offers a range of esteemed international schools catering to diverse educational needs. Based on curriculum offerings, facilities, and community feedback, here are five notable international schools on the island:</p>
+          <h2>1. International School of Samui (ISS)</h2>
+          <ul>
+            <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
+            <li><strong>Ages:</strong> 3 to 18</li>
+            <li><strong>Highlights:</strong> Established in 2007, ISS is accredited by Education Development Trust and the International School’s Quality Mark. The school boasts a diverse student body from over 35 countries and offers a comprehensive education from Early Years to Sixth Form.</li>
+          </ul>
+          <h2>2. Panyadee, The British International School of Samui (PBISS)</h2>
+          <ul>
+            <li><strong>Curriculum:</strong> British (Cambridge International Curriculum)</li>
+            <li><strong>Ages:</strong> 2 to 18</li>
+            <li><strong>Highlights:</strong> PBISS provides a holistic education with a strong emphasis on language programs and a comprehensive educational experience.</li>
+          </ul>
+          <h2>3. Greenacre International School</h2>
+          <ul>
+            <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
+            <li><strong>Ages:</strong> 3 to 13</li>
+            <li><strong>Highlights:</strong> Situated in the serene area of Na Mueang, Greenacre emphasizes academics, environmental awareness, and mindfulness. The school offers a nurturing environment with a focus on holistic development.</li>
+          </ul>
+          <h2>4. Windfield International School</h2>
+          <ul>
+            <li><strong>Curriculum:</strong> British and French</li>
+            <li><strong>Ages:</strong> 3 to 18</li>
+            <li><strong>Highlights:</strong> Windfield offers a bilingual education with a focus on inquiry-based learning and cultural diversity. The school promotes child development in a fun and responsible manner.</li>
+          </ul>
+          <h2>5. Lamai International School (LIS)</h2>
+          <ul>
+            <li><strong>Curriculum:</strong> British (Cambridge Curriculum)</li>
+            <li><strong>Ages:</strong> 3 to 11</li>
+            <li><strong>Highlights:</strong> Located in Lamai, LIS offers a bright and flourishing environment with a focus on the Cambridge Curriculum. The school prides itself on providing the highest level of education in a nurturing setting.</li>
+          </ul>
+          <h2>Summary</h2>
+          <p>Each of these schools offers unique programs and environments to cater to various educational preferences. If you have specific criteria or need further assistance in selecting the right school for your child, feel free to ask!</p>
+        </div>
+      </div>
+    </article>
+  </div>
+);
+
+export const BlogPostExpatsLocations = () => (
+  <div>
+    {/* Header */}
+    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center">
+          <h1 className="text-4xl font-serif text-white mb-4">
+            Best Locations for Expats to Live in Koh Samui
+          </h1>
+          <p className="text-gray-300">JULY 29, 2025</p>
+        </div>
+      </div>
+    </div>
+    {/* Blog Content */}
+    <article className="py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="prose prose-lg max-w-none">
+          <p>Koh Samui offers a variety of neighborhoods that cater to expatriates seeking different lifestyles, from vibrant social scenes to tranquil retreats. Here are some of the best locations for expats to reside on the island:</p>
+          <h2>🇹🇭 Bophut (Fisherman's Village) – Charming Blend of Tradition and Modernity</h2>
+          <p>Bophut is renowned for its picturesque Fisherman's Village, featuring traditional Thai architecture alongside modern amenities. The area boasts boutique shops, beachfront dining, and a weekly walking street market. It's popular among expats for its relaxed atmosphere and family-friendly environment. The presence of international schools and proximity to the airport add to its appeal.</p>
+          <h2>Lamai – Relaxed Beach Town with Essential Amenities</h2>
+          <p>Lamai offers a more laid-back alternative to the bustling Chaweng area. With its beautiful beaches, variety of dining options, and local markets, it's favored by families and retirees. The town provides essential amenities, including healthcare facilities and a French school, making it a practical choice for long-term living.</p>
+          <h2>Maenam – Tranquil Setting Ideal for Retirees</h2>
+          <p>Maenam is known for its serene environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.</p>
+          <h2>Choeng Mon – Upscale and Peaceful Environment</h2>
+          <p>Located on the northeastern tip of Koh Samui, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.</p>
+          <h2>Chaweng – Vibrant Hub for Social and Nightlife Enthusiasts</h2>
+          <p>Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.</p>
+          <h2>Plai Laem – Exclusive Area with Scenic Views</h2>
+          <p>Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.</p>
+          <h2>Nathon – Authentic Thai Experience with Modern Conveniences</h2>
+          <p>Nathon, the island's administrative center, offers a blend of local culture and modern amenities. It's ideal for expats seeking an authentic Thai experience without the tourist crowds. The area features local markets, affordable housing, and essential services, making it a practical choice for long-term residents.</p>
+          <h2>Summary Table:</h2>
+          <table className="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 p-2 text-left">Area</th>
+                <th className="border border-gray-300 p-2 text-left">Best For</th>
+                <th className="border border-gray-300 p-2 text-left">Key Features</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 p-2">Bophut</td>
+                <td className="border border-gray-300 p-2">Families, culture enthusiasts</td>
+                <td className="border border-gray-300 p-2">Fisherman's Village, international schools</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Lamai</td>
+                <td className="border border-gray-300 p-2">Families, retirees</td>
+                <td className="border border-gray-300 p-2">Relaxed vibe, essential amenities</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Maenam</td>
+                <td className="border border-gray-300 p-2">Retirees, budget-conscious expats</td>
+                <td className="border border-gray-300 p-2">Tranquil setting, affordable properties</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Choeng Mon</td>
+                <td className="border border-gray-300 p-2">High-net-worth individuals</td>
+                <td className="border border-gray-300 p-2">Luxury villas, peaceful environment</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Chaweng</td>
+                <td className="border border-gray-300 p-2">Socialites, nightlife lovers</td>
+                <td className="border border-gray-300 p-2">Vibrant nightlife, shopping centers</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Plai Laem</td>
+                <td className="border border-gray-300 p-2">Affluent expats</td>
+                <td className="border border-gray-300 p-2">Scenic views, exclusive properties</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Nathon</td>
+                <td className="border border-gray-300 p-2">Authentic experience seekers</td>
+                <td className="border border-gray-300 p-2">Local markets, administrative center</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Each of these neighborhoods offers a unique lifestyle, so your choice should align with your personal preferences and needs.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+);
+
 export default BlogPost; 

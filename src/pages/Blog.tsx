@@ -83,6 +83,24 @@ const blogPosts = [
     date: 'July 15, 2025',
     author: 'Editorial Team',
     category: 'Investment Guide'
+  },
+  {
+    id: '10',
+    title: 'Top 5 International Schools in Koh Samui',
+    excerpt: 'Discover the leading international schools in Koh Samui, their curricula, facilities, and what makes each unique for expat families.',
+    image: 'https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+    date: 'July 22, 2025',
+    author: 'Editorial Team',
+    category: 'Lifestyle & Family'
+  },
+  {
+    id: '11',
+    title: 'Best Locations for Expats to Live in Koh Samui',
+    excerpt: 'Discover the top neighborhoods in Koh Samui for expatriates, from vibrant Chaweng to tranquil Maenam and exclusive Choeng Mon.',
+    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+    date: 'July 29, 2025',
+    author: 'Editorial Team',
+    category: 'Lifestyle & Family'
   }
 ];
 
