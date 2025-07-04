@@ -14,6 +14,7 @@ export interface Property {
   newProperty: boolean;
   active: boolean;
   sold?: boolean;
+  priceOnApplication?: boolean;
 }
 
 export interface PropertyLocation {

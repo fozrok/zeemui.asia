@@ -100,37 +100,34 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="font-bold text-lg mb-2 text-gray-800">
-                  What services do you offer to property buyers?
+                  What services do we offer to property buyers?
                 </h3>
                 <p className="text-gray-600">
-                  We provide comprehensive property search, viewings, legal advice, and support throughout the entire buying process. Our services are free for buyers, as we receive our commission from property sellers.
+                  We provide comprehensive bespoke property searches, personal viewings, legal advice and referrals as well as support throughout the entire buying process. Our services are free for buyers, as we receive our commission from the property sellers.
                 </p>
               </div>
-              
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="font-bold text-lg mb-2 text-gray-800">
-                  What services do you offer to property sellers?
+                  What services do we offer to property sellers?
                 </h3>
                 <p className="text-gray-600">
-                  For sellers, we provide comprehensive marketing services, professional photography, virtual tours, targeted advertising, and access to our network of qualified buyers. We handle every aspect of the sales process to ensure a smooth transaction.
+                  For sellers, we provide comprehensive marketing services, professional photography, video tours, targeted advertising, and access to our network of qualified buyers. We handle every aspect of the sales process to ensure a smooth transaction through to completion.
                 </p>
               </div>
-              
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="font-bold text-lg mb-2 text-gray-800">
                   Do you offer property management services?
                 </h3>
                 <p className="text-gray-600">
-                  Yes, we offer full-service property management for owners who wish to maintain their investment while away. Our services include maintenance, rental management, security, and regular property inspections.
+                  We don't offer this service ourselves as we devote our skills to specialising in property sales. We do however partner with some very well established full-service property management agencies on the island for owners who wish to maintain their investment while away. Their services include maintenance, rental management, security, and regular property inspections. We will connect you upon request.
                 </p>
               </div>
-              
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="font-bold text-lg mb-2 text-gray-800">
                   What is the process for viewing properties?
                 </h3>
                 <p className="text-gray-600">
-                  We arrange personalized property viewings based on your preferences and schedule. For international clients, we can provide virtual tours and detailed video walkthroughs before you travel to Koh Samui.
+                  We arrange personalized property viewings based on your preferences and schedule. For international clients, who may be considering a remote purchase, we can also provide virtual tours and detailed video walkthroughs before you travel to Koh Samui.
                 </p>
               </div>
             </div>

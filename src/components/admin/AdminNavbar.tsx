@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Home, List, Plus, LogOut, FileText } from 'lucide-react';
+import { Home, List, Plus, LogOut, FileText, Upload } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 
 const AdminNavbar: React.FC = () => {
@@ -48,6 +48,14 @@ const AdminNavbar: React.FC = () => {
             >
               <Plus size={18} className="mr-1" />
               <span>Add Property</span>
+            </Link>
+
+            <Link 
+              to="/admin/properties/bulk-upload"
+              className="flex items-center text-gray-300 hover:text-white transition-colors"
+            >
+              <Upload size={18} className="mr-1" />
+              <span>Bulk Upload</span>
             </Link>
 
             <Link 

@@ -14,6 +14,7 @@ import {
   AdminDashboard,
   PropertyList,
   PropertyForm,
+  BulkUpload,
   Terms
 } from './pages';
 
@@ -73,6 +74,14 @@ function App() {
               element={
                 <AdminProtectedRoute>
                   <PropertyForm />
+                </AdminProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin/properties/bulk-upload"
+              element={
+                <AdminProtectedRoute>
+                  <BulkUpload />
                 </AdminProtectedRoute>
               }
             />

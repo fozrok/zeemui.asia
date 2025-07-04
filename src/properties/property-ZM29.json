@@ -26,5 +26,6 @@
   ],
   "featured": false,
   "newProperty": false,
-  "active": true
+  "active": true,
+  "priceOnApplication": true
 } 

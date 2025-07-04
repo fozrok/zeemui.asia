@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useProperties } from '../../hooks/useProperties';
-import { Home, Eye, EyeOff, Plus, DollarSign, RefreshCw, Star, Database } from 'lucide-react';
+import { Home, Eye, EyeOff, Plus, DollarSign, RefreshCw, Star, Database, Upload } from 'lucide-react';
 import { formatCurrency } from '../../utils/format';
 import { isMockData, supabase } from '../../lib/supabase';
 
@@ -173,7 +173,7 @@ const AdminDashboard: React.FC = () => {
       {/* Quick Actions */}
       <div className="bg-white rounded-lg shadow-md p-6 mb-8">
         <h2 className="text-xl font-bold text-gray-800 mb-4">Quick Actions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <Link
             to="/admin/properties/new"
             className="bg-blue-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
@@ -181,6 +181,15 @@ const AdminDashboard: React.FC = () => {
             <Plus size={20} className="mr-2" />
             Add New Property
           </Link>
+          
+          <Link
+            to="/admin/properties/bulk-upload"
+            className="bg-green-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors"
+          >
+            <Upload size={20} className="mr-2" />
+            Bulk Upload Properties
+          </Link>
+          
           <Link
             to="/admin/properties"
             className="bg-gray-700 text-white p-4 rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors"
@@ -188,10 +197,11 @@ const AdminDashboard: React.FC = () => {
             <Eye size={20} className="mr-2" />
             Manage Properties
           </Link>
+          
           <Link
             to="/"
             target="_blank"
-            className="bg-green-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors"
+            className="bg-purple-600 text-white p-4 rounded-lg flex items-center justify-center hover:bg-purple-700 transition-colors"
           >
             <Home size={20} className="mr-2" />
             View Live Site

@@ -116,4 +116,190 @@ const BlogPost = () => {
   );
 };
 
+export const BlogPostPropertyTaxes = () => (
+  <div>
+    {/* Header */}
+    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center">
+          <h1 className="text-4xl font-serif text-white mb-4">
+            Navigating Property Taxes in Koh Samui: A Complete Guide
+          </h1>
+          <p className="text-gray-300">JULY 1, 2025</p>
+        </div>
+      </div>
+    </div>
+    {/* Blog Content */}
+    <article className="py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="prose prose-lg max-w-none">
+          <p>Koh Samui, one of Thailand's most popular islands for expats and investors, offers attractive real estate opportunities. However, understanding the property tax landscape is crucial to ensure compliance and avoid unexpected costs.</p>
+          <h2>1. Property Ownership Structures</h2>
+          <p>Foreigners cannot directly own land in Thailand but can invest in property through:</p>
+          <ul>
+            <li>Leasehold Agreements (up to 30 years, renewable)</li>
+            <li>Condominium Freehold (foreigners can own up to 49% of the total floor area)</li>
+            <li>Thai Company Ownership (must be legally structured and operated)</li>
+            <li>Thai Spouse Ownership (with proper documentation)</li>
+          </ul>
+          <p>Your ownership structure can affect how taxes are assessed.</p>
+          <h2>2. Key Property-Related Taxes in Koh Samui</h2>
+          <h3>a. Land and Building Tax (Annual)</h3>
+          <ul>
+            <li>Replaced the old "House and Land Tax" and "Local Development Tax."</li>
+            <li>Paid annually by owners of land/buildings.</li>
+            <li>Rates depend on usage:
+              <ul>
+                <li>Residential: 0.02%–0.10%</li>
+                <li>Commercial: 0.30%–0.70%</li>
+                <li>Vacant Land: Up to 1.20% (increasing if left unused over time)</li>
+              </ul>
+            </li>
+            <li>Exemption: Primary residence with land valued under THB 50 million.</li>
+          </ul>
+          <h3>b. Withholding Tax (On Sale)</h3>
+          <ul>
+            <li>Seller pays this at the Land Office during transfer.</li>
+            <li>Rates:
+              <ul>
+                <li>Individuals: Calculated using a complex formula based on years of ownership and appraised value.</li>
+                <li>Companies: 1% of the transfer price or appraised value (whichever is higher).</li>
+              </ul>
+            </li>
+          </ul>
+          <h3>c. Transfer Fee</h3>
+          <ul>
+            <li>Paid at the Land Office.</li>
+            <li>2% of the official appraised value.</li>
+            <li>Typically split 50/50 between buyer and seller (negotiable).</li>
+          </ul>
+          <h3>d. Specific Business Tax (SBT)</h3>
+          <ul>
+            <li>Applies if the property is sold within 5 years (unless owner's primary residence).</li>
+            <li>3.3% of the higher of the appraised or sale value.</li>
+          </ul>
+          <h3>e. Stamp Duty</h3>
+          <ul>
+            <li>0.5% of the sale price or appraised value (whichever is higher).</li>
+            <li>Only applies if SBT is not applicable.</li>
+          </ul>
+          <h2>3. Tax Implications for Foreign Investors</h2>
+          <ul>
+            <li>Rental Income: Taxable in Thailand at progressive rates (5%–35%) or corporate tax (20%).</li>
+            <li>Double Taxation Agreements (DTAs): Thailand has treaties with many countries to avoid double taxation.</li>
+            <li>Tax ID: Required to pay taxes on rental income or capital gains.</li>
+          </ul>
+          <h2>4. When and Where to Pay</h2>
+          <ul>
+            <li>Annual taxes (like Land and Building Tax): Paid at the local District Office (Or Bor Tor).</li>
+            <li>Transaction-related taxes (transfer fees, withholding tax, SBT): Paid at the Land Office at time of ownership transfer.</li>
+          </ul>
+          <h2>5. Tips for Property Buyers in Koh Samui</h2>
+          <ul>
+            <li>Hire a local lawyer: Critical for navigating regulations and doing due diligence.</li>
+            <li>Use a reputable agent: Especially for foreign buyers unfamiliar with Thai law.</li>
+            <li>Clarify tax responsibilities: Include clear clauses in sale agreements.</li>
+            <li>Stay updated: Thai property tax laws have undergone reform in recent years and may change again.</li>
+          </ul>
+          <h2>Conclusion</h2>
+          <p>Understanding and planning for property taxes is essential to owning or investing in real estate in Koh Samui. While the tax rates in Thailand are relatively low, non-compliance or poor planning can lead to significant penalties or unexpected costs. Engage with local professionals to ensure you're covered legally and financially.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+);
+
+export const BlogPostMarketOutlook2025 = () => (
+  <div>
+    {/* Header */}
+    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center">
+          <h1 className="text-4xl font-serif text-white mb-4">
+            Koh Samui Luxury Real Estate Market Outlook 2025
+          </h1>
+          <p className="text-gray-300">JULY 8, 2025</p>
+        </div>
+      </div>
+    </div>
+    {/* Blog Content */}
+    <article className="py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="prose prose-lg max-w-none">
+          <p>The luxury real estate market in Koh Samui is poised for continued growth in 2025, driven by strong tourism, infrastructure development, and evolving buyer preferences. Here's a comprehensive outlook:</p>
+          <h2>Market Trends & Investment Outlook</h2>
+          <ul>
+            <li><strong>Price Growth:</strong> Analysts forecast annual property price increases of 5–7%, fueled by rising demand, limited inventory, and infrastructure enhancements.</li>
+            <li><strong>Rental Yields:</strong> Luxury villas offer attractive investment returns, with gross rental yields between 7% and 10%. Factoring in both rental income and capital appreciation, returns on investment (ROI) can reach 25% to 30% in premium segments.</li>
+            <li><strong>Tourism Recovery:</strong> Post-pandemic, Koh Samui has seen a resurgence in tourism, bolstered by relaxed visa policies and increased international flights. This steady influx ensures consistent demand for both short- and long-term rentals, enhancing the profitability of property investments.</li>
+          </ul>
+          <h2>Property Types & Pricing</h2>
+          <ul>
+            <li><strong>Villas:</strong> The market is predominantly villa-focused, catering to buyers seeking space, privacy, and scenic views. Entry-level villas start around THB 5 million, while high-end sea-view villas range from THB 15 million upwards. Absolute beachfront properties are rare and command premiums starting at approximately THB 60 million.</li>
+            <li><strong>Condominiums:</strong> The supply of freehold condominiums is limited, with only a few notable mid-market projects like Anava and Wing Samui. There are currently no luxury-grade freehold condominiums on the market, making villas the primary option for high-end buyers.</li>
+          </ul>
+          <h2>Infrastructure & Development</h2>
+          <ul>
+            <li><strong>Connectivity Enhancements:</strong> Koh Samui's accessibility has improved with regular flights to major cities and plans for further expansion of Samui International Airport. Additionally, a new international cruise terminal is scheduled for completion by 2032, aiming to attract major cruise ships and boost tourism.</li>
+            <li><strong>Comparative Advantage:</strong> While Phuket offers a more mature property market with extensive infrastructure, Koh Samui provides better value for money, particularly in the luxury villa segment. The island's natural beauty and exclusivity continue to attract well-capitalized buyers.</li>
+          </ul>
+          <h2>Neighborhood Highlights</h2>
+          <ul>
+            <li><strong>Chaweng:</strong> As Koh Samui's most developed area, Chaweng offers vibrant nightlife, high-end shopping, and immediate access to the airport. Villas and condos here command high rental returns, making it ideal for investors seeking high ROI.</li>
+            <li><strong>Bo Phut & Plai Laem:</strong> These areas are popular among lifestyle buyers and expats, offering a blend of tranquility and accessibility.</li>
+          </ul>
+          <h2>Summary</h2>
+          <p>Koh Samui's luxury real estate market in 2025 presents a compelling opportunity for investors and lifestyle buyers. The combination of strong tourism, attractive rental yields, and ongoing infrastructure development positions the island as a prime destination for high-end property investment. However, prospective buyers should navigate the evolving legal landscape carefully and consider professional advice to ensure compliance and secure investments.</p>
+          <p>If you're interested in exploring specific properties or require assistance with legal and investment guidance, feel free to ask.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+);
+
+export const BlogPostRentalLocations = () => (
+  <div>
+    {/* Header */}
+    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center">
+          <h1 className="text-4xl font-serif text-white mb-4">
+            Most Popular Locations for Rental Investment in Koh Samui
+          </h1>
+          <p className="text-gray-300">JULY 15, 2025</p>
+        </div>
+      </div>
+    </div>
+    {/* Blog Content */}
+    <article className="py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="prose prose-lg max-w-none">
+          <p>Koh Samui offers a variety of prime locations for rental property investment, each catering to different investment strategies and target demographics. Here's an overview of the most popular areas:</p>
+          <h2>1. Chaweng – Tourism Epicenter with High Rental Yields</h2>
+          <p>Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.</p>
+          <h2>2. Bophut (Fisherman's Village) – Blend of Tradition and Modern Luxury</h2>
+          <p>Bophut offers a charming mix of traditional Thai culture and modern amenities. The area is favored by expatriates and long-term visitors, making it ideal for luxury villa investments. Rental yields range from 6–8%, and the area's appeal continues to grow.</p>
+          <h2>3. Lamai – Balanced Investment with Growth Potential</h2>
+          <p>Lamai provides a more relaxed atmosphere compared to Chaweng but still boasts beautiful beaches and a variety of amenities. It's popular among families and retirees, offering a mix of affordable homes and luxury villas. Rental yields here are typically between 7–9%.</p>
+          <h2>4. Maenam – Tranquil Setting with Emerging Opportunities</h2>
+          <p>Maenam is known for its peaceful environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.</p>
+          <h2>5. Choeng Mon – Exclusive Area for High-End Investments</h2>
+          <p>Located on the northeastern tip of the island, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.</p>
+          <h2>6. Bangrak (Big Buddha Beach) – Convenient Location with Diverse Appeal</h2>
+          <p>Bangrak is emerging as a sought-after neighborhood due to its proximity to the airport and local attractions like the Big Buddha Temple. The area offers a range of properties, from beachfront villas to hillside homes with panoramic views, catering to both tourists and long-term residents.</p>
+          <h2>7. Plai Laem – Luxury Living with Scenic Views</h2>
+          <p>Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.</p>
+          <h2>8. Taling Ngam & Lipa Noi – Emerging Markets with Natural Beauty</h2>
+          <p>These southwestern regions offer serene beaches and are less developed, presenting opportunities for investors looking for long-term appreciation. Taling Ngam, for instance, has seen a 40% price appreciation since 2020, indicating strong growth potential.</p>
+          <h2>Summary</h2>
+          <p>When considering rental investment in Koh Samui, it's essential to align your choice of location with your investment goals, whether they focus on high rental yields, long-term capital appreciation, or catering to specific tenant demographics.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+);
+
 export default BlogPost; 

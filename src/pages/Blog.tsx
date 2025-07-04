@@ -56,6 +56,33 @@ const blogPosts = [
     date: 'March 15, 2025',
     author: 'Robert Chang',
     category: 'Legal & Finance'
+  },
+  {
+    id: '7',
+    title: 'Navigating Property Taxes in Koh Samui: A Complete Guide',
+    excerpt: 'A comprehensive guide to property taxes, ownership structures, and tax tips for buyers and investors in Koh Samui.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+    date: 'July 1, 2025',
+    author: 'Editorial Team',
+    category: 'Legal & Finance'
+  },
+  {
+    id: '8',
+    title: 'Koh Samui Luxury Real Estate Market Outlook 2025',
+    excerpt: 'A comprehensive outlook on the trends, investment returns, and infrastructure shaping Koh Samui\'s luxury property market in 2025.',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+    date: 'July 8, 2025',
+    author: 'Editorial Team',
+    category: 'Market Trends'
+  },
+  {
+    id: '9',
+    title: 'Most Popular Locations for Rental Investment in Koh Samui',
+    excerpt: 'Explore the top areas in Koh Samui for rental property investment, from vibrant Chaweng to tranquil Maenam and exclusive Choeng Mon.',
+    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+    date: 'July 15, 2025',
+    author: 'Editorial Team',
+    category: 'Investment Guide'
   }
 ];
 

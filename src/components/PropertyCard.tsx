@@ -26,12 +26,17 @@ const PropertyCard: React.FC<PropertyCardProps> = React.memo(({ property }) => {
               Sold
             </span>
           )}
-          {property.newProperty && !property.sold && (
+          {property.priceOnApplication && !property.sold && (
+            <span className="bg-orange-500 text-white px-3 py-1 text-xs uppercase font-semibold rounded">
+              Price on Application
+            </span>
+          )}
+          {property.newProperty && !property.sold && !property.priceOnApplication && (
             <span className="bg-custom-green text-white px-3 py-1 text-xs uppercase font-semibold rounded">
               New
             </span>
           )}
-          {property.featured && !property.newProperty && !property.sold && (
+          {property.featured && !property.newProperty && !property.sold && !property.priceOnApplication && (
             <span className="bg-blue-600 text-white px-3 py-1 text-xs uppercase font-semibold rounded">
               Featured
             </span>

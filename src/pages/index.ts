@@ -14,3 +14,4 @@ export { default as AdminLogin } from './admin/AdminLogin';
 export { default as AdminDashboard } from './admin/AdminDashboard';
 export { default as PropertyList } from './admin/PropertyList';
 export { default as PropertyForm } from './admin/PropertyForm';
+export { default as BulkUpload } from './admin/BulkUpload';
