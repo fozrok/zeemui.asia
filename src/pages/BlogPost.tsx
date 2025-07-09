@@ -335,20 +335,20 @@ export const BlogPostMarketOutlook2025 = () => (
   <div>
     {/* Hero Section */}
     <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
-      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
     }}>
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            The Luxury Real Estate Market in Koh Samui: 2025 Outlook
+            Koh Samui Luxury Real Estate Market Outlook 2025
           </h1>
           <p className="text-xl text-gray-300 mb-8">
-            Comprehensive analysis of market trends, investment opportunities, and future projections for luxury properties in Koh Samui
+            The luxury real estate market in Koh Samui is poised for continued growth in 2025, driven by strong tourism, infrastructure development, and evolving buyer preferences.
           </p>
           <div className="flex items-center justify-center text-gray-400">
-            <span>JANUARY 1, 2025</span>
+            <span>JULY 8, 2025</span>
             <span className="mx-2">•</span>
-            <span>18 MIN READ</span>
+            <span>12 MIN READ</span>
           </div>
         </div>
       </div>
@@ -357,191 +357,32 @@ export const BlogPostMarketOutlook2025 = () => (
     {/* Content Section */}
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Koh Samui's luxury real estate market continues to evolve, driven by increasing international demand, infrastructure improvements, and the island's enduring appeal as a premium destination. This comprehensive analysis explores the key trends shaping the market in 2025 and beyond.
-            </p>
-          </div>
-
-          {/* Market Overview */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">1. Market Overview: 2025 Trends</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              The luxury real estate market in Koh Samui has shown remarkable resilience and growth, with several key factors driving demand and price appreciation across premium properties.
-            </p>
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Market Indicators:</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• <strong>Price Growth:</strong> 15-25% annual appreciation in luxury segments</li>
-                <li>• <strong>Demand Increase:</strong> 40% rise in international buyer inquiries</li>
-                <li>• <strong>Inventory Levels:</strong> Limited supply driving premium pricing</li>
-                <li>• <strong>Rental Yields:</strong> 8-12% for luxury properties</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Market Drivers */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-8">2. Key Market Drivers</h2>
-            
-            <div className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. International Tourism Recovery</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Visitor Numbers:</strong> 2.5+ million tourists annually</li>
-                  <li>• <strong>High-End Tourism:</strong> Growing luxury travel segment</li>
-                  <li>• <strong>Direct Flights:</strong> Increased connectivity from major cities</li>
-                  <li>• <strong>Extended Stays:</strong> Rise in long-term vacation rentals</li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Infrastructure Development</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Road Improvements:</strong> Ring road completion and upgrades</li>
-                  <li>• <strong>Utilities:</strong> Enhanced power and water infrastructure</li>
-                  <li>• <strong>Healthcare:</strong> New international medical facilities</li>
-                  <li>• <strong>Technology:</strong> Improved internet connectivity</li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Digital Nomad Movement</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Remote Work:</strong> Growing demand for work-from-paradise setups</li>
-                  <li>• <strong>Co-working Spaces:</strong> New facilities opening across the island</li>
-                  <li>• <strong>Long-term Rentals:</strong> 6-12 month lease preferences</li>
-                  <li>• <strong>Community Building:</strong> Expat networking and events</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Property Segments */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Luxury Property Segments</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Ultra-Luxury Villas</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Price Range:</strong> THB 50-200 million</li>
-                  <li>• <strong>Locations:</strong> Bophut, Choeng Mon, Plai Laem</li>
-                  <li>• <strong>Features:</strong> Private pools, ocean views, smart home tech</li>
-                  <li>• <strong>ROI:</strong> 10-15% annual returns</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Premium Condominiums</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Price Range:</strong> THB 15-50 million</li>
-                  <li>• <strong>Locations:</strong> Chaweng, Bophut, Lamai</li>
-                  <li>• <strong>Features:</strong> Resort amenities, concierge services</li>
-                  <li>• <strong>ROI:</strong> 8-12% annual returns</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Investment Opportunities */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Investment Opportunities</h2>
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
-              <p className="text-amber-800">
-                <strong>Market Insight:</strong> The current market presents excellent opportunities for both capital appreciation and rental income, with limited supply driving premium pricing.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Development Projects</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>New Luxury Resorts:</strong> Several high-end developments planned</li>
-                  <li>• <strong>Marina Projects:</strong> Bangrak marina expansion</li>
-                  <li>• <strong>Wellness Communities:</strong> Health-focused residential developments</li>
-                  <li>• <strong>Mixed-Use Projects:</strong> Retail, residential, and hospitality combinations</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Emerging Areas</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Lipanoi:</strong> Upcoming residential development</li>
-                  <li>• <strong>Plai Laem:</strong> Luxury villa communities</li>
-                  <li>• <strong>Bangrak:</strong> Marina and waterfront properties</li>
-                  <li>• <strong>Maenam:</strong> Quiet luxury residential area</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Market Challenges */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Market Challenges and Considerations</h2>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Current Challenges:</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li>• <strong>Limited Supply:</strong> High demand outpacing new construction</li>
-                <li>• <strong>Infrastructure Constraints:</strong> Some areas still developing</li>
-                <li>• <strong>Regulatory Changes:</strong> Evolving property ownership laws</li>
-                <li>• <strong>Environmental Concerns:</strong> Sustainable development requirements</li>
-                <li>• <strong>Seasonal Variations:</strong> Tourism-dependent market fluctuations</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Future Projections */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">6. Future Projections (2025-2030)</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Short-term Outlook (2025-2027)</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Price Growth:</strong> 20-30% cumulative appreciation expected</li>
-                  <li>• <strong>New Developments:</strong> Several luxury projects to launch</li>
-                  <li>• <strong>Infrastructure:</strong> Continued improvements in utilities and roads</li>
-                  <li>• <strong>Tourism:</strong> Steady growth in high-end visitor numbers</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Long-term Outlook (2028-2030)</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Market Maturity:</strong> Established luxury real estate market</li>
-                  <li>• <strong>Sustainability Focus:</strong> Eco-friendly developments standard</li>
-                  <li>• <strong>Technology Integration:</strong> Smart home features commonplace</li>
-                  <li>• <strong>International Recognition:</strong> Global luxury destination status</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Conclusion */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Koh Samui's luxury real estate market is positioned for continued growth and success in 2025 and beyond. The combination of strong fundamentals, limited supply, and increasing international demand creates an attractive investment environment.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Investors and buyers should focus on properties in established luxury areas while keeping an eye on emerging opportunities. Professional guidance and thorough due diligence remain essential for successful market participation.
-            </p>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-            <div className="flex items-start">
-              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
-                <Shield className="h-8 w-8 text-custom-green" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready to Invest in Koh Samui?</h3>
-                <p className="text-gray-600 mb-4">
-                  Our market experts can help you navigate the luxury real estate market and find the perfect investment opportunity in Koh Samui.
-                </p>
-                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
-                  Contact Our Market Experts
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto prose prose-lg">
+          <p>The luxury real estate market in Koh Samui is poised for continued growth in 2025, driven by strong tourism, infrastructure development, and evolving buyer preferences. Here's a comprehensive outlook:</p>
+          <h2>Market Trends & Investment Outlook</h2>
+          <ul>
+            <li><strong>Price Growth:</strong> Analysts forecast annual property price increases of 5–7%, fueled by rising demand, limited inventory, and infrastructure enhancements.</li>
+            <li><strong>Rental Yields:</strong> Luxury villas offer attractive investment returns, with gross rental yields between 7% and 10%. Factoring in both rental income and capital appreciation, returns on investment (ROI) can reach 25% to 30% in premium segments.</li>
+            <li><strong>Tourism Recovery:</strong> Post-pandemic, Koh Samui has seen a resurgence in tourism, bolstered by relaxed visa policies and increased international flights. This steady influx ensures consistent demand for both short- and long-term rentals, enhancing the profitability of property investments.</li>
+          </ul>
+          <h2>Property Types & Pricing</h2>
+          <ul>
+            <li><strong>Villas:</strong> The market is predominantly villa-focused, catering to buyers seeking space, privacy, and scenic views. Entry-level villas start around THB 5 million, while high-end sea-view villas range from THB 15 million upwards. Absolute beachfront properties are rare and command premiums starting at approximately THB 60 million.</li>
+            <li><strong>Condominiums:</strong> The supply of freehold condominiums is limited, with only a few notable mid-market projects like Anava and Wing Samui. There are currently no luxury-grade freehold condominiums on the market, making villas the primary option for high-end buyers.</li>
+          </ul>
+          <h2>Infrastructure & Development</h2>
+          <ul>
+            <li><strong>Connectivity Enhancements:</strong> Koh Samui's accessibility has improved with regular flights to major cities and plans for further expansion of Samui International Airport. Additionally, a new international cruise terminal is scheduled for completion by 2032, aiming to attract major cruise ships and boost tourism.</li>
+            <li><strong>Comparative Advantage:</strong> While Phuket offers a more mature property market with extensive infrastructure, Koh Samui provides better value for money, particularly in the luxury villa segment. The island's natural beauty and exclusivity continue to attract well-capitalized buyers.</li>
+          </ul>
+          <h2>Neighborhood Highlights</h2>
+          <ul>
+            <li><strong>Chaweng:</strong> As Koh Samui's most developed area, Chaweng offers vibrant nightlife, high-end shopping, and immediate access to the airport. Villas and condos here command high rental returns, making it ideal for investors seeking high ROI.</li>
+            <li><strong>Bo Phut & Plai Laem:</strong> These areas are popular among lifestyle buyers and expats, offering a blend of tranquility and accessibility.</li>
+          </ul>
+          <h2>Summary</h2>
+          <p>Koh Samui's luxury real estate market in 2025 presents a compelling opportunity for investors and lifestyle buyers. The combination of strong tourism, attractive rental yields, and ongoing infrastructure development positions the island as a prime destination for high-end property investment. However, prospective buyers should navigate the evolving legal landscape carefully and consider professional advice to ensure compliance and secure investments.</p>
+          <p>If you're interested in exploring specific properties or require assistance with legal and investment guidance, feel free to ask.</p>
         </div>
       </div>
     </div>
@@ -557,10 +398,10 @@ export const BlogPostRentalLocations = () => (
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            Best Rental Locations in Koh Samui: A Complete Guide
+            Most Popular Locations for Rental Investment in Koh Samui
           </h1>
           <p className="text-xl text-gray-300 mb-8">
-            Discover the top areas for rental properties in Koh Samui, from tourist hotspots to quiet residential neighborhoods
+            Koh Samui offers a variety of prime locations for rental property investment, each catering to different investment strategies and target demographics.
           </p>
           <div className="flex items-center justify-center text-gray-400">
             <span>JULY 1, 2025</span>
@@ -574,221 +415,43 @@ export const BlogPostRentalLocations = () => (
     {/* Content Section */}
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Koh Samui offers diverse rental opportunities across its various districts, each with unique characteristics and target markets. Understanding these locations is crucial for maximizing rental income and finding the right property for your investment goals.
-            </p>
-          </div>
-
-          {/* Top Rental Areas */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-8">1. Top Rental Areas in Koh Samui</h2>
-            
-            <div className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Chaweng Beach</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Highest rental rates</li>
-                      <li>• Year-round demand</li>
-                      <li>• Walking distance to amenities</li>
-                      <li>• Strong tourist market</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Higher property prices</li>
-                      <li>• Noisy during peak season</li>
-                      <li>• Limited parking</li>
-                      <li>• High competition</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Rental Range:</strong> THB 25,000-80,000/month for 1-2 bedroom condos
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Bophut (Fisherman's Village)</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• High-end market</li>
-                      <li>• Friday night market</li>
-                      <li>• Good restaurants</li>
-                      <li>• Quieter than Chaweng</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Limited beach access</li>
-                      <li>• Higher property costs</li>
-                      <li>• Seasonal demand</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Rental Range:</strong> THB 30,000-100,000/month for luxury villas and condos
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Lamai Beach</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Family-friendly</li>
-                      <li>• Good beach access</li>
-                      <li>• More affordable</li>
-                      <li>• Growing expat community</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Fewer amenities</li>
-                      <li>• Lower rental rates</li>
-                      <li>• Limited nightlife</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Rental Range:</strong> THB 15,000-45,000/month for 1-3 bedroom properties
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">d. Maenam Beach</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Quiet and peaceful</li>
-                      <li>• Long-term expat rentals</li>
-                      <li>• Good value for money</li>
-                      <li>• Beautiful beach</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Limited shopping</li>
-                      <li>• Fewer restaurants</li>
-                      <li>• Lower tourist demand</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Rental Range:</strong> THB 12,000-35,000/month for houses and condos
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Rental Market Analysis */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">2. Rental Market Analysis</h2>
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Market Trends:</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• <strong>Peak Season:</strong> December to April (higher rates)</li>
-                <li>• <strong>Low Season:</strong> May to November (discounted rates)</li>
-                <li>• <strong>Long-term Rentals:</strong> 10-30% discount vs short-term</li>
-                <li>• <strong>Expat Market:</strong> Growing demand for 6-12 month leases</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Property Types by Location */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Property Types by Location</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Tourist Areas</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Chaweng:</strong> Condos, hotel rooms</li>
-                  <li>• <strong>Bophut:</strong> Luxury villas, boutique hotels</li>
-                  <li>• <strong>Lamai:</strong> Beachfront villas, family resorts</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Residential Areas</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Maenam:</strong> Houses, long-term rentals</li>
-                  <li>• <strong>Choeng Mon:</strong> Luxury villas, private estates</li>
-                  <li>• <strong>Bangrak:</strong> Marina apartments, townhouses</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Investment Tips */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Investment Tips for Rental Properties</h2>
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
-              <p className="text-amber-800">
-                <strong>Pro Tip:</strong> Consider the balance between rental income and property appreciation when choosing your investment location.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Location Selection</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Proximity to Amenities:</strong> Walking distance to shops, restaurants, and transport</li>
-                  <li>• <strong>Beach Access:</strong> Properties near the beach command premium rents</li>
-                  <li>• <strong>Infrastructure:</strong> Good roads, utilities, and internet connectivity</li>
-                  <li>• <strong>Future Development:</strong> Areas with planned infrastructure improvements</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Property Management</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Professional Services:</strong> Use experienced property managers</li>
-                  <li>• <strong>Maintenance:</strong> Regular upkeep to maintain rental value</li>
-                  <li>• <strong>Marketing:</strong> Professional photos and online listings</li>
-                  <li>• <strong>Guest Services:</strong> Airport transfers, cleaning, concierge</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Conclusion */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Choosing the right rental location in Koh Samui depends on your investment goals, budget, and target market. Each area offers unique opportunities and challenges.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Successful rental property investment in Koh Samui requires thorough market research, understanding of seasonal trends, and professional property management. With the right approach, rental properties can provide excellent returns and long-term appreciation.
-            </p>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-            <div className="flex items-start">
-              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
-                <Shield className="h-8 w-8 text-custom-green" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Need Rental Property Advice?</h3>
-                <p className="text-gray-600 mb-4">
-                  Our rental specialists can help you find the perfect investment property and maximize your rental income in Koh Samui.
-                </p>
-                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
-                  Contact Our Rental Team
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto prose prose-lg">
+          <p>Koh Samui offers a variety of prime locations for rental property investment, each catering to different investment strategies and target demographics. Here's an overview of the most popular areas:</p>
+          <ol>
+            <li>
+              <strong>Chaweng – Tourism Epicenter with High Rental Yields</strong><br/>
+              Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.
+            </li>
+            <li>
+              <strong>Bophut (Fisherman's Village) – Blend of Tradition and Modern Luxury</strong><br/>
+              Bophut offers a charming mix of traditional Thai culture and modern amenities. The area is favored by expatriates and long-term visitors, making it ideal for luxury villa investments. Rental yields range from 6–8%, and the area's appeal continues to grow.
+            </li>
+            <li>
+              <strong>Lamai – Balanced Investment with Growth Potential</strong><br/>
+              Lamai provides a more relaxed atmosphere compared to Chaweng but still boasts beautiful beaches and a variety of amenities. It's popular among families and retirees, offering a mix of affordable homes and luxury villas. Rental yields here are typically between 7–9%.
+            </li>
+            <li>
+              <strong>Maenam – Tranquil Setting with Emerging Opportunities</strong><br/>
+              Maenam is known for its peaceful environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.
+            </li>
+            <li>
+              <strong>Choeng Mon – Exclusive Area for High-End Investments</strong><br/>
+              Located on the northeastern tip of the island, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.
+            </li>
+            <li>
+              <strong>Bangrak (Big Buddha Beach) – Convenient Location with Diverse Appeal</strong><br/>
+              Bangrak is emerging as a sought-after neighborhood due to its proximity to the airport and local attractions like the Big Buddha Temple. The area offers a range of properties, from beachfront villas to hillside homes with panoramic views, catering to both tourists and long-term residents.
+            </li>
+            <li>
+              <strong>Plai Laem – Luxury Living with Scenic Views</strong><br/>
+              Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.
+            </li>
+            <li>
+              <strong>Taling Ngam & Lipa Noi – Emerging Markets with Natural Beauty</strong><br/>
+              These southwestern regions offer serene beaches and are less developed, presenting opportunities for investors looking for long-term appreciation. Taling Ngam, for instance, has seen a 40% price appreciation since 2020, indicating strong growth potential.
+            </li>
+          </ol>
+          <p>When considering rental investment in Koh Samui, it's essential to align your choice of location with your investment goals, whether they focus on high rental yields, long-term capital appreciation, or catering to specific tenant demographics.</p>
         </div>
       </div>
     </div>
