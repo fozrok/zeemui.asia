@@ -14,7 +14,18 @@
   "features": [
     "Sea View "
   ],
-  "images": [],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_1_k4orx8.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_2_hjk29d.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_3_pclvqc.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_4_nkkwyo.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_5_yvqxfd.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_6_nmdzmw.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_7_ggxzk8.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_8_b3rz8k.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_9_huva1y.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044036/ZM82_10_b1ttu8.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": true
