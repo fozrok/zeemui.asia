@@ -125,7 +125,7 @@ const Properties = () => {
               onChange={handleFilterChange}
               className="px-4 py-3 border border-gray-300 rounded text-gray-700 w-full focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             >
-              <option value="">All Countries</option>
+              <option value="">All Locations</option>
               <option value="Thailand">Thailand</option>
             </select>
             
@@ -135,7 +135,7 @@ const Properties = () => {
               onChange={handleFilterChange}
               className="px-4 py-3 border border-gray-300 rounded text-gray-700 w-full focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             >
-              <option value="">All Locations</option>
+              <option value="">All Areas</option>
               {cities.map(city => (
                 <option key={city} value={city}>{city}</option>
               ))}

@@ -49,7 +49,7 @@ const HeroSection = () => {
               onChange={handleFilterChange}
               className="px-4 py-3 rounded text-gray-700 w-full focus:outline-none"
             >
-              <option value="">COUNTRY</option>
+              <option value="">LOCATION</option>
               {countries.map(country => (
                 <option key={country} value={country}>{country}</option>
               ))}
@@ -61,7 +61,7 @@ const HeroSection = () => {
               onChange={handleFilterChange}
               className="px-4 py-3 rounded text-gray-700 w-full focus:outline-none"
             >
-              <option value="">LOCATION</option>
+              <option value="">AREA</option>
               {cities.map(city => (
                 <option key={city} value={city}>{city}</option>
               ))}
