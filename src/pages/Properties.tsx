@@ -5,6 +5,7 @@ import { cities, propertyTypes, priceRanges } from '../data/properties';
 import { PropertyFilter } from '../types';
 import { Search } from 'lucide-react';
 import { useProperties } from '../hooks/useProperties';
+import ContactForm from '../components/ContactForm';
 
 const Properties = () => {
   const location = useLocation();
@@ -214,6 +215,12 @@ const Properties = () => {
               >
                 Reset Filters
               </button>
+              <div className="max-w-xl mx-auto mt-12">
+                <h4 className="text-xl font-semibold mb-4 text-gray-800 text-center">
+                  Didn’t find what you’re looking for? Let us know your requirements and we’ll help you find the perfect property!
+                </h4>
+                <ContactForm />
+              </div>
             </div>
           )}
         </div>
