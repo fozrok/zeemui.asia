@@ -14,7 +14,18 @@
   "features": [
     "Villa"
   ],
-  "images": [],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_1_b09jjq.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044132/ZM85_2_sckeqf.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_3_lkiyp7.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_4_f7ngy7.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_5_bowsko.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_6_ueyg5u.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_7_iff1jt.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_8_xo7mj2.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_9_hrcxyb.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752044133/ZM85_10_vfwada.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": false
