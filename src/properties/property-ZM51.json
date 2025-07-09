@@ -14,7 +14,27 @@
   "features": [
     "Villa"
   ],
-  "images": [],
+  "images": [
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_1_hxznxe.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_2_nvaelc.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_3_m4wjpb.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_4_uyyox9.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_5_jbmozw.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_6_wlen70.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_7_t8zlw6.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_8_wqe0aa.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_9_viyilw.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_10_k6spgc.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_11_ibscoe.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_12_eplgs8.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_13_rk626q.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_14_kzhhxr.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_15_vorqve.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_16_y4p4cx.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_17_djze3f.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_18_lkmoqd.jpg",
+    "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_19_yxyxod.jpg"
+  ],
   "featured": false,
   "newProperty": false,
   "active": true
