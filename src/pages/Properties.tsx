@@ -54,9 +54,16 @@ const Properties = () => {
     }
     
     if (currentFilters.type) {
-      result = result.filter(property => 
-        property.type.toLowerCase() === currentFilters.type.toLowerCase()
-      );
+      if (currentFilters.type.toLowerCase() === 'sea view') {
+        result = result.filter(property =>
+          property.type.toLowerCase() === 'sea view' ||
+          property.features.some(f => f.toLowerCase().includes('sea view'))
+        );
+      } else {
+        result = result.filter(property =>
+          property.type.toLowerCase() === currentFilters.type.toLowerCase()
+        );
+      }
     }
     
     if (currentFilters.price) {
