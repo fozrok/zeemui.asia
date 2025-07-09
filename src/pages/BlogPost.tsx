@@ -358,30 +358,30 @@ export const BlogPostMarketOutlook2025 = () => (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto prose prose-lg">
-          <p>The luxury real estate market in Koh Samui is poised for continued growth in 2025, driven by strong tourism, infrastructure development, and evolving buyer preferences. Here's a comprehensive outlook:</p>
-          <h2>Market Trends & Investment Outlook</h2>
-          <ul>
+          <p className="mb-8">The luxury real estate market in Koh Samui is poised for continued growth in 2025, driven by strong tourism, infrastructure development, and evolving buyer preferences. Here's a comprehensive outlook:</p>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Market Trends & Investment Outlook</h2>
+          <ul className="list-disc pl-6 mb-8">
             <li><strong>Price Growth:</strong> Analysts forecast annual property price increases of 5–7%, fueled by rising demand, limited inventory, and infrastructure enhancements.</li>
             <li><strong>Rental Yields:</strong> Luxury villas offer attractive investment returns, with gross rental yields between 7% and 10%. Factoring in both rental income and capital appreciation, returns on investment (ROI) can reach 25% to 30% in premium segments.</li>
             <li><strong>Tourism Recovery:</strong> Post-pandemic, Koh Samui has seen a resurgence in tourism, bolstered by relaxed visa policies and increased international flights. This steady influx ensures consistent demand for both short- and long-term rentals, enhancing the profitability of property investments.</li>
           </ul>
-          <h2>Property Types & Pricing</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Property Types & Pricing</h2>
+          <ul className="list-disc pl-6 mb-8">
             <li><strong>Villas:</strong> The market is predominantly villa-focused, catering to buyers seeking space, privacy, and scenic views. Entry-level villas start around THB 5 million, while high-end sea-view villas range from THB 15 million upwards. Absolute beachfront properties are rare and command premiums starting at approximately THB 60 million.</li>
             <li><strong>Condominiums:</strong> The supply of freehold condominiums is limited, with only a few notable mid-market projects like Anava and Wing Samui. There are currently no luxury-grade freehold condominiums on the market, making villas the primary option for high-end buyers.</li>
           </ul>
-          <h2>Infrastructure & Development</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Infrastructure & Development</h2>
+          <ul className="list-disc pl-6 mb-8">
             <li><strong>Connectivity Enhancements:</strong> Koh Samui's accessibility has improved with regular flights to major cities and plans for further expansion of Samui International Airport. Additionally, a new international cruise terminal is scheduled for completion by 2032, aiming to attract major cruise ships and boost tourism.</li>
             <li><strong>Comparative Advantage:</strong> While Phuket offers a more mature property market with extensive infrastructure, Koh Samui provides better value for money, particularly in the luxury villa segment. The island's natural beauty and exclusivity continue to attract well-capitalized buyers.</li>
           </ul>
-          <h2>Neighborhood Highlights</h2>
-          <ul>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Neighborhood Highlights</h2>
+          <ul className="list-disc pl-6 mb-8">
             <li><strong>Chaweng:</strong> As Koh Samui's most developed area, Chaweng offers vibrant nightlife, high-end shopping, and immediate access to the airport. Villas and condos here command high rental returns, making it ideal for investors seeking high ROI.</li>
             <li><strong>Bo Phut & Plai Laem:</strong> These areas are popular among lifestyle buyers and expats, offering a blend of tranquility and accessibility.</li>
           </ul>
-          <h2>Summary</h2>
-          <p>Koh Samui's luxury real estate market in 2025 presents a compelling opportunity for investors and lifestyle buyers. The combination of strong tourism, attractive rental yields, and ongoing infrastructure development positions the island as a prime destination for high-end property investment. However, prospective buyers should navigate the evolving legal landscape carefully and consider professional advice to ensure compliance and secure investments.</p>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Summary</h2>
+          <p className="mb-4">Koh Samui's luxury real estate market in 2025 presents a compelling opportunity for investors and lifestyle buyers. The combination of strong tourism, attractive rental yields, and ongoing infrastructure development positions the island as a prime destination for high-end property investment. However, prospective buyers should navigate the evolving legal landscape carefully and consider professional advice to ensure compliance and secure investments.</p>
           <p>If you're interested in exploring specific properties or require assistance with legal and investment guidance, feel free to ask.</p>
         </div>
       </div>
@@ -416,42 +416,42 @@ export const BlogPostRentalLocations = () => (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto prose prose-lg">
-          <p>Koh Samui offers a variety of prime locations for rental property investment, each catering to different investment strategies and target demographics. Here's an overview of the most popular areas:</p>
-          <ol>
+          <p className="mb-8">Koh Samui offers a variety of prime locations for rental property investment, each catering to different investment strategies and target demographics. Here's an overview of the most popular areas:</p>
+          <ol className="list-decimal pl-6 space-y-6 mb-8">
             <li>
-              <strong>Chaweng – Tourism Epicenter with High Rental Yields</strong><br/>
-              Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.
+              <span className="block font-bold text-lg mb-1">Chaweng – Tourism Epicenter with High Rental Yields</span>
+              <span>Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between <strong>8–10%</strong>. While property prices here are higher, the consistent demand ensures strong returns.</span>
             </li>
             <li>
-              <strong>Bophut (Fisherman's Village) – Blend of Tradition and Modern Luxury</strong><br/>
-              Bophut offers a charming mix of traditional Thai culture and modern amenities. The area is favored by expatriates and long-term visitors, making it ideal for luxury villa investments. Rental yields range from 6–8%, and the area's appeal continues to grow.
+              <span className="block font-bold text-lg mb-1">Bophut (Fisherman's Village) – Blend of Tradition and Modern Luxury</span>
+              <span>Bophut offers a charming mix of traditional Thai culture and modern amenities. The area is favored by expatriates and long-term visitors, making it ideal for luxury villa investments. Rental yields range from <strong>6–8%</strong>, and the area's appeal continues to grow.</span>
             </li>
             <li>
-              <strong>Lamai – Balanced Investment with Growth Potential</strong><br/>
-              Lamai provides a more relaxed atmosphere compared to Chaweng but still boasts beautiful beaches and a variety of amenities. It's popular among families and retirees, offering a mix of affordable homes and luxury villas. Rental yields here are typically between 7–9%.
+              <span className="block font-bold text-lg mb-1">Lamai – Balanced Investment with Growth Potential</span>
+              <span>Lamai provides a more relaxed atmosphere compared to Chaweng but still boasts beautiful beaches and a variety of amenities. It's popular among families and retirees, offering a mix of affordable homes and luxury villas. Rental yields here are typically between <strong>7–9%</strong>.</span>
             </li>
             <li>
-              <strong>Maenam – Tranquil Setting with Emerging Opportunities</strong><br/>
-              Maenam is known for its peaceful environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.
+              <span className="block font-bold text-lg mb-1">Maenam – Tranquil Setting with Emerging Opportunities</span>
+              <span>Maenam is known for its peaceful environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately <strong>25%</strong> between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.</span>
             </li>
             <li>
-              <strong>Choeng Mon – Exclusive Area for High-End Investments</strong><br/>
-              Located on the northeastern tip of the island, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.
+              <span className="block font-bold text-lg mb-1">Choeng Mon – Exclusive Area for High-End Investments</span>
+              <span>Located on the northeastern tip of the island, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.</span>
             </li>
             <li>
-              <strong>Bangrak (Big Buddha Beach) – Convenient Location with Diverse Appeal</strong><br/>
-              Bangrak is emerging as a sought-after neighborhood due to its proximity to the airport and local attractions like the Big Buddha Temple. The area offers a range of properties, from beachfront villas to hillside homes with panoramic views, catering to both tourists and long-term residents.
+              <span className="block font-bold text-lg mb-1">Bangrak (Big Buddha Beach) – Convenient Location with Diverse Appeal</span>
+              <span>Bangrak is emerging as a sought-after neighborhood due to its proximity to the airport and local attractions like the Big Buddha Temple. The area offers a range of properties, from beachfront villas to hillside homes with panoramic views, catering to both tourists and long-term residents.</span>
             </li>
             <li>
-              <strong>Plai Laem – Luxury Living with Scenic Views</strong><br/>
-              Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.
+              <span className="block font-bold text-lg mb-1">Plai Laem – Luxury Living with Scenic Views</span>
+              <span>Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.</span>
             </li>
             <li>
-              <strong>Taling Ngam & Lipa Noi – Emerging Markets with Natural Beauty</strong><br/>
-              These southwestern regions offer serene beaches and are less developed, presenting opportunities for investors looking for long-term appreciation. Taling Ngam, for instance, has seen a 40% price appreciation since 2020, indicating strong growth potential.
+              <span className="block font-bold text-lg mb-1">Taling Ngam & Lipa Noi – Emerging Markets with Natural Beauty</span>
+              <span>These southwestern regions offer serene beaches and are less developed, presenting opportunities for investors looking for long-term appreciation. Taling Ngam, for instance, has seen a <strong>40%</strong> price appreciation since 2020, indicating strong growth potential.</span>
             </li>
           </ol>
-          <p>When considering rental investment in Koh Samui, it's essential to align your choice of location with your investment goals, whether they focus on high rental yields, long-term capital appreciation, or catering to specific tenant demographics.</p>
+          <p className="mb-4">When considering rental investment in Koh Samui, it's essential to align your choice of location with your investment goals, whether they focus on high rental yields, long-term capital appreciation, or catering to specific tenant demographics.</p>
         </div>
       </div>
     </div>
@@ -485,43 +485,43 @@ export const BlogPostInternationalSchools = () => (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto prose prose-lg">
-          <p>Koh Samui offers a range of esteemed international schools catering to diverse educational needs. Based on curriculum offerings, facilities, and community feedback, here are five notable international schools on the island:</p>
-          <ol>
+          <p className="mb-8">Koh Samui offers a range of esteemed international schools catering to diverse educational needs. Based on curriculum offerings, facilities, and community feedback, here are five notable international schools on the island:</p>
+          <ol className="list-decimal pl-6 space-y-6 mb-8">
             <li>
-              <strong>International School of Samui (ISS)</strong><br/>
-              <ul>
+              <span className="block font-bold text-lg mb-1">International School of Samui (ISS)</span>
+              <ul className="list-disc pl-6">
                 <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
                 <li><strong>Ages:</strong> 3 to 18</li>
                 <li><strong>Highlights:</strong> Established in 2007, ISS is accredited by Education Development Trust and the International School's Quality Mark. The school boasts a diverse student body from over 35 countries and offers a comprehensive education from Early Years to Sixth Form.</li>
               </ul>
             </li>
             <li>
-              <strong>Panyadee, The British International School of Samui (PBISS)</strong><br/>
-              <ul>
+              <span className="block font-bold text-lg mb-1">Panyadee, The British International School of Samui (PBISS)</span>
+              <ul className="list-disc pl-6">
                 <li><strong>Curriculum:</strong> British (Cambridge International Curriculum)</li>
                 <li><strong>Ages:</strong> 2 to 18</li>
                 <li><strong>Highlights:</strong> PBISS provides a holistic education with a strong emphasis on language programs and a comprehensive educational experience.</li>
               </ul>
             </li>
             <li>
-              <strong>Greenacre International School</strong><br/>
-              <ul>
+              <span className="block font-bold text-lg mb-1">Greenacre International School</span>
+              <ul className="list-disc pl-6">
                 <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
                 <li><strong>Ages:</strong> 3 to 13</li>
                 <li><strong>Highlights:</strong> Situated in the serene area of Na Mueang, Greenacre emphasizes academics, environmental awareness, and mindfulness. The school offers a nurturing environment with a focus on holistic development.</li>
               </ul>
             </li>
             <li>
-              <strong>Windfield International School</strong><br/>
-              <ul>
+              <span className="block font-bold text-lg mb-1">Windfield International School</span>
+              <ul className="list-disc pl-6">
                 <li><strong>Curriculum:</strong> British and French</li>
                 <li><strong>Ages:</strong> 3 to 18</li>
                 <li><strong>Highlights:</strong> Windfield offers a bilingual education with a focus on inquiry-based learning and cultural diversity. The school promotes child development in a fun and responsible manner.</li>
               </ul>
             </li>
             <li>
-              <strong>Lamai International School (LIS)</strong><br/>
-              <ul>
+              <span className="block font-bold text-lg mb-1">Lamai International School (LIS)</span>
+              <ul className="list-disc pl-6">
                 <li><strong>Curriculum:</strong> British (Cambridge Curriculum)</li>
                 <li><strong>Ages:</strong> 3 to 11</li>
                 <li><strong>Highlights:</strong> Located in Lamai, LIS offers a bright and flourishing environment with a focus on the Cambridge Curriculum. The school prides itself on providing the highest level of education in a nurturing setting.</li>
