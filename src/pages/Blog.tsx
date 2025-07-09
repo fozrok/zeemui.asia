@@ -4,15 +4,6 @@ import { Clock, User, Tag } from 'lucide-react';
 
 const blogPosts = [
   {
-    id: '3',
-    title: 'Investing in Koh Samui: A Guide for Foreign Buyers',
-    excerpt: 'Everything you need to know about purchasing property in Koh Samui, from legal requirements to the best locations.',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
-    date: 'May 10, 2025',
-    author: 'David Wilson',
-    category: 'Investment Guide'
-  },
-  {
     id: '7',
     title: 'Navigating Property Taxes in Koh Samui: A Complete Guide',
     excerpt: 'A comprehensive guide to property taxes, ownership structures, and tax tips for buyers and investors in Koh Samui.',
