@@ -467,13 +467,13 @@ export const BlogPostInternationalSchools = () => (
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            International Schools in Koh Samui: A Complete Guide
+            Top 5 International Schools in Koh Samui
           </h1>
           <p className="text-xl text-gray-300 mb-8">
-            Everything you need to know about international education options for expat families in Koh Samui
+            Koh Samui offers a range of esteemed international schools catering to diverse educational needs.
           </p>
           <div className="flex items-center justify-center text-gray-400">
-            <span>JULY 1, 2025</span>
+            <span>JULY 22, 2025</span>
             <span className="mx-2">•</span>
             <span>8 MIN READ</span>
           </div>
@@ -484,214 +484,51 @@ export const BlogPostInternationalSchools = () => (
     {/* Content Section */}
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-gray-600 leading-relaxed mb-6">
-              For expat families considering a move to Koh Samui, the availability of quality international education is often a top priority. While the island's international school options are more limited compared to Bangkok or Phuket, there are several excellent choices available.
-            </p>
-          </div>
-
-          {/* Available Schools */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-8">1. International Schools in Koh Samui</h2>
-            
-            <div className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Panyadee International School</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Key Features:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• British curriculum (IGCSE)</li>
-                      <li>• Ages 2-16 years</li>
-                      <li>• Located in Bophut</li>
-                      <li>• Small class sizes</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Tuition:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• THB 180,000-350,000/year</li>
-                      <li>• Additional fees apply</li>
-                      <li>• Sibling discounts available</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Overview:</strong> The largest international school on the island, offering a comprehensive British curriculum with a focus on holistic development.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Lamai International School</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Key Features:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• International curriculum</li>
-                      <li>• Ages 3-12 years</li>
-                      <li>• Located in Lamai</li>
-                      <li>• Bilingual approach</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Tuition:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• THB 120,000-250,000/year</li>
-                      <li>• More affordable option</li>
-                      <li>• Flexible payment plans</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Overview:</strong> A smaller, community-focused school offering a blend of international and Thai educational approaches.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Samui International Montessori School</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Key Features:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Montessori curriculum</li>
-                      <li>• Ages 2-6 years</li>
-                      <li>• Located in Chaweng</li>
-                      <li>• Child-centered learning</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Tuition:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• THB 150,000-200,000/year</li>
-                      <li>• Half-day options available</li>
-                      <li>• Summer programs</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Overview:</strong> Specialized early childhood education following Montessori principles in a nurturing environment.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Curriculum Options */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">2. Curriculum Options</h2>
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Available Curricula:</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• <strong>British Curriculum:</strong> IGCSE, A-Levels, recognized worldwide</li>
-                <li>• <strong>International Curriculum:</strong> Flexible, inquiry-based learning</li>
-                <li>• <strong>Montessori:</strong> Child-led, hands-on learning approach</li>
-                <li>• <strong>Bilingual Programs:</strong> English and Thai language instruction</li>
+        <div className="max-w-4xl mx-auto prose prose-lg">
+          <p>Koh Samui offers a range of esteemed international schools catering to diverse educational needs. Based on curriculum offerings, facilities, and community feedback, here are five notable international schools on the island:</p>
+          <ol>
+            <li>
+              <strong>International School of Samui (ISS)</strong><br/>
+              <ul>
+                <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
+                <li><strong>Ages:</strong> 3 to 18</li>
+                <li><strong>Highlights:</strong> Established in 2007, ISS is accredited by Education Development Trust and the International School's Quality Mark. The school boasts a diverse student body from over 35 countries and offers a comprehensive education from Early Years to Sixth Form.</li>
               </ul>
-            </div>
-          </div>
-
-          {/* School Selection Factors */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Factors to Consider When Choosing a School</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Academic Factors</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Curriculum:</strong> Compatibility with home country</li>
-                  <li>• <strong>Class Sizes:</strong> Individual attention</li>
-                  <li>• <strong>Teacher Qualifications:</strong> International experience</li>
-                  <li>• <strong>Academic Performance:</strong> Graduation rates, university placements</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Practical Factors</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Location:</strong> Proximity to home/work</li>
-                  <li>• <strong>Transportation:</strong> School bus availability</li>
-                  <li>• <strong>Cost:</strong> Tuition, fees, uniforms</li>
-                  <li>• <strong>Extracurricular:</strong> Sports, arts, activities</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Admission Process */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Admission Process</h2>
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
-              <p className="text-amber-800">
-                <strong>Important:</strong> Start the application process early, as some schools have waiting lists, especially for popular age groups.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Application Requirements</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Application Form:</strong> Complete school application</li>
-                  <li>• <strong>Academic Records:</strong> Previous school transcripts</li>
-                  <li>• <strong>Health Records:</strong> Medical certificates, vaccinations</li>
-                  <li>• <strong>Passport Copies:</strong> Student and parent passports</li>
-                  <li>• <strong>Application Fee:</strong> Non-refundable processing fee</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Assessment Process</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Entrance Tests:</strong> Academic assessment for older students</li>
-                  <li>• <strong>Interviews:</strong> Student and parent interviews</li>
-                  <li>• <strong>Classroom Visits:</strong> Trial day for younger children</li>
-                  <li>• <strong>English Assessment:</strong> Language proficiency evaluation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Costs and Fees */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Costs and Additional Fees</h2>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Typical Fee Structure:</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li>• <strong>Application Fee:</strong> THB 5,000-15,000 (one-time)</li>
-                <li>• <strong>Registration Fee:</strong> THB 20,000-50,000 (one-time)</li>
-                <li>• <strong>Annual Tuition:</strong> THB 120,000-350,000</li>
-                <li>• <strong>Uniforms:</strong> THB 3,000-8,000/year</li>
-                <li>• <strong>Books and Materials:</strong> THB 10,000-20,000/year</li>
-                <li>• <strong>Transportation:</strong> THB 15,000-30,000/year (optional)</li>
-                <li>• <strong>Lunch Program:</strong> THB 8,000-15,000/year (optional)</li>
+            </li>
+            <li>
+              <strong>Panyadee, The British International School of Samui (PBISS)</strong><br/>
+              <ul>
+                <li><strong>Curriculum:</strong> British (Cambridge International Curriculum)</li>
+                <li><strong>Ages:</strong> 2 to 18</li>
+                <li><strong>Highlights:</strong> PBISS provides a holistic education with a strong emphasis on language programs and a comprehensive educational experience.</li>
               </ul>
-            </div>
-          </div>
-
-          {/* Conclusion */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              While Koh Samui's international school options are more limited than larger cities, the available schools offer quality education in a beautiful island setting. The smaller class sizes and community atmosphere can be beneficial for children's development.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              When choosing a school, consider your family's long-term plans, budget, and educational priorities. Visiting schools in person and speaking with current parents can provide valuable insights into the best fit for your child.
-            </p>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-            <div className="flex items-start">
-              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
-                <Shield className="h-8 w-8 text-custom-green" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Need School Guidance?</h3>
-                <p className="text-gray-600 mb-4">
-                  Our relocation specialists can help you navigate the school selection process and find the perfect educational fit for your family in Koh Samui.
-                </p>
-                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
-                  Contact Our Relocation Team
-                </a>
-              </div>
-            </div>
-          </div>
+            </li>
+            <li>
+              <strong>Greenacre International School</strong><br/>
+              <ul>
+                <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
+                <li><strong>Ages:</strong> 3 to 13</li>
+                <li><strong>Highlights:</strong> Situated in the serene area of Na Mueang, Greenacre emphasizes academics, environmental awareness, and mindfulness. The school offers a nurturing environment with a focus on holistic development.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Windfield International School</strong><br/>
+              <ul>
+                <li><strong>Curriculum:</strong> British and French</li>
+                <li><strong>Ages:</strong> 3 to 18</li>
+                <li><strong>Highlights:</strong> Windfield offers a bilingual education with a focus on inquiry-based learning and cultural diversity. The school promotes child development in a fun and responsible manner.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lamai International School (LIS)</strong><br/>
+              <ul>
+                <li><strong>Curriculum:</strong> British (Cambridge Curriculum)</li>
+                <li><strong>Ages:</strong> 3 to 11</li>
+                <li><strong>Highlights:</strong> Located in Lamai, LIS offers a bright and flourishing environment with a focus on the Cambridge Curriculum. The school prides itself on providing the highest level of education in a nurturing setting.</li>
+              </ul>
+            </li>
+          </ol>
+          <p>Each of these schools offers unique programs and environments to cater to various educational preferences. If you have specific criteria or need further assistance in selecting the right school for your child, feel free to ask!</p>
         </div>
       </div>
     </div>
@@ -961,8 +798,6 @@ export const BlogPostExpatsLocations = () => (
     </div>
   </div>
 );
-
-
 
 export const BlogPostForeignBuyers = () => (
   <div>
