@@ -4,24 +4,6 @@ import { Clock, User, Tag } from 'lucide-react';
 
 const blogPosts = [
   {
-    id: '1',
-    title: 'The Luxury Real Estate Market in Koh Samui: 2025 Outlook',
-    excerpt: 'Discover the latest trends and investment opportunities in Koh Samui\'s thriving luxury real estate market for 2025.',
-    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
-    date: 'June 15, 2025',
-    author: 'Sarah Johnson',
-    category: 'Market Trends'
-  },
-  {
-    id: '2',
-    title: '5 Must-Have Features in Your Luxury Villa',
-    excerpt: 'From infinity pools to smart home technology, we explore the essential features that define true luxury in modern villas.',
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
-    date: 'May 28, 2025',
-    author: 'Michael Chen',
-    category: 'Luxury Living'
-  },
-  {
     id: '3',
     title: 'Investing in Koh Samui: A Guide for Foreign Buyers',
     excerpt: 'Everything you need to know about purchasing property in Koh Samui, from legal requirements to the best locations.',
@@ -29,33 +11,6 @@ const blogPosts = [
     date: 'May 10, 2025',
     author: 'David Wilson',
     category: 'Investment Guide'
-  },
-  {
-    id: '4',
-    title: 'Sustainable Luxury: Eco-Friendly Design Trends',
-    excerpt: 'How luxury real estate is embracing sustainability without compromising on elegance and comfort.',
-    image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
-    date: 'April 22, 2025',
-    author: 'Emma Roberts',
-    category: 'Architecture & Design'
-  },
-  {
-    id: '5',
-    title: 'The Rise of Wellness-Focused Real Estate in Koh Samui',
-    excerpt: 'Exploring the growing demand for properties that prioritize health, well-being, and holistic living.',
-    image: 'https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
-    date: 'April 8, 2025',
-    author: 'Sophie Taylor',
-    category: 'Wellness Living'
-  },
-  {
-    id: '6',
-    title: 'Navigating Property Taxes in Koh Samui: A Complete Guide',
-    excerpt: 'Understanding the tax implications of buying, owning, and selling luxury real estate in Koh Samui.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
-    date: 'March 15, 2025',
-    author: 'Robert Chang',
-    category: 'Legal & Finance'
   },
   {
     id: '7',
@@ -110,7 +65,8 @@ const categories = [
   'Investment Guide',
   'Architecture & Design',
   'Wellness Living',
-  'Legal & Finance'
+  'Legal & Finance',
+  'Lifestyle & Family'
 ];
 
 const Blog = () => {

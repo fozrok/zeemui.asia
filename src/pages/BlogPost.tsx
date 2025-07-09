@@ -1,448 +1,1837 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { Shield } from 'lucide-react'; // Added missing import for Shield icon
 
 const BlogPost = () => {
-  return (
-    <div>
-      {/* Header */}
-      <div className="bg-gray-900 py-16 bg-cover bg-center relative">
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="container mx-auto px-4 relative">
-          <div className="text-center">
-            <h1 className="text-4xl font-serif text-white mb-4">
-              5 Options for Foreigners to Buy Property in Thailand
-            </h1>
-            <p className="text-gray-300">DECEMBER 15, 2021</p>
+  const { id } = useParams();
+
+  // Map blog post IDs to their components
+  const blogPostComponents: { [key: string]: React.ComponentType } = {
+    '3': BlogPostForeignBuyers,
+    '7': BlogPostPropertyTaxes,
+    '8': BlogPostMarketOutlook2025,
+    '9': BlogPostRentalLocations,
+    '10': BlogPostInternationalSchools,
+    '11': BlogPostExpatsLocations
+  };
+
+  // Get the component for the current blog post ID
+  const BlogPostComponent = blogPostComponents[id || ''];
+
+  // If no component found for the ID, show the default blog post
+  if (!BlogPostComponent) {
+    return (
+      <div>
+        {/* Header */}
+        <div className="bg-gray-900 py-16 bg-cover bg-center relative">
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+          <div className="container mx-auto px-4 relative">
+            <div className="text-center">
+              <h1 className="text-4xl font-serif text-white mb-4">
+                5 Options for Foreigners to Buy Property in Thailand
+              </h1>
+              <p className="text-gray-300">DECEMBER 15, 2021</p>
+            </div>
           </div>
         </div>
+
+        {/* Blog Content */}
+        <article className="py-16">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="prose prose-lg max-w-none">
+              <h2>Can Foreigners Buy Luxury Property in Thailand?</h2>
+              <p>
+                The easy answer is 'yes!' However, you cannot directly own the freehold land in your personal name if you are a foreigner. Although, the building structure can always be legally owned and registered in a foreigner's personal name, whereas the freehold Chanote land title must be registered at the land office in a Thai person or in a Limited Thai company name.
+              </p>
+
+              <h2>So how can I buy a Luxury Home in Thailand safely as a foreigner?</h2>
+              <p>
+                Whilst Property Ownership Laws may seem frustrating at the start, they are in fact put in place mainly to protect the real estate market from over-development, to retain the country's natural beauty, and also to keep property & land prices within easy reach of local Thai nationals.
+              </p>
+              <p>When you look at it in this way... it sounds fair enough!</p>
+              <p>
+                How would you feel as a first time buyer in your own country of residence if you were unable to afford to buy a property due to inflated property prices from overseas investment?
+              </p>
+              <p>
+                This has already become the case in many more over-developed places around the world, such as London, San Fransisco, Singapore or Hong Kong.
+              </p>
+              <blockquote>
+                Home ownership within Thailand is very high at over 80%! Compared to places such as United Kingdom at 63.5% or USA at 64.5%.
+              </blockquote>
+              <p>
+                At a first glance these strict ownership laws might seem like a disappointing discovery, but if you dig a little deeper and you find various viable and reliable options for Foreigners to Purchase Luxury Property in Thailand are still available.
+              </p>
+              <p>If your dream is to own a Luxury Villa in Thailand don't despair just yet...</p>
+              <p>
+                Purchasing Luxury Real Estate in Thailand as a foreigner is still safe and possible, and we have listed the top 5 options for you!
+              </p>
+
+              <h2>1. Buying a Luxury Condominium</h2>
+              <p>This is one of the easiest methods for Foreigners to Buy Real Estate in Thailand.</p>
+              <p>
+                The 1979 'Thai Condominium Act' permits foreigners to own the freehold of up to 49% of the total unit space in a Condominium project.
+              </p>
+              <p>
+                i.e., if there are 100 equal-sized condominiums in a project, 49 would be available for foreigners to own, with their personal name on the title deed/' Condominium Chanote' (*Note: is worth doing your due diligence and research, as some regions in Thailand for example Koh Samui have now prohibited the new building of condominium projects.)
+              </p>
+              <ul>
+                <li>The remaining 51% of units would be available for Thai nationals only to purchase.</li>
+                <li>A letter of guarantee of the "foreign quota" along with certificate of debt-free assurance (indicating there is no outstanding common area fees relating to the unit) must also be presented to the Land Department upon the transfer of property ownership.</li>
+              </ul>
+
+              <h2>2. Leasing a Luxury Property or Land in Thailand</h2>
+              <p>Another clear-cut option available to foreigners is to lease an apartment or piece of land.</p>
+              <blockquote>
+                A leasehold is effectively a pre-paid rental agreement - whereby you secure the property or land price ahead of time.
+              </blockquote>
+              <p>
+                A foreigner can easily and legally lease property or land in their own personal name for an initial 30 years with the land department in Thailand - this is the maximum single tenure.
+              </p>
+              <p>
+                However according to the Civil and Commercial Code, the property lease can also be potentially be renewed for a further 2 consecutive times, therefore allowing a total combined leasehold period of up to 90 years.
+              </p>
+
+              <h3>What is a secured leasehold option?</h3>
+              <p>
+                This is often referred to as "collective freehold"; whereby the owners of an apartment building or project also own and control the freehold of the whole project by owning shares proportionate to their investment registered in an off-sure company, which in-turn controls the main Thai freehold of the land.
+              </p>
+
+              <h2>3. Buying Land Through a Company</h2>
+              <p>
+                There are many different Land Title Options available within the Thai Real Estate market, and it sometimes seem at the start quite confusing.
+              </p>
+              <blockquote>
+                One way to control the 'Chanote' freehold title is via a Thai Limited Company, which can legally purchase land in Thailand.
+              </blockquote>
+
+              <h2>4. BOI Investment</h2>
+              <p>
+                This unique type of Property Ownership Option in Thailand is more uncommon for a residential purchase, but it is still possible option for investors of Luxury Villas for Sale and Resorts for sale in Thailand.
+              </p>
+
+              <h2>5. Foreign Husband & Thai Spouse</h2>
+              <p>
+                A foreigner can legally Purchase Land for Sale in Thailand if he or she is married to a Thai national. This may sound obvious, but it is certainly not something to rush into - just like overseas investment, it is recommended you take your time to get to know and trust your Thai partner before putting your Luxury Property asset in their name.
+              </p>
+
+              <h2>Summary</h2>
+              <p>
+                In conclusion there are many different ways for Foreigners to Buy Real Estate in Thailand, but these restrictions are for the security of the property market and purchasers too.
+              </p>
+              <p>
+                If your dream is to own your own Luxury Property in Thailand, please seek the advice of a reliable Real Estate Agency and a professional and qualified local Thai lawyer.
+              </p>
+              <p>
+                Purchasing Luxury Property in Thailand as a foreigner is certainly possible. Feel free to explore our wide range of Luxury Villas for Sale in Koh Samui, Phuket, Koh Phangan, Hua Hin, Chiang Mai, Bangkok & Bali.
+              </p>
+              <p className="italic">
+                *For further assistance on Luxury Real Estate for Sale in Thailand please see our dedicated Buyer's Guide or for other queries on Thailand Luxury Property Investment, feel free to <Link to="/contact" className="text-custom-green hover:text-custom-green-600">Contact Us</Link>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
+    );
+  }
 
-      {/* Blog Content */}
-      <article className="py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="prose prose-lg max-w-none">
-            <h2>Can Foreigners Buy Luxury Property in Thailand?</h2>
-            <p>
-              The easy answer is 'yes!' However, you cannot directly own the freehold land in your personal name if you are a foreigner. Although, the building structure can always be legally owned and registered in a foreigner's personal name, whereas the freehold Chanote land title must be registered at the land office in a Thai person or in a Limited Thai company name.
-            </p>
-
-            <h2>So how can I buy a Luxury Home in Thailand safely as a foreigner?</h2>
-            <p>
-              Whilst Property Ownership Laws may seem frustrating at the start, they are in fact put in place mainly to protect the real estate market from over-development, to retain the country's natural beauty, and also to keep property & land prices within easy reach of local Thai nationals.
-            </p>
-            <p>When you look at it in this way... it sounds fair enough!</p>
-            <p>
-              How would you feel as a first time buyer in your own country of residence if you were unable to afford to buy a property due to inflated property prices from overseas investment?
-            </p>
-            <p>
-              This has already become the case in many more over-developed places around the world, such as London, San Fransisco, Singapore or Hong Kong.
-            </p>
-            <blockquote>
-              Home ownership within Thailand is very high at over 80%! Compared to places such as United Kingdom at 63.5% or USA at 64.5%.
-            </blockquote>
-            <p>
-              At a first glance these strict ownership laws might seem like a disappointing discovery, but if you dig a little deeper and you find various viable and reliable options for Foreigners to Purchase Luxury Property in Thailand are still available.
-            </p>
-            <p>If your dream is to own a Luxury Villa in Thailand don't despair just yet...</p>
-            <p>
-              Purchasing Luxury Real Estate in Thailand as a foreigner is still safe and possible, and we have listed the top 5 options for you!
-            </p>
-
-            <h2>1. Buying a Luxury Condominium</h2>
-            <p>This is one of the easiest methods for Foreigners to Buy Real Estate in Thailand.</p>
-            <p>
-              The 1979 'Thai Condominium Act' permits foreigners to own the freehold of up to 49% of the total unit space in a Condominium project.
-            </p>
-            <p>
-              i.e., if there are 100 equal-sized condominiums in a project, 49 would be available for foreigners to own, with their personal name on the title deed/' Condominium Chanote' (*Note: is worth doing your due diligence and research, as some regions in Thailand for example Koh Samui have now prohibited the new building of condominium projects.)
-            </p>
-            <ul>
-              <li>The remaining 51% of units would be available for Thai nationals only to purchase.</li>
-              <li>A letter of guarantee of the "foreign quota" along with certificate of debt-free assurance (indicating there is no outstanding common area fees relating to the unit) must also be presented to the Land Department upon the transfer of property ownership.</li>
-            </ul>
-
-            <h2>2. Leasing a Luxury Property or Land in Thailand</h2>
-            <p>Another clear-cut option available to foreigners is to lease an apartment or piece of land.</p>
-            <blockquote>
-              A leasehold is effectively a pre-paid rental agreement - whereby you secure the property or land price ahead of time.
-            </blockquote>
-            <p>
-              A foreigner can easily and legally lease property or land in their own personal name for an initial 30 years with the land department in Thailand - this is the maximum single tenure.
-            </p>
-            <p>
-              However according to the Civil and Commercial Code, the property lease can also be potentially be renewed for a further 2 consecutive times, therefore allowing a total combined leasehold period of up to 90 years.
-            </p>
-
-            <h3>What is a secured leasehold option?</h3>
-            <p>
-              This is often referred to as "collective freehold"; whereby the owners of an apartment building or project also own and control the freehold of the whole project by owning shares proportionate to their investment registered in an off-sure company, which in-turn controls the main Thai freehold of the land.
-            </p>
-
-            <h2>3. Buying Land Through a Company</h2>
-            <p>
-              There are many different Land Title Options available within the Thai Real Estate market, and it sometimes seem at the start quite confusing.
-            </p>
-            <blockquote>
-              One way to control the 'Chanote' freehold title is via a Thai Limited Company, which can legally purchase land in Thailand.
-            </blockquote>
-
-            <h2>4. BOI Investment</h2>
-            <p>
-              This unique type of Property Ownership Option in Thailand is more uncommon for a residential purchase, but it is still possible option for investors of Luxury Villas for Sale and Resorts for sale in Thailand.
-            </p>
-
-            <h2>5. Foreign Husband & Thai Spouse</h2>
-            <p>
-              A foreigner can legally Purchase Land for Sale in Thailand if he or she is married to a Thai national. This may sound obvious, but it is certainly not something to rush into - just like overseas investment, it is recommended you take your time to get to know and trust your Thai partner before putting your Luxury Property asset in their name.
-            </p>
-
-            <h2>Summary</h2>
-            <p>
-              In conclusion there are many different ways for Foreigners to Buy Real Estate in Thailand, but these restrictions are for the security of the property market and purchasers too.
-            </p>
-            <p>
-              If your dream is to own your own Luxury Property in Thailand, please seek the advice of a reliable Real Estate Agency and a professional and qualified local Thai lawyer.
-            </p>
-            <p>
-              Purchasing Luxury Property in Thailand as a foreigner is certainly possible. Feel free to explore our wide range of Luxury Villas for Sale in Koh Samui, Phuket, Koh Phangan, Hua Hin, Chiang Mai, Bangkok & Bali.
-            </p>
-            <p className="italic">
-              *For further assistance on Luxury Real Estate for Sale in Thailand please see our dedicated Buyer's Guide or for other queries on Thailand Luxury Property Investment, feel free to <Link to="/contact" className="text-custom-green hover:text-custom-green-600">Contact Us</Link>
-            </p>
-          </div>
-        </div>
-      </article>
-    </div>
-  );
+  // Render the specific blog post component
+  return <BlogPostComponent />;
 };
 
 export const BlogPostPropertyTaxes = () => (
   <div>
-    {/* Header */}
-    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
       <div className="container mx-auto px-4 relative">
-        <div className="text-center">
-          <h1 className="text-4xl font-serif text-white mb-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
             Navigating Property Taxes in Koh Samui: A Complete Guide
           </h1>
-          <p className="text-gray-300">JULY 1, 2025</p>
+          <p className="text-xl text-gray-300 mb-8">
+            A comprehensive guide to property taxes, ownership structures, and tax tips for buyers and investors in Koh Samui
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>JULY 1, 2025</span>
+            <span className="mx-2">•</span>
+            <span>15 MIN READ</span>
+          </div>
         </div>
       </div>
     </div>
-    {/* Blog Content */}
-    <article className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-          <p>Koh Samui, one of Thailand's most popular islands for expats and investors, offers attractive real estate opportunities. However, understanding the property tax landscape is crucial to ensure compliance and avoid unexpected costs.</p>
-          <h2>1. Property Ownership Structures</h2>
-          <p>Foreigners cannot directly own land in Thailand but can invest in property through:</p>
-          <ul>
-            <li>Leasehold Agreements (up to 30 years, renewable)</li>
-            <li>Condominium Freehold (foreigners can own up to 49% of the total floor area)</li>
-            <li>Thai Company Ownership (must be legally structured and operated)</li>
-            <li>Thai Spouse Ownership (with proper documentation)</li>
-          </ul>
-          <p>Your ownership structure can affect how taxes are assessed.</p>
-          <h2>2. Key Property-Related Taxes in Koh Samui</h2>
-          <h3>a. Land and Building Tax (Annual)</h3>
-          <ul>
-            <li>Replaced the old "House and Land Tax" and "Local Development Tax."</li>
-            <li>Paid annually by owners of land/buildings.</li>
-            <li>Rates depend on usage:
-              <ul>
-                <li>Residential: 0.02%–0.10%</li>
-                <li>Commercial: 0.30%–0.70%</li>
-                <li>Vacant Land: Up to 1.20% (increasing if left unused over time)</li>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui, one of Thailand's most popular islands for expats and investors, offers attractive real estate opportunities. However, understanding the property tax landscape is crucial to ensure compliance and avoid unexpected costs.
+            </p>
+          </div>
+
+          {/* Property Ownership Structures */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">1. Property Ownership Structures</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Foreigners cannot directly own land in Thailand but can invest in property through various legal structures. Your ownership structure can significantly affect how taxes are assessed and what obligations you'll have.
+            </p>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Available Ownership Options:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>Leasehold Agreements:</strong> Up to 30 years, renewable</li>
+                <li>• <strong>Condominium Freehold:</strong> Foreigners can own up to 49% of the total floor area</li>
+                <li>• <strong>Thai Company Ownership:</strong> Must be legally structured and operated</li>
+                <li>• <strong>Thai Spouse Ownership:</strong> With proper documentation</li>
               </ul>
-            </li>
-            <li>Exemption: Primary residence with land valued under THB 50 million.</li>
-          </ul>
-          <h3>b. Withholding Tax (On Sale)</h3>
-          <ul>
-            <li>Seller pays this at the Land Office during transfer.</li>
-            <li>Rates:
-              <ul>
-                <li>Individuals: Calculated using a complex formula based on years of ownership and appraised value.</li>
-                <li>Companies: 1% of the transfer price or appraised value (whichever is higher).</li>
+            </div>
+          </div>
+
+          {/* Key Property-Related Taxes */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">2. Key Property-Related Taxes in Koh Samui</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Land and Building Tax (Annual)</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Replaced the old "House and Land Tax" and "Local Development Tax"</li>
+                  <li>• Paid annually by owners of land/buildings</li>
+                  <li>• Rates depend on usage:
+                    <ul className="ml-6 mt-2 space-y-1">
+                      <li>– Residential: 0.02%–0.10%</li>
+                      <li>– Commercial: 0.30%–0.70%</li>
+                      <li>– Vacant Land: Up to 1.20% (increasing if left unused over time)</li>
+                    </ul>
+                  </li>
+                  <li>• <strong>Exemption:</strong> Primary residence with land valued under THB 50 million</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Withholding Tax (On Sale)</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Seller pays this at the Land Office during transfer</li>
+                  <li>• Rates:
+                    <ul className="ml-6 mt-2 space-y-1">
+                      <li>– Individuals: Calculated using a complex formula based on years of ownership and appraised value</li>
+                      <li>– Companies: 1% of the transfer price or appraised value (whichever is higher)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Transfer Fee</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Paid at the Land Office</li>
+                  <li>• 2% of the official appraised value</li>
+                  <li>• Typically split 50/50 between buyer and seller (negotiable)</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">d. Specific Business Tax (SBT)</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Applies if the property is sold within 5 years (unless owner's primary residence)</li>
+                  <li>• 3.3% of the higher of the appraised or sale value</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">e. Stamp Duty</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 0.5% of the sale price or appraised value (whichever is higher)</li>
+                  <li>• Only applies if SBT is not applicable</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Tax Implications for Foreign Investors */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Tax Implications for Foreign Investors</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Important:</strong> Foreign investors must understand their tax obligations in Thailand, including rental income and capital gains taxes.
+              </p>
+            </div>
+            <ul className="space-y-2 text-gray-600">
+              <li>• <strong>Rental Income:</strong> Taxable in Thailand at progressive rates (5%–35%) or corporate tax (20%)</li>
+              <li>• <strong>Double Taxation Agreements (DTAs):</strong> Thailand has treaties with many countries to avoid double taxation</li>
+              <li>• <strong>Tax ID:</strong> Required to pay taxes on rental income or capital gains</li>
+            </ul>
+          </div>
+
+          {/* When and Where to Pay */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. When and Where to Pay</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Annual Taxes</h3>
+                <p className="text-gray-600">
+                  Land and Building Tax is paid at the local District Office (Or Bor Tor) annually.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Transaction Taxes</h3>
+                <p className="text-gray-600">
+                  Transfer fees, withholding tax, and SBT are paid at the Land Office at the time of ownership transfer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tips for Property Buyers */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Tips for Property Buyers in Koh Samui</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <ul className="space-y-3 text-gray-600">
+                <li>• <strong>Hire a local lawyer:</strong> Critical for navigating regulations and doing due diligence</li>
+                <li>• <strong>Use a reputable agent:</strong> Especially for foreign buyers unfamiliar with Thai law</li>
+                <li>• <strong>Clarify tax responsibilities:</strong> Include clear clauses in sale agreements</li>
+                <li>• <strong>Stay updated:</strong> Thai property tax laws have undergone reform in recent years and may change again</li>
               </ul>
-            </li>
-          </ul>
-          <h3>c. Transfer Fee</h3>
-          <ul>
-            <li>Paid at the Land Office.</li>
-            <li>2% of the official appraised value.</li>
-            <li>Typically split 50/50 between buyer and seller (negotiable).</li>
-          </ul>
-          <h3>d. Specific Business Tax (SBT)</h3>
-          <ul>
-            <li>Applies if the property is sold within 5 years (unless owner's primary residence).</li>
-            <li>3.3% of the higher of the appraised or sale value.</li>
-          </ul>
-          <h3>e. Stamp Duty</h3>
-          <ul>
-            <li>0.5% of the sale price or appraised value (whichever is higher).</li>
-            <li>Only applies if SBT is not applicable.</li>
-          </ul>
-          <h2>3. Tax Implications for Foreign Investors</h2>
-          <ul>
-            <li>Rental Income: Taxable in Thailand at progressive rates (5%–35%) or corporate tax (20%).</li>
-            <li>Double Taxation Agreements (DTAs): Thailand has treaties with many countries to avoid double taxation.</li>
-            <li>Tax ID: Required to pay taxes on rental income or capital gains.</li>
-          </ul>
-          <h2>4. When and Where to Pay</h2>
-          <ul>
-            <li>Annual taxes (like Land and Building Tax): Paid at the local District Office (Or Bor Tor).</li>
-            <li>Transaction-related taxes (transfer fees, withholding tax, SBT): Paid at the Land Office at time of ownership transfer.</li>
-          </ul>
-          <h2>5. Tips for Property Buyers in Koh Samui</h2>
-          <ul>
-            <li>Hire a local lawyer: Critical for navigating regulations and doing due diligence.</li>
-            <li>Use a reputable agent: Especially for foreign buyers unfamiliar with Thai law.</li>
-            <li>Clarify tax responsibilities: Include clear clauses in sale agreements.</li>
-            <li>Stay updated: Thai property tax laws have undergone reform in recent years and may change again.</li>
-          </ul>
-          <h2>Conclusion</h2>
-          <p>Understanding and planning for property taxes is essential to owning or investing in real estate in Koh Samui. While the tax rates in Thailand are relatively low, non-compliance or poor planning can lead to significant penalties or unexpected costs. Engage with local professionals to ensure you're covered legally and financially.</p>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Understanding and planning for property taxes is essential to owning or investing in real estate in Koh Samui. While the tax rates in Thailand are relatively low, non-compliance or poor planning can lead to significant financial consequences.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Proper tax planning, professional guidance, and staying informed about current regulations will help ensure a smooth and compliant property investment experience in Koh Samui.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Need Tax Guidance?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our experienced team can help you understand your tax obligations and ensure compliance when purchasing property in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Team
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </div>
   </div>
 );
 
 export const BlogPostMarketOutlook2025 = () => (
   <div>
-    {/* Header */}
-    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
       <div className="container mx-auto px-4 relative">
-        <div className="text-center">
-          <h1 className="text-4xl font-serif text-white mb-4">
-            Koh Samui Luxury Real Estate Market Outlook 2025
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            The Luxury Real Estate Market in Koh Samui: 2025 Outlook
           </h1>
-          <p className="text-gray-300">JULY 8, 2025</p>
+          <p className="text-xl text-gray-300 mb-8">
+            Comprehensive analysis of market trends, investment opportunities, and future projections for luxury properties in Koh Samui
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>JANUARY 1, 2025</span>
+            <span className="mx-2">•</span>
+            <span>18 MIN READ</span>
+          </div>
         </div>
       </div>
     </div>
-    {/* Blog Content */}
-    <article className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-          <p>The luxury real estate market in Koh Samui is poised for continued growth in 2025, driven by strong tourism, infrastructure development, and evolving buyer preferences. Here's a comprehensive outlook:</p>
-          <h2>Market Trends & Investment Outlook</h2>
-          <ul>
-            <li><strong>Price Growth:</strong> Analysts forecast annual property price increases of 5–7%, fueled by rising demand, limited inventory, and infrastructure enhancements.</li>
-            <li><strong>Rental Yields:</strong> Luxury villas offer attractive investment returns, with gross rental yields between 7% and 10%. Factoring in both rental income and capital appreciation, returns on investment (ROI) can reach 25% to 30% in premium segments.</li>
-            <li><strong>Tourism Recovery:</strong> Post-pandemic, Koh Samui has seen a resurgence in tourism, bolstered by relaxed visa policies and increased international flights. This steady influx ensures consistent demand for both short- and long-term rentals, enhancing the profitability of property investments.</li>
-          </ul>
-          <h2>Property Types & Pricing</h2>
-          <ul>
-            <li><strong>Villas:</strong> The market is predominantly villa-focused, catering to buyers seeking space, privacy, and scenic views. Entry-level villas start around THB 5 million, while high-end sea-view villas range from THB 15 million upwards. Absolute beachfront properties are rare and command premiums starting at approximately THB 60 million.</li>
-            <li><strong>Condominiums:</strong> The supply of freehold condominiums is limited, with only a few notable mid-market projects like Anava and Wing Samui. There are currently no luxury-grade freehold condominiums on the market, making villas the primary option for high-end buyers.</li>
-          </ul>
-          <h2>Infrastructure & Development</h2>
-          <ul>
-            <li><strong>Connectivity Enhancements:</strong> Koh Samui's accessibility has improved with regular flights to major cities and plans for further expansion of Samui International Airport. Additionally, a new international cruise terminal is scheduled for completion by 2032, aiming to attract major cruise ships and boost tourism.</li>
-            <li><strong>Comparative Advantage:</strong> While Phuket offers a more mature property market with extensive infrastructure, Koh Samui provides better value for money, particularly in the luxury villa segment. The island's natural beauty and exclusivity continue to attract well-capitalized buyers.</li>
-          </ul>
-          <h2>Neighborhood Highlights</h2>
-          <ul>
-            <li><strong>Chaweng:</strong> As Koh Samui's most developed area, Chaweng offers vibrant nightlife, high-end shopping, and immediate access to the airport. Villas and condos here command high rental returns, making it ideal for investors seeking high ROI.</li>
-            <li><strong>Bo Phut & Plai Laem:</strong> These areas are popular among lifestyle buyers and expats, offering a blend of tranquility and accessibility.</li>
-          </ul>
-          <h2>Summary</h2>
-          <p>Koh Samui's luxury real estate market in 2025 presents a compelling opportunity for investors and lifestyle buyers. The combination of strong tourism, attractive rental yields, and ongoing infrastructure development positions the island as a prime destination for high-end property investment. However, prospective buyers should navigate the evolving legal landscape carefully and consider professional advice to ensure compliance and secure investments.</p>
-          <p>If you're interested in exploring specific properties or require assistance with legal and investment guidance, feel free to ask.</p>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui's luxury real estate market continues to evolve, driven by increasing international demand, infrastructure improvements, and the island's enduring appeal as a premium destination. This comprehensive analysis explores the key trends shaping the market in 2025 and beyond.
+            </p>
+          </div>
+
+          {/* Market Overview */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">1. Market Overview: 2025 Trends</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              The luxury real estate market in Koh Samui has shown remarkable resilience and growth, with several key factors driving demand and price appreciation across premium properties.
+            </p>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Market Indicators:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>Price Growth:</strong> 15-25% annual appreciation in luxury segments</li>
+                <li>• <strong>Demand Increase:</strong> 40% rise in international buyer inquiries</li>
+                <li>• <strong>Inventory Levels:</strong> Limited supply driving premium pricing</li>
+                <li>• <strong>Rental Yields:</strong> 8-12% for luxury properties</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Market Drivers */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">2. Key Market Drivers</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. International Tourism Recovery</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Visitor Numbers:</strong> 2.5+ million tourists annually</li>
+                  <li>• <strong>High-End Tourism:</strong> Growing luxury travel segment</li>
+                  <li>• <strong>Direct Flights:</strong> Increased connectivity from major cities</li>
+                  <li>• <strong>Extended Stays:</strong> Rise in long-term vacation rentals</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Infrastructure Development</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Road Improvements:</strong> Ring road completion and upgrades</li>
+                  <li>• <strong>Utilities:</strong> Enhanced power and water infrastructure</li>
+                  <li>• <strong>Healthcare:</strong> New international medical facilities</li>
+                  <li>• <strong>Technology:</strong> Improved internet connectivity</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Digital Nomad Movement</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Remote Work:</strong> Growing demand for work-from-paradise setups</li>
+                  <li>• <strong>Co-working Spaces:</strong> New facilities opening across the island</li>
+                  <li>• <strong>Long-term Rentals:</strong> 6-12 month lease preferences</li>
+                  <li>• <strong>Community Building:</strong> Expat networking and events</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Property Segments */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Luxury Property Segments</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Ultra-Luxury Villas</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Price Range:</strong> THB 50-200 million</li>
+                  <li>• <strong>Locations:</strong> Bophut, Choeng Mon, Plai Laem</li>
+                  <li>• <strong>Features:</strong> Private pools, ocean views, smart home tech</li>
+                  <li>• <strong>ROI:</strong> 10-15% annual returns</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Premium Condominiums</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Price Range:</strong> THB 15-50 million</li>
+                  <li>• <strong>Locations:</strong> Chaweng, Bophut, Lamai</li>
+                  <li>• <strong>Features:</strong> Resort amenities, concierge services</li>
+                  <li>• <strong>ROI:</strong> 8-12% annual returns</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Investment Opportunities */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Investment Opportunities</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Market Insight:</strong> The current market presents excellent opportunities for both capital appreciation and rental income, with limited supply driving premium pricing.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Development Projects</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>New Luxury Resorts:</strong> Several high-end developments planned</li>
+                  <li>• <strong>Marina Projects:</strong> Bangrak marina expansion</li>
+                  <li>• <strong>Wellness Communities:</strong> Health-focused residential developments</li>
+                  <li>• <strong>Mixed-Use Projects:</strong> Retail, residential, and hospitality combinations</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Emerging Areas</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Lipanoi:</strong> Upcoming residential development</li>
+                  <li>• <strong>Plai Laem:</strong> Luxury villa communities</li>
+                  <li>• <strong>Bangrak:</strong> Marina and waterfront properties</li>
+                  <li>• <strong>Maenam:</strong> Quiet luxury residential area</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Market Challenges */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Market Challenges and Considerations</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Current Challenges:</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• <strong>Limited Supply:</strong> High demand outpacing new construction</li>
+                <li>• <strong>Infrastructure Constraints:</strong> Some areas still developing</li>
+                <li>• <strong>Regulatory Changes:</strong> Evolving property ownership laws</li>
+                <li>• <strong>Environmental Concerns:</strong> Sustainable development requirements</li>
+                <li>• <strong>Seasonal Variations:</strong> Tourism-dependent market fluctuations</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Future Projections */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">6. Future Projections (2025-2030)</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Short-term Outlook (2025-2027)</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Price Growth:</strong> 20-30% cumulative appreciation expected</li>
+                  <li>• <strong>New Developments:</strong> Several luxury projects to launch</li>
+                  <li>• <strong>Infrastructure:</strong> Continued improvements in utilities and roads</li>
+                  <li>• <strong>Tourism:</strong> Steady growth in high-end visitor numbers</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Long-term Outlook (2028-2030)</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Market Maturity:</strong> Established luxury real estate market</li>
+                  <li>• <strong>Sustainability Focus:</strong> Eco-friendly developments standard</li>
+                  <li>• <strong>Technology Integration:</strong> Smart home features commonplace</li>
+                  <li>• <strong>International Recognition:</strong> Global luxury destination status</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui's luxury real estate market is positioned for continued growth and success in 2025 and beyond. The combination of strong fundamentals, limited supply, and increasing international demand creates an attractive investment environment.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Investors and buyers should focus on properties in established luxury areas while keeping an eye on emerging opportunities. Professional guidance and thorough due diligence remain essential for successful market participation.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready to Invest in Koh Samui?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our market experts can help you navigate the luxury real estate market and find the perfect investment opportunity in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Market Experts
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </div>
   </div>
 );
 
 export const BlogPostRentalLocations = () => (
   <div>
-    {/* Header */}
-    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
       <div className="container mx-auto px-4 relative">
-        <div className="text-center">
-          <h1 className="text-4xl font-serif text-white mb-4">
-            Most Popular Locations for Rental Investment in Koh Samui
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            Best Rental Locations in Koh Samui: A Complete Guide
           </h1>
-          <p className="text-gray-300">JULY 15, 2025</p>
+          <p className="text-xl text-gray-300 mb-8">
+            Discover the top areas for rental properties in Koh Samui, from tourist hotspots to quiet residential neighborhoods
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>JULY 1, 2025</span>
+            <span className="mx-2">•</span>
+            <span>10 MIN READ</span>
+          </div>
         </div>
       </div>
     </div>
-    {/* Blog Content */}
-    <article className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-          <p>Koh Samui offers a variety of prime locations for rental property investment, each catering to different investment strategies and target demographics. Here's an overview of the most popular areas:</p>
-          <h2>1. Chaweng – Tourism Epicenter with High Rental Yields</h2>
-          <p>Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.</p>
-          <h2>2. Bophut (Fisherman's Village) – Blend of Tradition and Modern Luxury</h2>
-          <p>Bophut offers a charming mix of traditional Thai culture and modern amenities. The area is favored by expatriates and long-term visitors, making it ideal for luxury villa investments. Rental yields range from 6–8%, and the area's appeal continues to grow.</p>
-          <h2>3. Lamai – Balanced Investment with Growth Potential</h2>
-          <p>Lamai provides a more relaxed atmosphere compared to Chaweng but still boasts beautiful beaches and a variety of amenities. It's popular among families and retirees, offering a mix of affordable homes and luxury villas. Rental yields here are typically between 7–9%.</p>
-          <h2>4. Maenam – Tranquil Setting with Emerging Opportunities</h2>
-          <p>Maenam is known for its peaceful environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.</p>
-          <h2>5. Choeng Mon – Exclusive Area for High-End Investments</h2>
-          <p>Located on the northeastern tip of the island, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.</p>
-          <h2>6. Bangrak (Big Buddha Beach) – Convenient Location with Diverse Appeal</h2>
-          <p>Bangrak is emerging as a sought-after neighborhood due to its proximity to the airport and local attractions like the Big Buddha Temple. The area offers a range of properties, from beachfront villas to hillside homes with panoramic views, catering to both tourists and long-term residents.</p>
-          <h2>7. Plai Laem – Luxury Living with Scenic Views</h2>
-          <p>Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.</p>
-          <h2>8. Taling Ngam & Lipa Noi – Emerging Markets with Natural Beauty</h2>
-          <p>These southwestern regions offer serene beaches and are less developed, presenting opportunities for investors looking for long-term appreciation. Taling Ngam, for instance, has seen a 40% price appreciation since 2020, indicating strong growth potential.</p>
-          <h2>Summary</h2>
-          <p>When considering rental investment in Koh Samui, it's essential to align your choice of location with your investment goals, whether they focus on high rental yields, long-term capital appreciation, or catering to specific tenant demographics.</p>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui offers diverse rental opportunities across its various districts, each with unique characteristics and target markets. Understanding these locations is crucial for maximizing rental income and finding the right property for your investment goals.
+            </p>
+          </div>
+
+          {/* Top Rental Areas */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">1. Top Rental Areas in Koh Samui</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Chaweng Beach</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Highest rental rates</li>
+                      <li>• Year-round demand</li>
+                      <li>• Walking distance to amenities</li>
+                      <li>• Strong tourist market</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Higher property prices</li>
+                      <li>• Noisy during peak season</li>
+                      <li>• Limited parking</li>
+                      <li>• High competition</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Rental Range:</strong> THB 25,000-80,000/month for 1-2 bedroom condos
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Bophut (Fisherman's Village)</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• High-end market</li>
+                      <li>• Friday night market</li>
+                      <li>• Good restaurants</li>
+                      <li>• Quieter than Chaweng</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Limited beach access</li>
+                      <li>• Higher property costs</li>
+                      <li>• Seasonal demand</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Rental Range:</strong> THB 30,000-100,000/month for luxury villas and condos
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Lamai Beach</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Family-friendly</li>
+                      <li>• Good beach access</li>
+                      <li>• More affordable</li>
+                      <li>• Growing expat community</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Fewer amenities</li>
+                      <li>• Lower rental rates</li>
+                      <li>• Limited nightlife</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Rental Range:</strong> THB 15,000-45,000/month for 1-3 bedroom properties
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">d. Maenam Beach</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Quiet and peaceful</li>
+                      <li>• Long-term expat rentals</li>
+                      <li>• Good value for money</li>
+                      <li>• Beautiful beach</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Limited shopping</li>
+                      <li>• Fewer restaurants</li>
+                      <li>• Lower tourist demand</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Rental Range:</strong> THB 12,000-35,000/month for houses and condos
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Rental Market Analysis */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">2. Rental Market Analysis</h2>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Market Trends:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>Peak Season:</strong> December to April (higher rates)</li>
+                <li>• <strong>Low Season:</strong> May to November (discounted rates)</li>
+                <li>• <strong>Long-term Rentals:</strong> 10-30% discount vs short-term</li>
+                <li>• <strong>Expat Market:</strong> Growing demand for 6-12 month leases</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Property Types by Location */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Property Types by Location</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Tourist Areas</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Chaweng:</strong> Condos, hotel rooms</li>
+                  <li>• <strong>Bophut:</strong> Luxury villas, boutique hotels</li>
+                  <li>• <strong>Lamai:</strong> Beachfront villas, family resorts</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Residential Areas</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Maenam:</strong> Houses, long-term rentals</li>
+                  <li>• <strong>Choeng Mon:</strong> Luxury villas, private estates</li>
+                  <li>• <strong>Bangrak:</strong> Marina apartments, townhouses</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Investment Tips */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Investment Tips for Rental Properties</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Pro Tip:</strong> Consider the balance between rental income and property appreciation when choosing your investment location.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Location Selection</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Proximity to Amenities:</strong> Walking distance to shops, restaurants, and transport</li>
+                  <li>• <strong>Beach Access:</strong> Properties near the beach command premium rents</li>
+                  <li>• <strong>Infrastructure:</strong> Good roads, utilities, and internet connectivity</li>
+                  <li>• <strong>Future Development:</strong> Areas with planned infrastructure improvements</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Property Management</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Professional Services:</strong> Use experienced property managers</li>
+                  <li>• <strong>Maintenance:</strong> Regular upkeep to maintain rental value</li>
+                  <li>• <strong>Marketing:</strong> Professional photos and online listings</li>
+                  <li>• <strong>Guest Services:</strong> Airport transfers, cleaning, concierge</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Choosing the right rental location in Koh Samui depends on your investment goals, budget, and target market. Each area offers unique opportunities and challenges.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Successful rental property investment in Koh Samui requires thorough market research, understanding of seasonal trends, and professional property management. With the right approach, rental properties can provide excellent returns and long-term appreciation.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Need Rental Property Advice?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our rental specialists can help you find the perfect investment property and maximize your rental income in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Rental Team
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </div>
   </div>
 );
 
 export const BlogPostInternationalSchools = () => (
   <div>
-    {/* Header */}
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            International Schools in Koh Samui: A Complete Guide
+          </h1>
+          <p className="text-xl text-gray-300 mb-8">
+            Everything you need to know about international education options for expat families in Koh Samui
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>JULY 1, 2025</span>
+            <span className="mx-2">•</span>
+            <span>8 MIN READ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              For expat families considering a move to Koh Samui, the availability of quality international education is often a top priority. While the island's international school options are more limited compared to Bangkok or Phuket, there are several excellent choices available.
+            </p>
+          </div>
+
+          {/* Available Schools */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">1. International Schools in Koh Samui</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Panyadee International School</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Key Features:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• British curriculum (IGCSE)</li>
+                      <li>• Ages 2-16 years</li>
+                      <li>• Located in Bophut</li>
+                      <li>• Small class sizes</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Tuition:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• THB 180,000-350,000/year</li>
+                      <li>• Additional fees apply</li>
+                      <li>• Sibling discounts available</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Overview:</strong> The largest international school on the island, offering a comprehensive British curriculum with a focus on holistic development.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Lamai International School</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Key Features:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• International curriculum</li>
+                      <li>• Ages 3-12 years</li>
+                      <li>• Located in Lamai</li>
+                      <li>• Bilingual approach</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Tuition:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• THB 120,000-250,000/year</li>
+                      <li>• More affordable option</li>
+                      <li>• Flexible payment plans</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Overview:</strong> A smaller, community-focused school offering a blend of international and Thai educational approaches.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Samui International Montessori School</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Key Features:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Montessori curriculum</li>
+                      <li>• Ages 2-6 years</li>
+                      <li>• Located in Chaweng</li>
+                      <li>• Child-centered learning</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Tuition:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• THB 150,000-200,000/year</li>
+                      <li>• Half-day options available</li>
+                      <li>• Summer programs</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Overview:</strong> Specialized early childhood education following Montessori principles in a nurturing environment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Curriculum Options */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">2. Curriculum Options</h2>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Available Curricula:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>British Curriculum:</strong> IGCSE, A-Levels, recognized worldwide</li>
+                <li>• <strong>International Curriculum:</strong> Flexible, inquiry-based learning</li>
+                <li>• <strong>Montessori:</strong> Child-led, hands-on learning approach</li>
+                <li>• <strong>Bilingual Programs:</strong> English and Thai language instruction</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* School Selection Factors */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Factors to Consider When Choosing a School</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Academic Factors</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Curriculum:</strong> Compatibility with home country</li>
+                  <li>• <strong>Class Sizes:</strong> Individual attention</li>
+                  <li>• <strong>Teacher Qualifications:</strong> International experience</li>
+                  <li>• <strong>Academic Performance:</strong> Graduation rates, university placements</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Practical Factors</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Location:</strong> Proximity to home/work</li>
+                  <li>• <strong>Transportation:</strong> School bus availability</li>
+                  <li>• <strong>Cost:</strong> Tuition, fees, uniforms</li>
+                  <li>• <strong>Extracurricular:</strong> Sports, arts, activities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Admission Process */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Admission Process</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Important:</strong> Start the application process early, as some schools have waiting lists, especially for popular age groups.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Application Requirements</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Application Form:</strong> Complete school application</li>
+                  <li>• <strong>Academic Records:</strong> Previous school transcripts</li>
+                  <li>• <strong>Health Records:</strong> Medical certificates, vaccinations</li>
+                  <li>• <strong>Passport Copies:</strong> Student and parent passports</li>
+                  <li>• <strong>Application Fee:</strong> Non-refundable processing fee</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Assessment Process</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Entrance Tests:</strong> Academic assessment for older students</li>
+                  <li>• <strong>Interviews:</strong> Student and parent interviews</li>
+                  <li>• <strong>Classroom Visits:</strong> Trial day for younger children</li>
+                  <li>• <strong>English Assessment:</strong> Language proficiency evaluation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Costs and Fees */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Costs and Additional Fees</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Typical Fee Structure:</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• <strong>Application Fee:</strong> THB 5,000-15,000 (one-time)</li>
+                <li>• <strong>Registration Fee:</strong> THB 20,000-50,000 (one-time)</li>
+                <li>• <strong>Annual Tuition:</strong> THB 120,000-350,000</li>
+                <li>• <strong>Uniforms:</strong> THB 3,000-8,000/year</li>
+                <li>• <strong>Books and Materials:</strong> THB 10,000-20,000/year</li>
+                <li>• <strong>Transportation:</strong> THB 15,000-30,000/year (optional)</li>
+                <li>• <strong>Lunch Program:</strong> THB 8,000-15,000/year (optional)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              While Koh Samui's international school options are more limited than larger cities, the available schools offer quality education in a beautiful island setting. The smaller class sizes and community atmosphere can be beneficial for children's development.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              When choosing a school, consider your family's long-term plans, budget, and educational priorities. Visiting schools in person and speaking with current parents can provide valuable insights into the best fit for your child.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Need School Guidance?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our relocation specialists can help you navigate the school selection process and find the perfect educational fit for your family in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Relocation Team
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+export const BlogPostExpatsLocations = () => (
+  <div>
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            Best Locations for Expats in Koh Samui: A Complete Guide
+          </h1>
+          <p className="text-xl text-gray-300 mb-8">
+            Discover the most popular and livable areas for expatriates in Koh Samui
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>JULY 1, 2025</span>
+            <span className="mx-2">•</span>
+            <span>12 MIN READ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui has become a popular destination for expatriates seeking a tropical lifestyle with modern amenities. The island offers diverse neighborhoods catering to different preferences, from bustling tourist areas to quiet residential communities.
+            </p>
+          </div>
+
+          {/* Top Expat Locations */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">1. Top Expat Locations in Koh Samui</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Bophut (Fisherman's Village)</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Established expat community</li>
+                      <li>• High-end restaurants and bars</li>
+                      <li>• Friday night market</li>
+                      <li>• Good international schools</li>
+                      <li>• Luxury property options</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Higher cost of living</li>
+                      <li>• Limited beach access</li>
+                      <li>• Tourist crowds in season</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Best for:</strong> Families, retirees, and professionals seeking a sophisticated lifestyle with good amenities.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Maenam</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Quiet and peaceful</li>
+                      <li>• Long, beautiful beach</li>
+                      <li>• More affordable housing</li>
+                      <li>• Growing expat community</li>
+                      <li>• Good for families</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Limited shopping options</li>
+                      <li>• Fewer restaurants</li>
+                      <li>• Less nightlife</li>
+                      <li>• Need a car for convenience</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Best for:</strong> Families, retirees, and those seeking a quieter, more affordable lifestyle.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Lamai</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Good beach access</li>
+                      <li>• Family-friendly atmosphere</li>
+                      <li>• International school nearby</li>
+                      <li>• Reasonable property prices</li>
+                      <li>• Good local markets</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Less sophisticated than Bophut</li>
+                      <li>• Limited high-end dining</li>
+                      <li>• Some areas can be noisy</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Best for:</strong> Families with children, budget-conscious expats, and those who want beach access.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">d. Choeng Mon</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Exclusive and private</li>
+                      <li>• Beautiful beaches</li>
+                      <li>• Luxury properties</li>
+                      <li>• Close to airport</li>
+                      <li>• High-end resorts nearby</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Very expensive</li>
+                      <li>• Limited local amenities</li>
+                      <li>• Need transportation</li>
+                      <li>• Smaller expat community</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  <strong>Best for:</strong> High-net-worth individuals, retirees seeking exclusivity, and those who value privacy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lifestyle Considerations */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">2. Lifestyle Considerations</h2>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Factors for Expats:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>Community:</strong> Size and activity of expat community</li>
+                <li>• <strong>Amenities:</strong> Access to shops, restaurants, healthcare</li>
+                <li>• <strong>Transportation:</strong> Public transport, car necessity</li>
+                <li>• <strong>Cost of Living:</strong> Housing, utilities, daily expenses</li>
+                <li>• <strong>Safety:</strong> Crime rates, emergency services</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Property Options */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Property Options for Expats</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Rental Options</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Monthly Rentals:</strong> THB 15,000-80,000</li>
+                  <li>• <strong>Long-term Leases:</strong> 6-12 months preferred</li>
+                  <li>• <strong>Furnished/Unfurnished:</strong> Both available</li>
+                  <li>• <strong>Utilities:</strong> Usually separate</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Purchase Options</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Condos:</strong> Foreigners can own freehold</li>
+                  <li>• <strong>Villas:</strong> Leasehold or company structure</li>
+                  <li>• <strong>Land:</strong> Requires Thai company</li>
+                  <li>• <strong>Prices:</strong> THB 3M-50M+</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Cost of Living */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Cost of Living Comparison</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Note:</strong> Costs vary significantly by location and lifestyle choices. These are approximate monthly costs for a couple.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Monthly Living Expenses</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Rent (1-2 bedroom):</strong> THB 15,000-50,000</li>
+                  <li>• <strong>Utilities:</strong> THB 3,000-8,000</li>
+                  <li>• <strong>Groceries:</strong> THB 8,000-15,000</li>
+                  <li>• <strong>Dining Out:</strong> THB 10,000-25,000</li>
+                  <li>• <strong>Transportation:</strong> THB 5,000-15,000</li>
+                  <li>• <strong>Healthcare:</strong> THB 3,000-10,000</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Community and Social Life */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Community and Social Life</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Expat Activities and Groups:</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• <strong>Expat Clubs:</strong> Regular meetups and events</li>
+                <li>• <strong>Sports Groups:</strong> Golf, tennis, yoga, diving</li>
+                <li>• <strong>Volunteer Organizations:</strong> Animal welfare, community projects</li>
+                <li>• <strong>Business Networks:</strong> Professional networking events</li>
+                <li>• <strong>Social Media Groups:</strong> Facebook groups for expats</li>
+                <li>• <strong>Cultural Events:</strong> Festivals, art exhibitions, music</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui offers diverse living options for expatriates, from bustling tourist areas to quiet residential neighborhoods. The choice of location depends on individual preferences, budget, and lifestyle goals.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Successful expat living in Koh Samui requires careful consideration of location, community, and practical needs. Visiting different areas and speaking with current expats can help make the best choice for your situation.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready to Move to Koh Samui?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our relocation specialists can help you find the perfect location and property for your expat lifestyle in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Relocation Team
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+
+
+export const BlogPostForeignBuyers = () => (
+  <div>
     <div className="bg-gray-900 py-16 bg-cover bg-center relative">
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       <div className="container mx-auto px-4 relative">
         <div className="text-center">
           <h1 className="text-4xl font-serif text-white mb-4">
-            Top 5 International Schools in Koh Samui
+            Investing in Koh Samui: A Guide for Foreign Buyers
           </h1>
-          <p className="text-gray-300">JULY 22, 2025</p>
+          <p className="text-gray-300">MAY 10, 2025</p>
         </div>
       </div>
     </div>
-    {/* Blog Content */}
     <article className="py-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="prose prose-lg max-w-none">
-          <p>Koh Samui offers a range of esteemed international schools catering to diverse educational needs. Based on curriculum offerings, facilities, and community feedback, here are five notable international schools on the island:</p>
-          <h2>1. International School of Samui (ISS)</h2>
-          <ul>
-            <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
-            <li><strong>Ages:</strong> 3 to 18</li>
-            <li><strong>Highlights:</strong> Established in 2007, ISS is accredited by Education Development Trust and the International School’s Quality Mark. The school boasts a diverse student body from over 35 countries and offers a comprehensive education from Early Years to Sixth Form.</li>
-          </ul>
-          <h2>2. Panyadee, The British International School of Samui (PBISS)</h2>
-          <ul>
-            <li><strong>Curriculum:</strong> British (Cambridge International Curriculum)</li>
-            <li><strong>Ages:</strong> 2 to 18</li>
-            <li><strong>Highlights:</strong> PBISS provides a holistic education with a strong emphasis on language programs and a comprehensive educational experience.</li>
-          </ul>
-          <h2>3. Greenacre International School</h2>
-          <ul>
-            <li><strong>Curriculum:</strong> British (National Curriculum of England)</li>
-            <li><strong>Ages:</strong> 3 to 13</li>
-            <li><strong>Highlights:</strong> Situated in the serene area of Na Mueang, Greenacre emphasizes academics, environmental awareness, and mindfulness. The school offers a nurturing environment with a focus on holistic development.</li>
-          </ul>
-          <h2>4. Windfield International School</h2>
-          <ul>
-            <li><strong>Curriculum:</strong> British and French</li>
-            <li><strong>Ages:</strong> 3 to 18</li>
-            <li><strong>Highlights:</strong> Windfield offers a bilingual education with a focus on inquiry-based learning and cultural diversity. The school promotes child development in a fun and responsible manner.</li>
-          </ul>
-          <h2>5. Lamai International School (LIS)</h2>
-          <ul>
-            <li><strong>Curriculum:</strong> British (Cambridge Curriculum)</li>
-            <li><strong>Ages:</strong> 3 to 11</li>
-            <li><strong>Highlights:</strong> Located in Lamai, LIS offers a bright and flourishing environment with a focus on the Cambridge Curriculum. The school prides itself on providing the highest level of education in a nurturing setting.</li>
-          </ul>
-          <h2>Summary</h2>
-          <p>Each of these schools offers unique programs and environments to cater to various educational preferences. If you have specific criteria or need further assistance in selecting the right school for your child, feel free to ask!</p>
+          <p>Content coming soon...</p>
         </div>
       </div>
     </article>
   </div>
 );
 
-export const BlogPostExpatsLocations = () => (
+export const BlogPostSustainableLuxury = () => (
   <div>
-    {/* Header */}
-    <div className="bg-gray-900 py-16 bg-cover bg-center relative">
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
       <div className="container mx-auto px-4 relative">
-        <div className="text-center">
-          <h1 className="text-4xl font-serif text-white mb-4">
-            Best Locations for Expats to Live in Koh Samui
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            Sustainable Luxury: Eco-Friendly Design Trends
           </h1>
-          <p className="text-gray-300">JULY 29, 2025</p>
+          <p className="text-xl text-gray-300 mb-8">
+            How luxury real estate in Koh Samui is embracing sustainability without compromising on elegance
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>APRIL 22, 2025</span>
+            <span className="mx-2">•</span>
+            <span>15 MIN READ</span>
+          </div>
         </div>
       </div>
     </div>
-    {/* Blog Content */}
-    <article className="py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-          <p>Koh Samui offers a variety of neighborhoods that cater to expatriates seeking different lifestyles, from vibrant social scenes to tranquil retreats. Here are some of the best locations for expats to reside on the island:</p>
-          <h2>🇹🇭 Bophut (Fisherman's Village) – Charming Blend of Tradition and Modernity</h2>
-          <p>Bophut is renowned for its picturesque Fisherman's Village, featuring traditional Thai architecture alongside modern amenities. The area boasts boutique shops, beachfront dining, and a weekly walking street market. It's popular among expats for its relaxed atmosphere and family-friendly environment. The presence of international schools and proximity to the airport add to its appeal.</p>
-          <h2>Lamai – Relaxed Beach Town with Essential Amenities</h2>
-          <p>Lamai offers a more laid-back alternative to the bustling Chaweng area. With its beautiful beaches, variety of dining options, and local markets, it's favored by families and retirees. The town provides essential amenities, including healthcare facilities and a French school, making it a practical choice for long-term living.</p>
-          <h2>Maenam – Tranquil Setting Ideal for Retirees</h2>
-          <p>Maenam is known for its serene environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.</p>
-          <h2>Choeng Mon – Upscale and Peaceful Environment</h2>
-          <p>Located on the northeastern tip of Koh Samui, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.</p>
-          <h2>Chaweng – Vibrant Hub for Social and Nightlife Enthusiasts</h2>
-          <p>Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.</p>
-          <h2>Plai Laem – Exclusive Area with Scenic Views</h2>
-          <p>Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.</p>
-          <h2>Nathon – Authentic Thai Experience with Modern Conveniences</h2>
-          <p>Nathon, the island's administrative center, offers a blend of local culture and modern amenities. It's ideal for expats seeking an authentic Thai experience without the tourist crowds. The area features local markets, affordable housing, and essential services, making it a practical choice for long-term residents.</p>
-          <h2>Summary Table:</h2>
-          <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 p-2 text-left">Area</th>
-                <th className="border border-gray-300 p-2 text-left">Best For</th>
-                <th className="border border-gray-300 p-2 text-left">Key Features</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 p-2">Bophut</td>
-                <td className="border border-gray-300 p-2">Families, culture enthusiasts</td>
-                <td className="border border-gray-300 p-2">Fisherman's Village, international schools</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Lamai</td>
-                <td className="border border-gray-300 p-2">Families, retirees</td>
-                <td className="border border-gray-300 p-2">Relaxed vibe, essential amenities</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Maenam</td>
-                <td className="border border-gray-300 p-2">Retirees, budget-conscious expats</td>
-                <td className="border border-gray-300 p-2">Tranquil setting, affordable properties</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Choeng Mon</td>
-                <td className="border border-gray-300 p-2">High-net-worth individuals</td>
-                <td className="border border-gray-300 p-2">Luxury villas, peaceful environment</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Chaweng</td>
-                <td className="border border-gray-300 p-2">Socialites, nightlife lovers</td>
-                <td className="border border-gray-300 p-2">Vibrant nightlife, shopping centers</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Plai Laem</td>
-                <td className="border border-gray-300 p-2">Affluent expats</td>
-                <td className="border border-gray-300 p-2">Scenic views, exclusive properties</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Nathon</td>
-                <td className="border border-gray-300 p-2">Authentic experience seekers</td>
-                <td className="border border-gray-300 p-2">Local markets, administrative center</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Each of these neighborhoods offers a unique lifestyle, so your choice should align with your personal preferences and needs.</p>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              The luxury real estate market in Koh Samui is experiencing a paradigm shift as discerning buyers increasingly prioritize sustainability alongside opulence. Eco-friendly design is no longer a compromise but a sophisticated choice that enhances both property value and environmental responsibility.
+            </p>
+          </div>
+
+          {/* Current Trends */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">1. Current Sustainable Luxury Trends</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Modern luxury buyers are seeking properties that combine environmental consciousness with sophisticated design, creating a new standard for premium real estate in Koh Samui.
+            </p>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Market Drivers:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>Environmental Awareness:</strong> Growing concern for climate impact</li>
+                <li>• <strong>Energy Efficiency:</strong> Rising utility costs driving demand</li>
+                <li>• <strong>Health Benefits:</strong> Better indoor air quality and wellness</li>
+                <li>• <strong>Investment Value:</strong> Higher resale and rental potential</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Sustainable Design Elements */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">2. Essential Sustainable Design Elements</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Solar Energy Integration</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Solar Panels:</strong> High-efficiency photovoltaic systems</li>
+                  <li>• <strong>Battery Storage:</strong> Energy independence and backup power</li>
+                  <li>• <strong>Smart Monitoring:</strong> Real-time energy consumption tracking</li>
+                  <li>• <strong>ROI:</strong> 5-7 year payback period with government incentives</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Passive Design Principles</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Orientation:</strong> Optimal positioning for natural ventilation</li>
+                  <li>• <strong>Shading:</strong> Strategic overhangs and vegetation</li>
+                  <li>• <strong>Insulation:</strong> High-performance thermal barriers</li>
+                  <li>• <strong>Natural Light:</strong> Maximizing daylight while minimizing heat gain</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Water Conservation Systems</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Rainwater Harvesting:</strong> Collection and storage systems</li>
+                  <li>• <strong>Greywater Recycling:</strong> Reuse of household water</li>
+                  <li>• <strong>Low-Flow Fixtures:</strong> Water-efficient appliances</li>
+                  <li>• <strong>Drought-Resistant Landscaping:</strong> Native plant selection</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Materials and Construction */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Sustainable Materials and Construction</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Innovation Note:</strong> Sustainable materials are now available in luxury finishes, proving that eco-friendly choices can enhance rather than compromise aesthetic appeal.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Building Materials</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Bamboo:</strong> Rapidly renewable, strong, and beautiful</li>
+                  <li>• <strong>Reclaimed Wood:</strong> Character and sustainability</li>
+                  <li>• <strong>Recycled Steel:</strong> Structural integrity with eco-benefits</li>
+                  <li>• <strong>Natural Stone:</strong> Local sourcing reduces transport impact</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Finishing Materials</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Low-VOC Paints:</strong> Better indoor air quality</li>
+                  <li>• <strong>Natural Fabrics:</strong> Organic cotton, linen, and wool</li>
+                  <li>• <strong>Recycled Glass:</strong> Countertops and decorative elements</li>
+                  <li>• <strong>Cork Flooring:</strong> Sustainable and comfortable</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Smart Home Integration */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Smart Home Technology for Sustainability</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Energy Management Systems</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Smart Thermostats:</strong> AI-powered climate control</li>
+                  <li>• <strong>Automated Lighting:</strong> Motion sensors and scheduling</li>
+                  <li>• <strong>Appliance Monitoring:</strong> Real-time energy consumption</li>
+                  <li>• <strong>Grid Integration:</strong> Smart energy trading capabilities</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Water Management</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Smart Irrigation:</strong> Weather-based watering systems</li>
+                  <li>• <strong>Leak Detection:</strong> Early warning systems</li>
+                  <li>• <strong>Water Quality Monitoring:</strong> Real-time filtration status</li>
+                  <li>• <strong>Usage Analytics:</strong> Consumption pattern optimization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Wellness and Health */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Wellness-Focused Sustainable Features</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Health and Wellness Integration:</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• <strong>Air Purification:</strong> HEPA filtration and natural ventilation</li>
+                <li>• <strong>Biophilic Design:</strong> Connection to nature through design</li>
+                <li>• <strong>Natural Materials:</strong> Non-toxic, hypoallergenic finishes</li>
+                <li>• <strong>Outdoor Living:</strong> Seamless indoor-outdoor connections</li>
+                <li>• <strong>Meditation Spaces:</strong> Dedicated wellness areas</li>
+                <li>• <strong>Organic Gardens:</strong> Fresh produce and therapeutic benefits</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Investment Benefits */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">6. Investment Benefits of Sustainable Luxury</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Financial Advantages</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Lower Operating Costs:</strong> Reduced utility bills</li>
+                  <li>• <strong>Higher Rental Rates:</strong> Premium pricing for eco-features</li>
+                  <li>• <strong>Faster Resale:</strong> Growing market demand</li>
+                  <li>• <strong>Tax Incentives:</strong> Government support for green buildings</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Market Positioning</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Competitive Advantage:</strong> Differentiation in luxury market</li>
+                  <li>• <strong>Future-Proofing:</strong> Adapting to regulatory changes</li>
+                  <li>• <strong>Brand Value:</strong> Enhanced reputation and appeal</li>
+                  <li>• <strong>Tenant Attraction:</strong> Appeal to environmentally conscious renters</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Studies */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">7. Successful Sustainable Luxury Projects</h2>
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Bophut Eco-Luxury Villa</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Features:</strong> 100% solar powered, rainwater harvesting</li>
+                  <li>• <strong>ROI:</strong> 25% higher rental rates than comparable properties</li>
+                  <li>• <strong>Energy Savings:</strong> 80% reduction in utility costs</li>
+                  <li>• <strong>Market Response:</strong> 50% faster rental bookings</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Choeng Mon Sustainable Resort</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Features:</strong> Biophilic design, organic gardens</li>
+                  <li>• <strong>Guest Satisfaction:</strong> 95% positive feedback on sustainability</li>
+                  <li>• <strong>Occupancy Rates:</strong> 15% higher than traditional properties</li>
+                  <li>• <strong>Premium Pricing:</strong> 30% higher room rates</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Sustainable luxury is not just a trend but the future of high-end real estate in Koh Samui. Properties that successfully integrate eco-friendly features with sophisticated design are setting new standards for luxury living.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              The combination of environmental responsibility, enhanced living experience, and strong investment returns makes sustainable luxury properties an increasingly attractive option for discerning buyers and investors.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Interested in Sustainable Luxury?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our sustainable luxury specialists can help you find or design the perfect eco-friendly luxury property in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Sustainable Luxury Team
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </div>
+  </div>
+);
+
+export const BlogPostWellnessRealEstate = () => (
+  <div>
+    {/* Hero Section */}
+    <div className="bg-gray-900 py-24 bg-cover bg-center relative" style={{ 
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')"
+    }}>
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            The Rise of Wellness-Focused Real Estate in Koh Samui
+          </h1>
+          <p className="text-xl text-gray-300 mb-8">
+            How wellness amenities are transforming luxury properties and attracting health-conscious buyers
+          </p>
+          <div className="flex items-center justify-center text-gray-400">
+            <span>APRIL 8, 2025</span>
+            <span className="mx-2">•</span>
+            <span>14 MIN READ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Content Section */}
+    <div className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Introduction */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Koh Samui's luxury real estate market is experiencing a wellness revolution as buyers increasingly prioritize health and well-being in their property choices. From dedicated yoga studios to organic gardens, wellness-focused amenities are becoming essential features in premium properties.
+            </p>
+          </div>
+
+          {/* Market Overview */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">1. The Wellness Real Estate Market</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              The global wellness real estate market is growing rapidly, with Koh Samui emerging as a key destination for health-conscious luxury buyers seeking properties that support their wellness lifestyle.
+            </p>
+            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Market Growth Indicators:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• <strong>Global Growth:</strong> 6.4% annual growth in wellness real estate</li>
+                <li>• <strong>Premium Pricing:</strong> 15-25% higher values for wellness properties</li>
+                <li>• <strong>Rental Demand:</strong> 40% increase in wellness-focused rentals</li>
+                <li>• <strong>Buyer Demographics:</strong> Growing interest from health-conscious millennials</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Essential Wellness Features */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-8">2. Essential Wellness Features</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Dedicated Wellness Spaces</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Yoga Studio:</strong> Soundproofed space with natural light</li>
+                  <li>• <strong>Meditation Room:</strong> Quiet sanctuary with calming design</li>
+                  <li>• <strong>Home Gym:</strong> Professional equipment and ventilation</li>
+                  <li>• <strong>Spa Bathroom:</strong> Steam shower, sauna, and hydrotherapy</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Outdoor Wellness Areas</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Garden Yoga Deck:</strong> Outdoor practice space</li>
+                  <li>• <strong>Meditation Garden:</strong> Peaceful outdoor sanctuary</li>
+                  <li>• <strong>Infinity Pool:</strong> Low-impact exercise and relaxation</li>
+                  <li>• <strong>Walking Paths:</strong> Private trails through nature</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Health-Focused Amenities</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Air Purification:</strong> HEPA filtration systems</li>
+                  <li>• <strong>Water Filtration:</strong> Alkaline and mineral water systems</li>
+                  <li>• <strong>Organic Garden:</strong> Fresh produce and herbs</li>
+                  <li>• <strong>Sleep Optimization:</strong> Blackout curtains and soundproofing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Wellness Technology */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Wellness Technology Integration</h2>
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+              <p className="text-amber-800">
+                <strong>Innovation Note:</strong> Smart wellness technology is becoming standard in luxury properties, offering personalized health monitoring and optimization.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Health Monitoring</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Sleep Tracking:</strong> Bed sensors and environment optimization</li>
+                  <li>• <strong>Air Quality Monitoring:</strong> Real-time indoor air quality</li>
+                  <li>• <strong>Fitness Integration:</strong> Connected workout equipment</li>
+                  <li>• <strong>Stress Management:</strong> Biometric feedback systems</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Wellness Automation</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Circadian Lighting:</strong> Natural light simulation</li>
+                  <li>• <strong>Climate Control:</strong> Optimal temperature and humidity</li>
+                  <li>• <strong>Sound Therapy:</strong> Integrated wellness audio systems</li>
+                  <li>• <strong>Aromatherapy:</strong> Automated essential oil diffusion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Location and Environment */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Wellness-Optimized Locations</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Natural Environment Benefits</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Ocean Views:</strong> Proven stress reduction and mental clarity</li>
+                  <li>• <strong>Fresh Air:</strong> Tropical breezes and natural ventilation</li>
+                  <li>• <strong>Natural Light:</strong> Vitamin D and circadian rhythm support</li>
+                  <li>• <strong>Green Spaces:</strong> Connection to nature and biodiversity</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Proximity to Wellness Services</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Yoga Studios:</strong> Access to professional instruction</li>
+                  <li>• <strong>Wellness Centers:</strong> Spa and therapy services</li>
+                  <li>• <strong>Organic Markets:</strong> Fresh, healthy food options</li>
+                  <li>• <strong>Medical Facilities:</strong> Integrative healthcare services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Design Principles */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Wellness-Focused Design Principles</h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Biophilic Design Elements:</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li>• <strong>Natural Materials:</strong> Wood, stone, and organic textiles</li>
+                <li>• <strong>Indoor-Outdoor Flow:</strong> Seamless connection to nature</li>
+                <li>• <strong>Natural Patterns:</strong> Organic shapes and textures</li>
+                <li>• <strong>Water Features:</strong> Fountains, pools, and water elements</li>
+                <li>• <strong>Living Walls:</strong> Vertical gardens and plant integration</li>
+                <li>• <strong>Natural Color Palettes:</strong> Earth tones and calming hues</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Investment Benefits */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">6. Investment Benefits of Wellness Properties</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Financial Advantages</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Premium Pricing:</strong> 20-30% higher property values</li>
+                  <li>• <strong>Higher Rental Rates:</strong> Wellness-focused tenants pay more</li>
+                  <li>• <strong>Faster Appreciation:</strong> Growing market demand</li>
+                  <li>• <strong>Lower Vacancy:</strong> High tenant retention rates</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Market Positioning</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Competitive Differentiation:</strong> Unique selling proposition</li>
+                  <li>• <strong>Target Market Growth:</strong> Expanding wellness-conscious demographic</li>
+                  <li>• <strong>Brand Enhancement:</strong> Premium wellness positioning</li>
+                  <li>• <strong>Future-Proofing:</strong> Adapting to lifestyle trends</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Studies */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">7. Successful Wellness Property Examples</h2>
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Bophut Wellness Villa</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Features:</strong> Dedicated yoga studio, meditation garden, organic kitchen</li>
+                  <li>• <strong>Rental Performance:</strong> 35% higher rates than comparable properties</li>
+                  <li>• <strong>Occupancy:</strong> 95% year-round occupancy</li>
+                  <li>• <strong>Guest Satisfaction:</strong> 4.9/5 average rating</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Lamai Wellness Resort</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Features:</strong> Spa facilities, wellness programs, organic dining</li>
+                  <li>• <strong>Market Response:</strong> 50% increase in bookings</li>
+                  <li>• <strong>Revenue Growth:</strong> 40% higher average daily rates</li>
+                  <li>• <strong>Repeat Guests:</strong> 70% return rate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Future Trends */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">8. Future Trends in Wellness Real Estate</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Emerging Technologies</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>AI Wellness Coaches:</strong> Personalized health guidance</li>
+                  <li>• <strong>Virtual Reality Meditation:</strong> Immersive wellness experiences</li>
+                  <li>• <strong>Biometric Integration:</strong> Health monitoring systems</li>
+                  <li>• <strong>Smart Nutrition:</strong> Automated healthy meal planning</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Community Wellness</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• <strong>Wellness Communities:</strong> Shared health facilities</li>
+                  <li>• <strong>Group Activities:</strong> Community yoga and fitness</li>
+                  <li>• <strong>Wellness Events:</strong> Regular health and wellness programs</li>
+                  <li>• <strong>Social Connection:</strong> Community support networks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Conclusion */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Wellness-focused real estate represents the future of luxury living in Koh Samui, combining sophisticated design with health-promoting features that enhance both quality of life and investment value.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Properties that successfully integrate wellness amenities are not only meeting current market demand but are also positioning themselves for long-term success in an increasingly health-conscious world.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
+                <Shield className="h-8 w-8 text-custom-green" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready for Wellness Living?</h3>
+                <p className="text-gray-600 mb-4">
+                  Our wellness real estate specialists can help you find or design the perfect wellness-focused property in Koh Samui.
+                </p>
+                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
+                  Contact Our Wellness Team
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
