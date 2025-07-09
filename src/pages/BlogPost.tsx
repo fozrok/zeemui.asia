@@ -544,13 +544,13 @@ export const BlogPostExpatsLocations = () => (
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            Best Locations for Expats in Koh Samui: A Complete Guide
+            Best Locations for Expats to Live in Koh Samui
           </h1>
           <p className="text-xl text-gray-300 mb-8">
-            Discover the most popular and livable areas for expatriates in Koh Samui
+            Discover the top neighborhoods in Koh Samui for expatriates, from vibrant social hubs to tranquil retreats.
           </p>
           <div className="flex items-center justify-center text-gray-400">
-            <span>JULY 1, 2025</span>
+            <span>JULY 29, 2025</span>
             <span className="mx-2">•</span>
             <span>12 MIN READ</span>
           </div>
@@ -561,238 +561,95 @@ export const BlogPostExpatsLocations = () => (
     {/* Content Section */}
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Koh Samui has become a popular destination for expatriates seeking a tropical lifestyle with modern amenities. The island offers diverse neighborhoods catering to different preferences, from bustling tourist areas to quiet residential communities.
-            </p>
+        <div className="max-w-4xl mx-auto prose prose-lg">
+          <p className="mb-8">Koh Samui offers a variety of neighborhoods that cater to expatriates seeking different lifestyles, from vibrant social scenes to tranquil retreats. Here are some of the best locations for expats to reside on the island:</p>
+
+          <div className="mb-8">
+            <span className="text-2xl" role="img" aria-label="Thailand flag">🇹🇭</span>
           </div>
 
-          {/* Top Expat Locations */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-8">1. Top Expat Locations in Koh Samui</h2>
-            
-            <div className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">a. Bophut (Fisherman's Village)</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Established expat community</li>
-                      <li>• High-end restaurants and bars</li>
-                      <li>• Friday night market</li>
-                      <li>• Good international schools</li>
-                      <li>• Luxury property options</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Higher cost of living</li>
-                      <li>• Limited beach access</li>
-                      <li>• Tourist crowds in season</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Best for:</strong> Families, retirees, and professionals seeking a sophisticated lifestyle with good amenities.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">b. Maenam</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Quiet and peaceful</li>
-                      <li>• Long, beautiful beach</li>
-                      <li>• More affordable housing</li>
-                      <li>• Growing expat community</li>
-                      <li>• Good for families</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Limited shopping options</li>
-                      <li>• Fewer restaurants</li>
-                      <li>• Less nightlife</li>
-                      <li>• Need a car for convenience</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Best for:</strong> Families, retirees, and those seeking a quieter, more affordable lifestyle.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">c. Lamai</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Good beach access</li>
-                      <li>• Family-friendly atmosphere</li>
-                      <li>• International school nearby</li>
-                      <li>• Reasonable property prices</li>
-                      <li>• Good local markets</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Less sophisticated than Bophut</li>
-                      <li>• Limited high-end dining</li>
-                      <li>• Some areas can be noisy</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Best for:</strong> Families with children, budget-conscious expats, and those who want beach access.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">d. Choeng Mon</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Pros:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Exclusive and private</li>
-                      <li>• Beautiful beaches</li>
-                      <li>• Luxury properties</li>
-                      <li>• Close to airport</li>
-                      <li>• High-end resorts nearby</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Cons:</h4>
-                    <ul className="space-y-1 text-gray-600 text-sm">
-                      <li>• Very expensive</li>
-                      <li>• Limited local amenities</li>
-                      <li>• Need transportation</li>
-                      <li>• Smaller expat community</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-600">
-                  <strong>Best for:</strong> High-net-worth individuals, retirees seeking exclusivity, and those who value privacy.
-                </p>
-              </div>
+          <div className="space-y-8 mb-12">
+            <div>
+              <h2 className="text-xl font-bold mb-2">Bophut (Fisherman's Village) <span className="font-normal">– Charming Blend of Tradition and Modernity</span></h2>
+              <p>Bophut is renowned for its picturesque Fisherman's Village, featuring traditional Thai architecture alongside modern amenities. The area boasts boutique shops, beachfront dining, and a weekly walking street market. It's popular among expats for its relaxed atmosphere and family-friendly environment. The presence of international schools and proximity to the airport add to its appeal.</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-2">Lamai <span className="font-normal">– Relaxed Beach Town with Essential Amenities</span></h2>
+              <p>Lamai offers a more laid-back alternative to the bustling Chaweng area. With its beautiful beaches, variety of dining options, and local markets, it's favored by families and retirees. The town provides essential amenities, including healthcare facilities and a French school, making it a practical choice for long-term living.</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-2">Maenam <span className="font-normal">– Tranquil Setting Ideal for Retirees</span></h2>
+              <p>Maenam is known for its serene environment and long stretches of quiet beach. It's attracting attention from digital nomads and retirees, with property values appreciating by approximately 25% between 2021 and 2023. The area offers a range of properties, from affordable homes to luxury villas.</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-2">Choeng Mon <span className="font-normal">– Upscale and Peaceful Environment</span></h2>
+              <p>Located on the northeastern tip of Koh Samui, Choeng Mon is characterized by its upscale resorts and luxury villas. The area offers privacy and seclusion, making it attractive for high-net-worth individuals seeking exclusive vacation rentals. Its proximity to the airport and Chaweng adds to its appeal.</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-2">Chaweng <span className="font-normal">– Vibrant Hub for Social and Nightlife Enthusiasts</span></h2>
+              <p>Chaweng is the island's most vibrant area, renowned for its bustling nightlife, shopping centers, and the longest beach on Koh Samui. Its popularity among tourists makes it a hotspot for short-term rental investments, with properties often achieving rental yields between 8–10%. While property prices here are higher, the consistent demand ensures strong returns.</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-2">Plai Laem <span className="font-normal">– Exclusive Area with Scenic Views</span></h2>
+              <p>Plai Laem is gaining popularity among affluent tourists and investors seeking luxury properties with stunning sea views. The area is known for its high-end villas and tranquil environment, making it a prime location for premium rental investments.</p>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-2">Nathon <span className="font-normal">– Authentic Thai Experience with Modern Conveniences</span></h2>
+              <p>Nathon, the island's administrative center, offers a blend of local culture and modern amenities. It's ideal for expats seeking an authentic Thai experience without the tourist crowds. The area features local markets, affordable housing, and essential services, making it a practical choice for long-term residents.</p>
             </div>
           </div>
 
-          {/* Lifestyle Considerations */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">2. Lifestyle Considerations</h2>
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Factors for Expats:</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• <strong>Community:</strong> Size and activity of expat community</li>
-                <li>• <strong>Amenities:</strong> Access to shops, restaurants, healthcare</li>
-                <li>• <strong>Transportation:</strong> Public transport, car necessity</li>
-                <li>• <strong>Cost of Living:</strong> Housing, utilities, daily expenses</li>
-                <li>• <strong>Safety:</strong> Crime rates, emergency services</li>
-              </ul>
-            </div>
+          <h2 className="text-2xl font-bold mt-10 mb-4">Summary Table</h2>
+          <div className="overflow-x-auto mb-8">
+            <table className="min-w-full border border-gray-300 text-sm">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-4 py-2 border-b">Area</th>
+                  <th className="px-4 py-2 border-b">Best For</th>
+                  <th className="px-4 py-2 border-b">Key Features</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="px-4 py-2 border-b">Bophut</td>
+                  <td className="px-4 py-2 border-b">Families, culture enthusiasts</td>
+                  <td className="px-4 py-2 border-b">Fisherman's Village, international schools</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border-b">Lamai</td>
+                  <td className="px-4 py-2 border-b">Families, retirees</td>
+                  <td className="px-4 py-2 border-b">Relaxed vibe, essential amenities</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border-b">Maenam</td>
+                  <td className="px-4 py-2 border-b">Retirees, budget-conscious expats</td>
+                  <td className="px-4 py-2 border-b">Tranquil setting, affordable properties</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border-b">Choeng Mon</td>
+                  <td className="px-4 py-2 border-b">High-net-worth individuals</td>
+                  <td className="px-4 py-2 border-b">Luxury villas, peaceful environment</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border-b">Chaweng</td>
+                  <td className="px-4 py-2 border-b">Socialites, nightlife lovers</td>
+                  <td className="px-4 py-2 border-b">Vibrant nightlife, shopping centers</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border-b">Plai Laem</td>
+                  <td className="px-4 py-2 border-b">Affluent expats</td>
+                  <td className="px-4 py-2 border-b">Scenic views, exclusive properties</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border-b">Nathon</td>
+                  <td className="px-4 py-2 border-b">Authentic experience seekers</td>
+                  <td className="px-4 py-2 border-b">Local markets, administrative center</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          {/* Property Options */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">3. Property Options for Expats</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Rental Options</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Monthly Rentals:</strong> THB 15,000-80,000</li>
-                  <li>• <strong>Long-term Leases:</strong> 6-12 months preferred</li>
-                  <li>• <strong>Furnished/Unfurnished:</strong> Both available</li>
-                  <li>• <strong>Utilities:</strong> Usually separate</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Purchase Options</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Condos:</strong> Foreigners can own freehold</li>
-                  <li>• <strong>Villas:</strong> Leasehold or company structure</li>
-                  <li>• <strong>Land:</strong> Requires Thai company</li>
-                  <li>• <strong>Prices:</strong> THB 3M-50M+</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Cost of Living */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">4. Cost of Living Comparison</h2>
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
-              <p className="text-amber-800">
-                <strong>Note:</strong> Costs vary significantly by location and lifestyle choices. These are approximate monthly costs for a couple.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Monthly Living Expenses</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• <strong>Rent (1-2 bedroom):</strong> THB 15,000-50,000</li>
-                  <li>• <strong>Utilities:</strong> THB 3,000-8,000</li>
-                  <li>• <strong>Groceries:</strong> THB 8,000-15,000</li>
-                  <li>• <strong>Dining Out:</strong> THB 10,000-25,000</li>
-                  <li>• <strong>Transportation:</strong> THB 5,000-15,000</li>
-                  <li>• <strong>Healthcare:</strong> THB 3,000-10,000</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Community and Social Life */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">5. Community and Social Life</h2>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Expat Activities and Groups:</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li>• <strong>Expat Clubs:</strong> Regular meetups and events</li>
-                <li>• <strong>Sports Groups:</strong> Golf, tennis, yoga, diving</li>
-                <li>• <strong>Volunteer Organizations:</strong> Animal welfare, community projects</li>
-                <li>• <strong>Business Networks:</strong> Professional networking events</li>
-                <li>• <strong>Social Media Groups:</strong> Facebook groups for expats</li>
-                <li>• <strong>Cultural Events:</strong> Festivals, art exhibitions, music</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Conclusion */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-serif text-gray-800 mb-6">Conclusion</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Koh Samui offers diverse living options for expatriates, from bustling tourist areas to quiet residential neighborhoods. The choice of location depends on individual preferences, budget, and lifestyle goals.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Successful expat living in Koh Samui requires careful consideration of location, community, and practical needs. Visiting different areas and speaking with current expats can help make the best choice for your situation.
-            </p>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-            <div className="flex items-start">
-              <div className="bg-custom-green-50 p-3 rounded-full mr-6">
-                <Shield className="h-8 w-8 text-custom-green" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready to Move to Koh Samui?</h3>
-                <p className="text-gray-600 mb-4">
-                  Our relocation specialists can help you find the perfect location and property for your expat lifestyle in Koh Samui.
-                </p>
-                <a href="/contact" className="inline-block bg-custom-green text-white px-6 py-3 rounded-md hover:bg-custom-green-600 transition-colors">
-                  Contact Our Relocation Team
-                </a>
-              </div>
-            </div>
-          </div>
+          <p className="mt-8">Each of these neighborhoods offers a unique lifestyle, so your choice should align with your personal preferences and needs.</p>
         </div>
       </div>
     </div>
