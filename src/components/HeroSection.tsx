@@ -33,12 +33,12 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[70vh] md:h-[80vh] bg-cover bg-center" style={{ backgroundImage: "url('https://res.cloudinary.com/dhxriuzu5/image/upload/v1741726808/a-luxurious-modern-villa-with-an-infinit__IeWg50eSy6SiOD580qnjg_Bn614P7vTy20g1-4ro7q7Q_gralzm.jpg')" }}>
+    <section className="relative h-[70vh] md:h-[80vh] bg-cover bg-center" style={{ backgroundImage: "url('https://res.cloudinary.com/dhxriuzu5/image/upload/v1752457309/_-26-5_i968id.jpg')" }}>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-4 max-w-3xl">
-          Bespoke Properties for Sale in Koh Samui
+          Bespoke Real Estate Koh Samui
         </h1>
         
         <div className="w-full max-w-4xl mt-8 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-1">

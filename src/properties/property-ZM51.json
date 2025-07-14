@@ -35,7 +35,7 @@
     "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_18_lkmoqd.jpg",
     "https://res.cloudinary.com/dhxriuzu5/image/upload/v1752057381/ZM51_19_yxyxod.jpg"
   ],
-  "featured": false,
+  "featured": true,
   "newProperty": false,
   "active": true
 } 
