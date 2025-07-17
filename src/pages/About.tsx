@@ -48,22 +48,22 @@ const About = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                src="https://res.cloudinary.com/dhxriuzu5/image/upload/v1752715832/About-Us-Villa_Charal_-_June_2021_28_Large_ftwieh.jpg" 
                 alt="Luxury villa" 
                 className="rounded-lg h-64 w-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                src="https://res.cloudinary.com/dhxriuzu5/image/upload/v1752715833/About-Us-Property_entry_view_Large_sbmryv.jpg" 
                 alt="Luxury property" 
                 className="rounded-lg h-64 w-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                src="https://res.cloudinary.com/dhxriuzu5/image/upload/v1752715832/About-Us-Villa_L_-_May_2016_19_Large_w39ytm.jpg" 
                 alt="Modern villa" 
                 className="rounded-lg h-64 w-full object-cover"
               />
               <img 
-                src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                src="https://res.cloudinary.com/dhxriuzu5/image/upload/v1752715834/About-Us-Villa_L_-_May_2016_45_Large_jlpjnd.jpg" 
                 alt="Luxury pool" 
                 className="rounded-lg h-64 w-full object-cover"
               />
